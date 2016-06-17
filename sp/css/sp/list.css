@@ -156,14 +156,14 @@ html {
     font-size: 15px;
 }
 /* 2016-06-17 add kawai */
-#school .theme1 .theme_dtl span {
+.theme1 .theme_dtl p.date span {
     margin-left: -3px;
     padding: 2px 3px;
     background: #ece4d2;
     color: #5a3219;
 }
 /* //2016-06-17 add kawai */
-/* 2016-06-17 delete kawai
+/* 2016-06-17 delete kawai */
 .theme1 .theme_dtl p.time span{
     margin-left: -3px;
     padding: 2px 3px;
