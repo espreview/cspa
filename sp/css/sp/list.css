@@ -223,7 +223,7 @@ html {
     padding: 3px 8px;
 }
 #searchlist .theme_dtl .reserve span.icon_book {
-    width: 65%;
+    width: 70%;
     padding: 3px 0;
     text-align: center;
     font-size: 12px;
@@ -245,7 +245,7 @@ html {
     margin: 0 0 3px -10px;
     padding: 2px 0;
     border: solid 1px #5b3219;
-    width: 30%;
+    width: 25%;
     text-align: center;
 }
 .lesson_icon {
