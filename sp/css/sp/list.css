@@ -155,12 +155,22 @@ html {
     font-weight: bold;
     font-size: 15px;
 }
+/* 2016-06-17 add kawai */
+#school .theme1 .theme_dtl span {
+    margin-left: -3px;
+    padding: 2px 3px;
+    background: #ece4d2;
+    color: #5a3219;
+}
+/* //2016-06-17 add kawai */
+/* 2016-06-17 delete kawai
 .theme1 .theme_dtl p.time span{
     margin-left: -3px;
     padding: 2px 3px;
     background: #ece4d2;
     color: #5a3219;
 }
+/* //2016-06-17 delete kawai */
 .theme1 .theme_dtl p.desc{
     /* 2016-06-15 add kawai */
     height: 36px;
@@ -176,6 +186,21 @@ html {
 .theme1 .theme_dtl span.icon_book{
     font-size: 11px;
 }
+/* 2016-06-17 add kawai */
+.theme1 .theme_dtl span.icon_remaining {
+    background: none repeat scroll 0 0 #fff;
+    color: #5b3219;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1em;
+    margin: 0 0 3px -10px;
+    padding: 2px 0;
+    border: solid 1px #5b3219;
+    width: 20%;
+    text-align: center;
+}
+/* //2016-06-17 add kawai */
+/* 2016-06-17 delete kawai
 .theme1 .theme_dtl span.icon_remaining{
     background: none repeat scroll 0 0 #fff;
     color: #5b3219;
@@ -186,6 +211,7 @@ html {
     padding: 2px 4px;
     border: solid 1px #5b3219;
 }
+/* //2016-06-17 delete kawai */
 .theme1 .theme_dtl p.map{
     color: #86a727;
     font-size: 12px !important;
@@ -335,6 +361,19 @@ div.theme_dtl ul.date {
     margin: 0 0 3px;
     padding: 3px 5px;
 }
+/* 2016-06-17 add kawai */
+#school span.icon_book {
+    background: none repeat scroll 0 0 #5b3219;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1em;
+    margin: 0 0 3px;
+    padding: 3px 0;
+    width: 80%;
+    text-align: center;
+}
+/* //2016-06-17 add kawai */
 #searchlist span.icon_full {
     background: none repeat scroll 0 0 #d93030;
     color: #fff;
