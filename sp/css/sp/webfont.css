@@ -26,12 +26,12 @@
 
 /* icon1 見学OK */
 .icon1{
-    border: 1px solid #37c0e6;
-    color: #37c0e6;
+    border: 1px solid #619e0c;
+    color: #619e0c;
 }
 .icon-eye:before {
     content: "\e9ce";
-    color: #37c0e6;
+    color: #619e0c;
 }
 
 /* icon2 体験レッスン */
@@ -44,7 +44,63 @@
     color: #619e0c;
 }
 
+.icon3,.icon4,.icon5,.icon6,.icon7,.icon8{
+    border: 1px solid #ad6a31;
+    color: #ad6a31;
+}
 /* icon3 初心者歓迎 */
+.icon-smile:before {
+    content: "\e9e1";
+}
+
+/* icon4 親子レッスン */
+.icon-users:before {
+    content: "\e972";
+}
+
+/* icon5 子供向けレッスン */
+.icon-reddit:before {
+    content: "\eac6";
+}
+
+/* icon6 男性参加OK */
+.icon-user-tie:before {
+    content: "\e976";
+}
+
+/* icon7 コースレッスン方式 */
+.icon-spoon-knife:before {
+    content: "\e9a3";
+}
+
+/* icon8 デモンストレーションのみ */
+.icon-pencil2:before {
+    content: "\e906";
+}
+
+
+/* 旧カラー
+/* icon1 見学OK
+.icon1{
+    border: 1px solid #619e0c;
+    color: #619e0c;
+}
+.icon-eye:before {
+    content: "\e9ce";
+    color: #37c0e6;
+}
+
+/* icon2 体験レッスン
+.icon2{
+    border: 1px solid #619e0c;
+    color: #619e0c;
+}
+.icon-leaf:before {
+    content: "\e9a4";
+    color: #619e0c;
+}
+
+/* icon3 初心者歓迎
 .icon3{
     border: 1px solid #e9ab00;
     color: #e9ab00;
@@ -54,7 +110,7 @@
     color: #e9ab00;
 }
 
-/* icon4 親子レッスン */
+/* icon4 親子レッスン
 .icon4{
     border: 1px solid #e30d49;
     color: #e30d49;
@@ -64,7 +120,7 @@
     color: #e30d49;
 }
 
-/* icon5 子供向けレッスン */
+/* icon5 子供向けレッスン
 .icon5{
     border: 1px solid #ef9200;
     color: #ef9200;
@@ -74,7 +130,7 @@
     color: #ef9200;
 }
 
-/* icon6 男性参加OK */
+/* icon6 男性参加OK
 .icon6{
     border: 1px solid #3b8cdc;
     color: #3b8cdc;
@@ -84,7 +140,7 @@
     color: #3b8cdc;
 }
 
-/* icon7 コースレッスン方式 */
+/* icon7 コースレッスン方式
 .icon7{
     border: 1px solid #ad6a31;
     color: #ad6a31;
@@ -94,7 +150,7 @@
     color: #ad6a31;
 }
 
-/* icon8 デモンストレーションのみ */
+/* icon8 デモンストレーションのみ
 .icon8{
     border: 1px solid #86a727;
     color: #86a727;
@@ -103,3 +159,4 @@
     content: "\e906";
     color: #86a727;
 }
+*/

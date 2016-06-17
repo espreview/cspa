@@ -86,9 +86,9 @@ html {
     font-size: 14px;
     font-weight: bold;
 }
-.theme1 h3{
+.theme1 h4{
     width: 100%;
-    margin-bottom: 5px;
+    margin: -5px 0 5px;
     padding: 2px 0;
     color: #9d571c;
     font-size: 16px !important
@@ -129,35 +129,6 @@ html {
 .theme1 .theme_dtl p.date{
     font-weight: bold;
     font-size: 15px;
-}
-.theme1 .theme_dtl p.desc{
-    height: 36px;
-    line-height: 1.5em;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    margin: 5px 0;
-    font-size: 12px !important;
-}
-.theme1 .theme_dtl span.icon_book{
-    font-size: 11px;
-}
-.theme1 .theme_dtl span.icon_remaining {
-    background: none repeat scroll 0 0 #fff;
-    color: #5b3219;
-    display: inline-block;
-    font-size: 11px;
-    line-height: 1em;
-    margin: 0 0 3px -10px;
-    padding: 2px 0;
-    border: solid 1px #5b3219;
-    width: 30%;
-    text-align: center;
-}
-.theme1 .theme_dtl p.map{
-    color: #86a727;
-    font-size: 12px !important;
 }
 .theme1 .theme_dtl a.info{
     text-decoration: none;
@@ -242,17 +213,6 @@ html {
     margin: 0 0 3px;
     padding: 3px 5px;
 }
-#school span.icon_book {
-    background: none repeat scroll 0 0 #5b3219;
-    color: #fff;
-    display: inline-block;
-    font-size: 11px;
-    line-height: 1em;
-    margin: 0 0 3px;
-    padding: 3px 0;
-    width: 70%;
-    text-align: center;
-}
 #searchlist span.icon_full {
     background: none repeat scroll 0 0 #d93030;
     color: #fff;
@@ -262,12 +222,30 @@ html {
     margin: 0 0 3px;
     padding: 3px 8px;
 }
-#school span.icon_full {
-    width: 100%;
-    font-size: 11px;
+#searchlist .theme_dtl .reserve span.icon_book {
+    padding: 3px 0;
+    width: 70%;
+    text-align: center;
+    font-size: 12px;
+}
+#searchlist .theme_dtl .reserve span.icon_full {
+    width: 20%;
+    font-size: 12px;
     text-align: center;
     padding: 3px 0;
     font-weight: bold;
+}
+#searchlist .theme_dtl .reserve span.icon_remaining {
+    background: none repeat scroll 0 0 #fff;
+    color: #5b3219;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1em;
+    margin: 0 0 3px -10px;
+    padding: 2px 0;
+    border: solid 1px #5b3219;
+    width: 30%;
+    text-align: center;
 }
 .lesson_icon {
     font-size: 10px;
