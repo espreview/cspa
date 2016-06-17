@@ -27,6 +27,7 @@ html {
 }
 #school .theme1 {
     overflow: hidden;
+    padding-bottom: 5px;
 }
 #school .theme1 .theme_ttl, #school .theme2 .theme_ttl {
     color: #5b3219;
@@ -88,11 +89,11 @@ html {
 }
 .theme1 h4{
     width: 100%;
-    margin: -5px 0 5px;
+    margin-bottom: 5px;
     padding: 2px 0;
-    color: #9d571c;
+    color: #5b3219;
     font-size: 16px !important;
-    font-weight:normal;
+    line-height: 1.2em;
 }
 .theme1 div{
     display: table-cell;
@@ -128,23 +129,9 @@ html {
     width: 73%;
 }
 .theme1 .theme_dtl p.date{
+    margin-top: -3px;
     font-weight: bold;
     font-size: 15px;
-}
-.theme1 .theme_dtl a.info{
-    text-decoration: none;
-}
-.theme1 .theme_dtl .info p{
-    display: block;
-    margin-top: 10px;
-    text-align: center;
-    border: 1px solid #5b3219;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    font-size: 12px !important;
-    font-weight: bold;
-    color: #5b3219;
 }
 #searchlist {
     margin-top: 10px;
@@ -223,11 +210,19 @@ html {
     margin: 0 0 3px;
     padding: 3px 8px;
 }
+#searchlist .theme_dtl .reserve {
+    background: #fffbf1;
+}
 #searchlist .theme_dtl .reserve span.icon_book {
-    width: 70%;
-    padding: 3px 0;
-    text-align: center;
+    background: none;
+    color: #5b3219;
+    padding-right: 5px;
     font-size: 12px;
+}
+#searchlist .theme_dtl .reserve span.icon_remaining {
+    color: #b90000;
+    font-size: 15px;
+    font-weight: bold;
 }
 #searchlist .theme_dtl .reserve span.icon_full {
     width: 20%;
@@ -235,19 +230,6 @@ html {
     text-align: center;
     padding: 3px 0;
     font-weight: bold;
-}
-#searchlist .theme_dtl .reserve span.icon_remaining {
-    background: none repeat scroll 0 0 #fff;
-    color: #5b3219;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 1em;
-    margin: 0 0 3px -10px;
-    padding: 2px 0;
-    border: solid 1px #5b3219;
-    width: 25%;
-    text-align: center;
 }
 .lesson_icon {
     font-size: 10px;
@@ -267,13 +249,12 @@ html {
     clear: both;
     display: block;
     font-size: 11px;
-    margin: 15px 0 0;
+    margin: 10px 0 0;
 }
 #school .lesson_icon ul.option li {
     float: left;
     display: block;
     list-style: outside none none;
-    margin: 0 4px 4px 0;
 }
 #school dt {
     color: #5b3219;

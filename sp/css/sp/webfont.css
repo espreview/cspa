@@ -25,8 +25,7 @@
 }
 
 /* icon1 見学OK */
-.icon1{
-    border: 1px solid #619e0c;
+.icon1,.icon2{
     color: #619e0c;
 }
 .icon-eye:before {
@@ -35,17 +34,11 @@
 }
 
 /* icon2 体験レッスン */
-.icon2{
-    border: 1px solid #619e0c;
-    color: #619e0c;
-}
 .icon-leaf:before {
     content: "\e9a4";
-    color: #619e0c;
 }
 
 .icon3,.icon4,.icon5,.icon6,.icon7,.icon8{
-    border: 1px solid #ad6a31;
     color: #ad6a31;
 }
 /* icon3 初心者歓迎 */

@@ -21,6 +21,7 @@
   color: #b8b8b8;
   text-align: center;
   cursor: pointer;
+  margin-top: 2px;
 }
 .switch-label:active {
   font-weight: bold;
