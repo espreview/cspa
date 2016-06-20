@@ -194,7 +194,7 @@ div#footerArea li.commentBtn a {
     border: 1px solid #f7ead2;
     border-radius: 3px;
     display: block;
-    font-size: 15px;
+    font-size: 14px;
     padding: 6px;
 }
 
@@ -282,14 +282,14 @@ div#footerArea li.commentBtn a {
 
 #school section.schoolnews ul {
 	list-style-type: none;
-	font-size:12px;
+	font-size:14px;
 }
 
 #school section.schoolnews time {
 	display: block;
 	margin-top:0;
 	color:#333;
-	font-size:12px;
+	font-size:13px;
 	font-weight:normal;
 }
 #school section.schoolnews li {
