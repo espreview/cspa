@@ -194,7 +194,7 @@ div#footerArea li.commentBtn a {
     border: 1px solid #f7ead2;
     border-radius: 3px;
     display: block;
-    font-size: small;
+    font-size: 15px;
     padding: 6px;
 }
 
@@ -261,7 +261,7 @@ div#footerArea li.commentBtn a {
 	display:block;
 	padding:10px;
 	border-radius:3px;
-	font-size:12px;
+    font-size:15px;
 	border-right: 1px solid #F7EAD2;
 	border-left: 1px solid #F7EAD2;
 	text-decoration: none;
@@ -594,6 +594,8 @@ div#footerArea li.commentBtn a {
 
 #lessonttl {
 	color:#5B3219;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 #school #lesson ul.option {
