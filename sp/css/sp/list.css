@@ -132,7 +132,7 @@ html {
     left: 0;
     margin: 0;
     padding: 0;
-    position: inherit;
+    position: absolute;
     top: 0;
     width: 100%;
 }
@@ -223,6 +223,9 @@ html {
 }
 #searchlist .theme_dtl .reserve {
     background: #fffbf1;
+}
+#searchlist .theme_dtl .reserve_past {
+    background: #EBEAE7;
 }
 #searchlist .theme_dtl .reserve span.icon_book {
     background: none;
