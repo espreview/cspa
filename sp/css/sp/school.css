@@ -186,7 +186,7 @@ div#footerArea li.commentBtn a {
 }
 #school dt {
     color: #5b3219;
-    font-size: 12px;
+	font-size: 15px;
     font-weight: bold;
     margin-top: 6px;
 }
@@ -194,7 +194,7 @@ div#footerArea li.commentBtn a {
     border: 1px solid #f7ead2;
     border-radius: 3px;
     display: block;
-    font-size: 14px;
+	font-size: medium;
     padding: 6px;
 }
 
@@ -207,6 +207,15 @@ div#footerArea li.commentBtn a {
 #school .type1 dd a {
 	display:block;
 	text-align:right;
+	color:#FF6601;
+}
+
+/* ----------------------------------------
+	UXS003 「その他拠点の教室」の表示がズレている
+---------------------------------------- */
+#school .type1 .other a {
+    text-align: left;
+    display: inline;
 	color:#FF6601;
 }
 
@@ -328,13 +337,23 @@ div#footerArea li.commentBtn a {
 
 #school #top .recipetxt p{
 	padding:10px;
-	font-size:13px;
+    font-size: 15px;
 }
 
 #school #top ul{
 	display:block;
 	border-radius:3px;
 	font-size: small;
+}
+
+#school #top .content,#school #top .feature {
+    float: left;
+    width: auto;
+    border-top: none;
+    background: #FDF9EB;
+    padding: 0 2px;
+    margin: 5px 3px;
+    border-radius: 4px;
 }
 
 #school #top li{
@@ -362,13 +381,14 @@ div#footerArea li.commentBtn a {
 #school #top li span{
 	display:block;
 	padding:6px 3px;
-	font-size:10px;
+	font-size: 15px;
 }
 #school #top li:nth-child(2), #school #top li:first-child {
 	border-top:none;
 }
 #school #top li:nth-child(odd) span {
 	border-right:solid 1px #F7EAD2;
+	border-right: none;
 }
 #school #top .lessonphoto {
 	text-align:center;
@@ -691,14 +711,11 @@ div#footerArea li.commentBtn a {
 	border-top:solid 5px #5B3219; */
 }
 #school h2{
-	background:#784c14;
+	background:#E7D8A5;
 	padding:3px 6px;
 	font-size:16px;
-	color:#fff;
+	color:#5A3219;
 	box-shadow:0px 0px 5px #666666;
-	/* 2016-06-10 edit kawai
-	background:#E7D8A5;
-	color:#5A3219; */
 }
 #schoolTop {
 	background:#E7D8A5;
@@ -1465,7 +1482,7 @@ margin-left:2px;
 
 /* 2015.4.8 修正*/
 #schoolName h1 a { color:#fff; text-decoration:none; display:block;}
-.appealBox .fbbtn {width:auto; vertical-align:top;}
+.appealBox .fbbtn {width:auto; vertical-align:top; margin-top: -4px;}
 .appealBox .line img { margin-right: 0;}
 
 /* 2015.4.21 修正*/
@@ -1553,13 +1570,15 @@ div.otherRecipes .mgt15_auto {margin:15px;}
 .ingredient_row {
     border-bottom: 1px solid #E5E5E5;
     overflow: hidden;
-    padding: 1px 5px;
+	padding: 5px;
     zoom: 1;
+	font-size: 1.1em;
 }
 
 .ingredient_name {
     display: inline;
     float: left;
+	padding-left: 10px;
 }
 
 .ingredient_amount {
@@ -1567,6 +1586,7 @@ div.otherRecipes .mgt15_auto {margin:15px;}
     float: right;
     margin: 0 0 0 10px;
     text-align: right;
+	padding-right: 10px;
 }
 
 /* クチコミ改修　20151014 */
