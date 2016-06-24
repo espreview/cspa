@@ -223,6 +223,7 @@ html {
 }
 #searchlist .theme_dtl .reserve {
     background: #fffbf1;
+    margin-top: 5px;
 }
 #searchlist .theme_dtl .reserve_past {
     background: #EBEAE7;
@@ -245,6 +246,34 @@ html {
     padding: 3px 0;
     font-weight: bold;
     margin-left: 3px;
+}
+#searchlist .theme_dtl .salonDate p{
+    display: block;
+    float: left;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #aa978c;
+}
+#searchlist .theme_dtl .salonDate p.address{
+    width: 63%;
+    margin-right: 2%;
+}
+#searchlist .theme_dtl .salonDate p.salonName{
+    width: 35%;
+}
+#searchlist .theme_dtl .salonDate i{
+    margin-right: 2%;
+}
+#searchlist .theme_dtl p.price{
+    width: 100%;
+    padding-left: 2%;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #aa978c;/* グレー：#a8a8a8 */
 }
 .lesson_icon {
     font-size: 10px;
