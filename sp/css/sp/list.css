@@ -89,7 +89,6 @@ html {
 }
 .theme1 h4{
     width: 100%;
-    margin-bottom: 5px;
     padding: 2px 0;
     color: #5b3219;
     font-size: 16px !important;
@@ -98,6 +97,10 @@ html {
 .theme1 div{
     display: table-cell;
     position: relative;
+}
+.theme1 div.salonDate{
+    margin-top: -5px;
+    display: block;
 }
 .theme1 .linkicon{
     position: absolute;
@@ -116,11 +119,13 @@ html {
     display: inline-block;
     float: left;
     margin-right: 10px;
-    width: 27%;
+    width: 26%;
+    text-align: center;
 }
 .theme1 .pic img{
     width: 80px;
     height: 80px;
+    margin-top: 10px;
 }
 .theme .clm div.theme1 {
     overflow: hidden;
@@ -137,7 +142,7 @@ html {
     width: 100%;
 }
 .theme1 .theme_dtl {
-    width: 73%;
+    width: 74%;
 }
 .theme1 .theme_dtl p.date{
     margin-top: -3px;
@@ -223,7 +228,6 @@ html {
 }
 #searchlist .theme_dtl .reserve {
     background: #fffbf1;
-    margin-top: 5px;
 }
 #searchlist .theme_dtl .reserve_past {
     background: #EBEAE7;
@@ -254,10 +258,11 @@ html {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #aa978c;
+    color: #5b3219;
 }
 #searchlist .theme_dtl .salonDate p.address{
-    width: 63%;
+    min-width: 48%;
+    max-width: 63%;
     margin-right: 2%;
 }
 #searchlist .theme_dtl .salonDate p.salonName{
@@ -268,12 +273,13 @@ html {
 }
 #searchlist .theme_dtl p.price{
     width: 100%;
+    margin-top: -5px;
     padding-left: 2%;
     font-size: 12px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #aa978c;/* グレー：#a8a8a8 */
+    color: #5b3219;
 }
 .lesson_icon {
     font-size: 10px;
