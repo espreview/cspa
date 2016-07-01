@@ -257,13 +257,14 @@ html {
     margin-left: 3px;
 }
 #searchlist p.salon_data{
-    width: 78%;
+    /*width: 78%;*/
+    height: 20px;
     padding-left: 5px;
     font-size: 12px!important;
     color: #5b3219;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     overflow: hidden;
-    text-overflow: ellipsis;
+    /*text-overflow: ellipsis;*/
 }
 #searchlist .theme_dtl p.salon_data i{
     margin-right: 2%;
