@@ -27,7 +27,6 @@ html {
 }
 #school .theme1 {
     overflow: hidden;
-    padding-bottom: 5px;
 }
 #school .theme1 .theme_ttl, #school .theme2 .theme_ttl {
     color: #5b3219;
@@ -42,7 +41,6 @@ html {
     clear: both;
     color: #ff6601;
     display: block;
-    margin-top: -5px;
 }
 #school .theme .clm div.no a.switch {
     background: url("../../image/sp/bg_arrow_b.png") no-repeat scroll center bottom / 36px 25px rgba(0, 0, 0, 0);
@@ -87,54 +85,12 @@ html {
     font-size: 14px;
     font-weight: bold;
 }
-.theme1 h4{
-    width: 100%;
-    padding: 2px 0;
-    color: #5b3219;
-    font-size: 16px !important;
-    line-height: 1.2em;
-}
-.theme1 div{
-    position: relative;
-}
-.theme1 .linkicon{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 35%;
-    left: 96%;
-    z-index: 1;
-    opacity: 0.5;
-    color: #b8b8b8;
-}
-.theme1 .lesson_table{
-    width: 100%;
-    display: table;
-}
 .theme1 .clm div.theme_dtl dl dd a {
     font-weight: normal;
 }
-.theme1 .pic {
-    width: 28%;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-/* for iPhone5 */
-@media screen and (max-width:320px){
-    .theme1 .pic { 
-        width: 30%;
-        text-align: left;
-    }
-}
-/* //for iPhone5 */
-.theme1 .pic img{
-    width: 80px;
-    height: 80px;
-}
 .theme .clm div.theme1 {
     overflow: hidden;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     position: relative;
 }
 .theme .clm div.theme1 a {
@@ -146,16 +102,60 @@ html {
     top: 0;
     width: 100%;
 }
-.theme1 .theme_dtl {
-    display: table-cell;
+#school .theme1 .theme_dtl p.description, .theme .clm div.theme1 .theme_dtl p.description {
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	line-height:18px;
 }
-.theme1 .theme_dtl p.date{
-    margin-top: -3px;
+
+.theme1 .theme_dtl p.menu {
+    color: #5b3219;
+    font-size: 11pt;
     font-weight: bold;
-    font-size: 15px;
+    line-height: 1.2em;
+}
+
+div.theme_dtl dt {
+    color: #5b3219;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+div.theme_dtl dd, div.theme_dtl dd a {
+    color: #5b3219;
+    display: inline;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+div.theme_dtl ul li {
+    color: #86a727;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+div.theme_dtl ul.date {
+    margin-top: 5px;
 }
 #searchlist {
     margin-top: 10px;
+}
+.lesson_icon {
+    font-size: small;
+    margin: 5px 0 0;
+}
+.lesson_icon ul.option li {
+    float: left;
+    list-style: outside none none;
+    padding-right: 5px;
 }
 .clm {
     border-bottom: 1px dotted #666666;
@@ -217,7 +217,7 @@ html {
     background: none repeat scroll 0 0 #5b3219;
     color: #fff;
     display: inline-block;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 1em;
     margin: 0 0 3px;
     padding: 3px 5px;
@@ -231,86 +231,15 @@ html {
     margin: 0 0 3px;
     padding: 3px 8px;
 }
-#searchlist .theme_dtl .reserve {
-    background: #fffbf1;
-}
-#searchlist .theme_dtl .reserve_past {
-    background: #EBEAE7;
-}
-#searchlist .theme_dtl .reserve span.icon_book {
-    background: none;
-    color: #5b3219;
-    padding-right: 5px;
-    font-size: 12px;
-}
-#searchlist .theme_dtl .reserve span.icon_remaining {
-    color: #b90000;
-    font-size: 15px;
-    font-weight: bold;
-}
-#searchlist .theme_dtl .reserve span.icon_full {
-    width: 20%;
-    font-size: 12px;
-    text-align: center;
-    padding: 3px 0;
-    font-weight: bold;
-    margin-left: 3px;
-}
-.theme1 div.salonDate{
-    display: block;
-}
-#searchlist .theme_dtl .salonDate p{
-    display: block;
-    float: left;
-    font-size: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #5b3219;
-}
-#searchlist .theme_dtl .salonDate p.address{
-    min-width: 48%;
-    max-width: 63%;
-    margin-right: 2%;
-}
-#searchlist .theme_dtl .salonDate p.salonName{
-    width: 35%;
-}
-#searchlist .theme_dtl .salonDate i{
-    margin-right: 2%;
-}
-#searchlist .theme_dtl p.price{
-    width: 100%;
-    font-size: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #5b3219;
-}
-.lesson_icon {
-    font-size: 10px;
-    margin: 5px 0 0;
-}
-.lesson_icon ul.option li {
-    float: left;
-    list-style: outside none none;
-    padding: 1px 2px;
-    margin-bottom: 3px;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    font-weight: bold;
-}
 #school .lesson_icon {
     clear: both;
-    display: block;
-    font-size: 11px;
-    margin: 10px 0 0;
+    font-size: small;
+    margin: 5px 0 0;
 }
 #school .lesson_icon ul.option li {
     float: left;
-    display: block;
     list-style: outside none none;
+    padding-right: 5px;
 }
 #school dt {
     color: #5b3219;
