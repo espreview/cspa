@@ -88,7 +88,6 @@ html {
     font-weight: bold;
 }
 .theme1 h4{
-    width: 100%;
     padding: 2px 0;
     color: #5b3219;
     font-size: 16px !important;
@@ -114,24 +113,6 @@ html {
 .theme1 .clm div.theme_dtl dl dd a {
     font-weight: normal;
 }
-.theme1 .pic {
-    width: 28%;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-/* for iPhone5 */
-@media screen and (max-width:320px){
-    .theme1 .pic { 
-        width: 30%;
-        text-align: left;
-    }
-}
-/* //for iPhone5 */
-.theme1 .pic img{
-    width: 80px;
-    height: 80px;
-}
 .theme .clm div.theme1 {
     overflow: hidden;
     padding-bottom: 15px;
@@ -145,6 +126,25 @@ html {
     position: absolute;
     top: 0;
     width: 100%;
+}
+.theme1 .pic {
+    width: 28%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 2%;
+}
+/* for iPhone5 */
+@media screen and (max-width:320px){
+    .theme1 .pic { 
+        width: 30%;
+        text-align: left;
+    }
+}
+/* //for iPhone5 */
+.theme1 .pic img{
+    width: 80px;
+    height: 80px;
 }
 .theme1 .theme_dtl {
     display: table-cell;
@@ -256,36 +256,17 @@ html {
     font-weight: bold;
     margin-left: 3px;
 }
-.theme1 div.salonDate{
-    display: block;
-}
-#searchlist .theme_dtl .salonDate p{
-    display: block;
-    float: left;
-    font-size: 12px;
+#searchlist p.salon_data{
+    width: 78%;
+    padding-left: 5px;
+    font-size: 12px!important;
+    color: #5b3219;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #5b3219;
 }
-#searchlist .theme_dtl .salonDate p.address{
-    min-width: 48%;
-    max-width: 63%;
+#searchlist .theme_dtl p.salon_data i{
     margin-right: 2%;
-}
-#searchlist .theme_dtl .salonDate p.salonName{
-    width: 35%;
-}
-#searchlist .theme_dtl .salonDate i{
-    margin-right: 2%;
-}
-#searchlist .theme_dtl p.price{
-    width: 100%;
-    font-size: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #5b3219;
 }
 .lesson_icon {
     font-size: 10px;
