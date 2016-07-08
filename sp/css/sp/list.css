@@ -2,6 +2,17 @@
 html {
     background: none repeat scroll 0 0 #ffffff;
 }
+#school .noLesson{
+    width: 95%;
+    margin: 15px auto 0;
+    text-align: center;
+}
+#school .noLesson p{
+    margin-bottom: 10px;
+}
+#school .noLesson p a{
+    color: #FF8C00;
+}
 #school .clm {
     border-bottom: 1px dotted #666666;
     margin: 0 10px 15px;
