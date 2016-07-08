@@ -726,10 +726,39 @@ div#footerArea li.commentBtn a {
 	box-shadow:0px 0px 5px #666666;
 	height: 25px;
 }
-
 #school h2 span{
 	font-weight:normal;
 	font-size:12px;
+}
+#school .recipeTitle{
+	background: #fff;
+	border-bottom: 1px dashed #b99984;
+}
+#school .recipeTitle .recipeName{
+	width: 100%;
+	padding-left: 10px;
+	background: #f9efdd;
+	color: #2e1a00;
+}
+#school .recipeTitle .recipeName i{
+	float: left;
+	font-size: 12px;
+	margin-top: 3px;
+	background: #fff;
+	padding: 6px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+#school .recipeTitle .recipeName h2{
+	float: left;
+	background: none;
+	box-shadow: none;
+	color: #2e1a00;
+}
+#school .recipeTitle p{
+	padding: 5px 0 5px 10px;
+	font-size: 13px;
 }
 #school #photo {
 	text-align:center;
