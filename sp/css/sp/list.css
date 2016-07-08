@@ -11,7 +11,8 @@ html {
     margin-bottom: 10px;
 }
 #school .noLesson p a{
-    color: #FF8C00;
+    color: #FF6601;
+    font-weight: bold;
 }
 #school .clm {
     border-bottom: 1px dotted #666666;
