@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="content-language" content="ja" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="content-style-type" content="text/css" />
+  <meta http-equiv="content-script-type" content="text/javascript" />
+  <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true" />
+  
+  <title>教室先生用ログイン画面-クスパ</title>
+  
+  <!-- 2016-07-08
+  link rel="stylesheet" href="https://admin.cookingschool.jp/css/import.css?ts=20160324171533" type="text/css" media="all" / -->
+  <link rel="stylesheet" href="https://admin.cookingschool.jp/css/button.css?ts=20160323045608" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://admin.cookingschool.jp/css/label_badge.css?ts=20140909114605" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://admin.cookingschool.jp/css/navs.css?ts=20140724173515" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://admin.cookingschool.jp/css/print.css?ts=20140530125904" type="text/css" media="print" />
+  <link rel="stylesheet" href="https://admin.cookingschool.jp/css/font-awesome.min.css?ts=20140909114606" type="text/css" media="all" />
+  <link rel="stylesheet" href="https://admin.cookingschool.jp/css/activity.css?ts=20140909114605" type="text/css" media="all" />
+  <!-- 2016-07-08 PC-login.css
+  上部コメントアウトの[import.css]で[style.css]を呼び出していますが、
+  ここでは[style.css]を直接読み込んで使用します。
+  また都合上[style.css]→[login.css]へファイル名を変更しています。
+  -->
+  <link rel="stylesheet" type="text/css" href="css/PC-login.css">
+  <!-- // 2016-07-08 PC-login.css -->
+  
+  <script language="JavaScript" src="https://admin.cookingschool.jp/script/util.jsp" type="text/JavaScript"></script>
+  <link rel="stylesheet" href="https://admin.cookingschool.jp/css/colorbox.css" type="text/css" media="all" />
+  <script language="JavaScript" src="https://admin.cookingschool.jp/script/heightLine.js" type="text/JavaScript"></script>
+  <script language="JavaScript" src="https://admin.cookingschool.jp/script/jquery.js?v=20120217" type="text/JavaScript"></script>
+  <script language="JavaScript" src="https://admin.cookingschool.jp/script/activity.jsp?v=20120217" type="text/JavaScript"></script>
+  <script language="JavaScript" src="https://admin.cookingschool.jp/script/jquery.searcher.js" type="text/JavaScript"></script>
+  <script language="JavaScript" src="https://admin.cookingschool.jp/script/jquery.colorbox.js" type="text/JavaScript"></script>
+  <script language="JavaScript" src="https://admin.cookingschool.jp/script/colorbox.js" type="text/JavaScript"></script>
+  <script language="JavaScript" src="https://admin.cookingschool.jp/script/scroll.js" type="text/JavaScript"></script>
+  <script language="JavaScript" src="https://admin.cookingschool.jp/script/jquery.cookie.js" type="text/javascript" ></script>
+  <script language="JavaScript" src="https://admin.cookingschool.jp/script/delete.cookie.js" type="text/javascript" ></script>
+  <script type="text/javascript" language="JavaScript">
+  <!--
+    function initialize() {
+
+    }
+  -->
+  </script>
+  <script type="text/javascript">
+    function recordOutboundLink(link, category, action, label) {
+      try {
+        trackEvent(category, action, label);
+        setTimeout('window.open("' + link.href + '","_new")', 100)
+      }catch(err){}
+    }
+  </script>
+  <!-- google-analytics END -->
+</head>
+
+<body onload="javascript:initialize();">
+<script language="JavaScript" src="https://admin.cookingschool.jp/script/gtm.js" type="text/JavaScript"></script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PXR5X7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PXR5X7');</script>
+<!-- End Google Tag Manager --><!-- container -->
+
+<div id="login">
+<div id="container">
+<!-- header -->
+<div id="headWrap">
+  <div id="headWrapIn">
+    <div class="cf">
+      <div class="left">
+        <h1 id="logo"><a href="/do/index"><img src="https://admin.cookingschool.jp/image/cspa_admin_logo.png" height="46" width="268" alt="クスパ"></a></h1>
+      </div>
+      <!-- //left -->
+      <p id="headerNavi">
+        <a class="navihelp" target="_blank" href="http://help.admin.cookingschool.jp/">ヘルプ</a>
+        |
+        <a href="http://cookingschool.jp/" target="_blank">クスパTOPページ</a><br />
+        <a href="/do/guidance/index" target="_blank" class="logout">クスパ教室サイトガイダンス</a>
+      </p>
+      <!-- //headerNavi -->
+    </div>
+    <!-- //cf -->
+  </div>
+  <!-- //headWrapIn -->
+</div>
+<!-- //header -->
+
+<h2>ログイン</h2>
+<!-- wrapper -->
+<div id="wrapper" class="full">
+  <div class="loginAttention">
+    <p class="cap">【クスパ運営事務局からのお知らせ】</p>
+    <p>
+      ログイン用のメールアドレスが有効でない場合はログイン出来ません。<br>
+      クスパからのメールを受信できない方は、迷惑メールの設定や受信拒否の設定をご変更下さい。
+    </p>
+  </div>
+  <!-- //loginAttention -->
+
+  <form name="login.LoginBean" method="post" action="/do/login/login" onsubmit="javascript:trackEvent('ログイン','click','mail');">
+    <table class="basicTable">
+      <tr>
+        <th>メールアドレス</th>
+        <td><input type="text" name="mailAddress" maxlength="128" size="64" value=""></td>
+      </tr>
+      <tr>
+        <th>パスワード</th>
+        <td><input type="password" name="password" maxlength="128" size="64" value=""></td>
+      </tr>
+    </table>
+    <!-- //basicTable -->
+
+    <p class="autologin">
+      <input type="checkbox" name="autoLogin" value="1" id="no2">
+      ログイン状態を維持する
+    </p>
+    <input type="hidden" name="req" value="">
+    <div class="loginBtn">
+      <input type="submit" value="ログイン">
+    </div>
+  </form>
+  <!-- //form login.LoginBean -->
+  <script type="text/javascript" language="JavaScript">
+    <!--
+    var focusControl = document.forms["login.LoginBean"].elements["mailAddress"];
+
+    if (focusControl.type != "hidden" && !focusControl.disabled && focusControl.style.display != "none") {
+    focusControl.focus();
+    }
+    // -->
+  </script>
+
+  <div class="btns">
+    <a href="/do/login/facebook" onclick="javascript:trackEvent('ログイン','click','facebook');"><img src="https://admin.cookingschool.jp/image/login/fb_login.png" height="32px" width="202px" alt="Facebookでログイン"></a>
+    <a href="/do/login/twitter" onclick="javascript:trackEvent('ログイン','click','twitter');"><img src="https://admin.cookingschool.jp/image/login/tw_login.png" height="32px" width="202px" alt="twitterでログイン"></a>
+  </div>
+  <!-- //btns -->
+
+  <div class="loginInfoTxt">
+    <p>
+      facebookおよびtwitterのアカウントで、クスパ教室管理サイトへのログインが可能になります。<br />
+      ※連携設定は先生プロフィール更新画面にて行えます。
+    </p>
+
+    <p class="loginForgot"><a href="/do/login/password/index">パスワードを忘れた方はこちら</a></p>
+    <p class="loginForgot"><a href="https://admin.cookingschool.jp/do/help/index#q3-12">メールアドレスを変更したい場合はこちら</a></p>
+  </div>
+  <!-- //loginInfoTxt -->
+
+  <p class="newRegsterBtn"><a href="/do/guidance/index"><img src="https://admin.cookingschool.jp/image/btn/new_register.gif" width="400" height="83"  alt="これから教室の登録をお考えの方はこちらをご覧ください-教室情報の掲載について" /></a></p>
+  <!-- //newRegsterBtn -->
+
+  <p class="spamAttention">
+    <span style="font-weight:bold;">～WEBメールをお使いの方へ～</span><br />
+    WEBメール等をご利用いただいている場合、クスパからのメールが、迷惑メールフォルダに振り分けられてしまう場合があるようです。<br />
+    クスパ運営事務局からのメールが迷惑メールフォルダに入っていた場合は、「迷惑メールを解除」「受信を許可する」などのリンクをクリックして、<br />
+    クスパからのメールが受信トレイに入るよう、設定をおねがいいたします。
+  </p>
+  <!-- //spamAttention -->
+
+  <p class="spamAttention">
+    <span style="font-weight:bold;">～推奨環境について～</span><br />
+    [OS]<br />
+    Windows Vista、Windows 7、Windows 8<br />
+    [ブラウザ]<br />
+    Internet Explorer　7.x、8.x　9.x　10.x　11.x &nbsp;&nbsp;Firefox最新版&nbsp;&nbsp;Google Chrome最新版<br />
+    ※2014年4月より、windowsXPでのご利用はサポート対象外になりましたので予めご了承下さい。<br />
+    ※推奨環境以外でご覧いただいた場合、一部の機能が使えない可能性がございます。<br />
+    ご自身の利用環境を確かめるには<a href="http://help.admin.cookingschool.jp/2014/01/pc-1ee8.html" title="ご自身のPC利用環境を確認するには" target="_blank">こちら</a>を参考にして下さい。
+  </p>
+  <!-- //spamAttention -->
+</div>
+<!-- //wrapper -->
+
+<!-- footer -->
+<div id="footer">
+  <p id="footerNavi"><a href="http://admin.cookingschool.jp/pdf/cspa_admin_kiyaku-1.pdf" target="_blank">利用規約</a>　｜　<a href="http://www.eatsmart.co.jp/pp/index.html" target="_blank">プライバシーポリシー</a>　｜　<a href="http://www.eatsmart.co.jp/index.html" target="_blank">運営会社</a>　｜　<a href="/do/inquiry/entry">お問い合わせ</a>　｜　<a href="/information/howto201208.jsp">クスパ利用マニュアル</a></p>
+  <p id="copyRights">Copyright (C) 2004-2016 Eat Smart Inc. All rights reserved.</p>
+</div>
+<!-- //footer -->
+</div>
+<!-- //container -->
+</div>
+<!-- //login -->
+</body>
+</html>
