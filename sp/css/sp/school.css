@@ -4,7 +4,6 @@ html { background:#FFFFFF; }
 /*===================================
 教室情報　header
 ===================================*/
-
 .appealBox img {
 	float:left;
 	margin-right:10px;
@@ -706,9 +705,6 @@ div#footerArea li.commentBtn a {
 
 #school {
 	margin:0 0 10px;
-	border-top:solid 5px #2e1a00;
-	/* 2016-06-10 edit kawai
-	border-top:solid 5px #5B3219; */
 }
 #school h2{
 	background:#E7D8A5;
@@ -732,32 +728,34 @@ div#footerArea li.commentBtn a {
 }
 #school .recipeTitle{
 	background: #fff;
-	border-bottom: 1px dashed #b99984;
+	color: #5b3219;
 }
 #school .recipeTitle .recipeName{
-	padding-left: 10px;
-	background: #f9efdd;
-	color: #2e1a00;
+	padding: 10px 0 0 10px;
 }
 #school .recipeTitle .recipeName i{
 	float: left;
-	font-size: 12px;
+	font-size: 13px;
 	margin-top: 3px;
-	background: #fff;
-	padding: 6px;
+	background: #8fb721;
+	padding: 7px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
+    color: #fff;
 }
 #school .recipeTitle .recipeName h2{
 	float: left;
 	background: none;
 	box-shadow: none;
-	color: #2e1a00;
+	font-size: 18px;
 }
 #school .recipeTitle p{
-	padding: 5px 0 5px 10px;
+	width: 95%;
+	margin: 0 auto;
+	padding-bottom: 5px;
 	font-size: 13px;
+	text-align: right;
 }
 #school #photo {
 	text-align:center;

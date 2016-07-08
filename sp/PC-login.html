@@ -123,7 +123,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </p>
     <input type="hidden" name="req" value="">
     <div class="loginBtn">
-      <input type="submit" value="ログイン">
+      <button type="button" name="" value="ログイン">ログイン</button>
+      <!-- 2016-07-08
+        MacOSのSafariとChromeで高さ指定が無視されるバグがあるため、
+        <input>から<button>へ変更しました。
+      -->
     </div>
   </form>
   <!-- //form login.LoginBean -->

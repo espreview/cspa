@@ -4627,7 +4627,7 @@ margin:0 auto;}
 	margin-bottom: 20px;
 	text-align: center;
 }
-#login .loginBtn input{
+#login .loginBtn button{
 	width: 200px;
 	height: 45px;
 }
