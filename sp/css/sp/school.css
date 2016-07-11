@@ -757,8 +757,7 @@ div#footerArea li.commentBtn a {
 }
 #school .recipeTitle p{
 	width: 95%;
-	margin: 0 auto;
-	padding-bottom: 5px;
+	margin: 0 auto 10px;
 	font-size: 13px;
 	text-align: right;
 }
