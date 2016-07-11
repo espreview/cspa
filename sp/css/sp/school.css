@@ -22,8 +22,9 @@ html { background:#FFFFFF; }
 	font-weight:normal;
 }
 #schoolName p {
+    width: 95%;
+    margin: 0 auto;
 	padding:10px 0 5px;
-	font-size:13px;
 }
 
 #schoolName p.open_confirm {
@@ -193,7 +194,7 @@ div#footerArea li.commentBtn a {
     border: 1px solid #f7ead2;
     border-radius: 3px;
     display: block;
-	font-size: medium;
+	font-size: 15px;
     padding: 6px;
 }
 
@@ -597,7 +598,9 @@ div#footerArea li.commentBtn a {
 .Modalbox li:last-child { border:none; }
 
 #school #lesson h3{
-	padding:6px 6px 6px 25px;
+	width: 95%;
+	margin: 0 auto;
+	padding:6px 2.5%;
 	margin-bottom:15px;
 	border-bottom:dotted 1px #5A3219;
 	background: url(../../image/sp/clip.png) no-repeat 5px center #F9EFDD;
@@ -608,6 +611,7 @@ div#footerArea li.commentBtn a {
 }
 #school #lesson h3.lessonttl {
 	margin-bottom:3px;
+	font-size: 17px;
 }
 #school #lesson h3.fullseat:after { content:"満席"; display:inline-block; font-size:12px; background-color:#ff0000; border-radius:3px; color:#fff; margin-left:5px; padding:0 5px;}
 
@@ -663,8 +667,9 @@ div#footerArea li.commentBtn a {
 	background: #e0e0e0;
 }
 #school #lesson p {
-	margin:15px;
-	font-size:12px;
+    width: 90%;
+    margin: 5px auto;
+	font-size:15px;
 }
 #school #lesson .lessonphoto {
 	text-align:center;
@@ -1568,8 +1573,9 @@ div.otherRecipes .mgt15_auto {margin:15px;}
 
 /* レッスン情報ページ改修2015.610 */
 #school .lessonDate { margin:0 15px;}
-#school .lessonDate h4 { color: #5b3219; font-size: 12px; font-weight: bold;}
+#school .lessonDate h4 { color: #5b3219; font-size: 15px; font-weight: bold;}
 #school #lesson .lessonDate p {margin:0;}
+#school #lesson .lessonDate p span{font-size: 12px;}
 #school .lessonDate ul {list-style:none; padding:0; margin:5px 0 10px;}
 #school .lessonDate .date li {width:100%; position:relative; background-color: #f0ece5;	border-width:1px; border-style:solid; border-color:#dcd4c5; display:block; box-sizing:border-box;	box-shadow:0 2px #a9988b; border-radius:5px; color:#663300; margin-bottom:5px; padding:9px 6px;font-size:14px; line-height:18px; font-weight:bold;	position:relative;}
 #school .lessonDate .date li a {color:#5A3219; text-decoration:none; display:block; font-size:14px;}
