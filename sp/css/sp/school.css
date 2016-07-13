@@ -1669,3 +1669,14 @@ html.bgc { background-color:#fffdfa;}
 #school .btmbtnbox li a.btn.c3 { margin:10px 5px 10px 15px;}
 #school .btmbtnbox li a.btn.c2 { margin:10px 15px 10px 5px;}
 #school .btmbtnbox li span.btn{ background:#bbb; border: 1px solid #999; border-radius:5px; color: #fff; line-height: 30px; margin:10px 15px 10px 5px; display:block; text-align:center; font-weight:bold; padding:6px;}
+
+#school .sec_h3 {
+    background: none no-repeat scroll 9px 4px / 22px auto #f9efdd;
+    border-bottom: 1px dotted #aa917c;
+    border-top: 4px solid #5b3219;
+    color: #5b3219;
+    padding: 5px 0 5px 40px;
+}
+#school .sec_h3.search {
+    background-image: url("../../image/sp/new/search.png");
+}
