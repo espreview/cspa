@@ -88,6 +88,27 @@ googletag.pubads().enableSingleRequest();
 googletag.enableServices();
 });
 </script>
+
+<!-- スクロールで教室名を上部に固定 -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    var nav = $('#schoolName h1');
+    //navの位置    
+    var navTop = nav.offset().top;
+    //スクロールするたびに実行
+    $(window).scroll(function () {
+        var winTop = $(this).scrollTop();
+        //スクロール位置がnavの位置より下だったらクラスfixedを追加
+        if (winTop >= navTop) {
+            nav.addClass('fixed')
+        } else if (winTop <= navTop) {
+            nav.removeClass('fixed')
+        }
+    });
+});
+</script>
+<!-- //スクロールで教室名を上部に固定 -->
 </head>
 
 <body>

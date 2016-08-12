@@ -1549,7 +1549,8 @@ margin-left:2px;
 }
 
 /* 2015.4.8 修正*/
-#schoolName h1 a { color:#fff; text-decoration:none; display:block;}
+#schoolName h1 a { color:#fff; text-decoration:none; display:block;
+    font-size: 1.2em;}
 .appealBox .fbbtn {width:auto; vertical-align:top; margin-top: -4px;}
 .appealBox .line img { margin-right: 0;}
 
@@ -1706,4 +1707,26 @@ html.bgc { background-color:#fffdfa;}
 }
 #school .sec_h3.search {
     background-image: url("../../image/sp/new/search.png");
+}
+
+/* スクロールで教室名を上部に固定 20160812 */
+#schoolName h1 {z-index: 2;}
+#schoolName h1 {
+	padding: 10px 0 1em 0;
+	background:
+	    linear-gradient(-135deg, #5b3219 3.5px, transparent 0) 0 3.5px,
+	    linear-gradient(135deg, #5b3219 3.5px, #ffffff 0) 0 3.5px;
+	background-color: #5b3219;
+	background-position: left bottom !important;
+	background-repeat: repeat-x !important;
+	background-size: 7px 7px;
+}
+#schoolName .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#schoolName h1.fixed{
+	opacity: 0.95;
 }
