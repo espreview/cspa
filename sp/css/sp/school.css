@@ -319,6 +319,8 @@ div#footerArea li.commentBtn a {
 	border:none;
 	border-radius:0px;
 	border-bottom:dotted 1px #b99984;
+    background: url(../../image/sp/bg_arrow_b.png) no-repeat center bottom;
+    background-size: 30px 21px;
 }
 
 #school section.schoolnews li a {
@@ -327,8 +329,15 @@ div#footerArea li.commentBtn a {
 }
 
 #school section.schoolnews li.no a {
-	background: url(../../image/sp/bg_arrow_b.png) no-repeat center bottom;
-	background-size: 36px 25px;
+    padding-bottom: 35px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    opacity: 0.6;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(253,249,235,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(253,249,235,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(253, 249, 235) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f9efdd',GradientType=0 );
+}
 }
 
 #school section.schoolnews li.on a {
