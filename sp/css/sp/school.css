@@ -883,6 +883,29 @@ div#footerArea li.commentBtn a {
 	padding-left:15px;
 	background:url(../../image/sp/favo.png) no-repeat left center;
 }
+/* 2016-08-10 add kawai */
+#school #top .recipeSns ul.recipeBtnBox {
+    width: 90%;
+    margin-bottom: 20px;
+}
+#school #top .recipeSns ul.recipeBtnBox li {
+    float: left;
+    display: block;
+    width: 30%;
+    margin: 0px 3px;
+    border-top: none;
+    background: none;
+}
+#school #top .recipeSns ul.recipeBtnBox li:nth-child(2) {
+    margin-left: -5px;
+}
+#school #top .recipeSns ul.recipeBtnBox li.fbbtn {
+    margin: -6px 5px 0 -5px;
+}
+#school #top .recipeSns ul.recipeBtnBox li:nth-child(3) {
+    margin-right: 0;
+}
+/* //2016-08-10 add kawai */
 
 /*===================================
 教室情報　生徒の声
