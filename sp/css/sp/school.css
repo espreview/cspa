@@ -401,18 +401,21 @@ div#footerArea li.commentBtn a {
 	margin:0 2px;
 	padding:0;
 }
-
+/* 2016-08-12 edit kawai */
 #school #top h3, h3.newsttl {
-	padding:6px 6px 6px 25px;
-	margin-bottom:15px;
-	border-bottom:dotted 1px #5A3219;
-	background: url(../../image/sp/clip.png) no-repeat 5px center #F9EFDD;
-	-webkit-background-size:17px 15px;
-	-moz-background-size:17px 15px;
-	background-size:17px 15px;
-	color:#5A3219;
+    color: #5b3219;
+    margin: 30px 0 10px 15px;
 }
-
+#school #top h3:before, h3.newsttl:before {
+    color: #5b3219;
+	margin-right: 5px;
+	font-family: "FontAwesome";
+	content: "\f0c6";
+	font-weight: lighter;
+	position: relative;
+	display: inline-block;
+}
+/* //2016-08-12 edit kawai */
 #school #top .profile {
 	margin: 0 15px;
 }
@@ -1564,7 +1567,7 @@ div.otherRecipes .mgt15_auto {margin:15px;}
 #school .messagebox { font-size:14px; margin: 0 15px 15px; padding-top:10px; border-width:1px 0; border-style:solid; border-color:#e8dcc7;}
 #school .messagebox .moreread a {display:block; font-size:0; line-height:none; text-align:center; padding-top:10px;}
 #school #top .profile.above {margin-bottom:15px; padding:0 0 25px; border:1px solid #e8dbd1; box-shadow:2px 2px 2px #ddd; position:relative;}
-#school #top .profile.above h3 { background-color:#e8dbd1; border-bottom:3px solid #ddbfa8; background-image:none; padding-left:5px;}
+#school #top .profile.above h3 { background-color:#e8dbd1; border-bottom:3px solid #ddbfa8; background-image:none; padding: 5px 0 5px 5px; margin: 0 0 15px 0;}
 #school #top .profile.above h3:before {content:""; width:12px; height:12px; border-radius:50%; background-color:#ddbfa8; display:inline-block; margin:0 5px 0 0; }
 #school #top .profile.above img {margin:0 10px;}
 #school #top .profile.above p {padding:0 10px;}
