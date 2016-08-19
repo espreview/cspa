@@ -423,9 +423,18 @@ div#footerArea li.commentBtn a {
 }
 /* 2016-08-12 edit kawai */
 #school #top h3, h3.newsttl {
+    width: 94%;
+    margin: 30px auto 10px;
+    padding: 15px 3%;
     color: #5b3219;
-    margin: 30px 0 10px 15px;
+    border-top: 1px dotted #5A3219;
+    background: rgb(253,249,235);
+	background: -moz-linear-gradient(top,  rgba(253,249,235,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(253,249,235,1) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom,  rgba(253,249,235,1) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdf9eb', endColorstr='#ffffff',GradientType=0 );
 }
+
 #school #top h3:before, h3.newsttl:before {
     color: #5b3219;
 	margin-right: 5px;
@@ -738,7 +747,7 @@ div#footerArea li.commentBtn a {
 #school h2{
 	background:#E7D8A5;
 	padding:3px 6px;
-	font-size:16px;
+	font-sizes:16px;
 	color:#5A3219;
 	box-shadow:0px 0px 5px #666666;
 }
@@ -1730,7 +1739,20 @@ html.bgc { background-color:#fffdfa;}
 }
 
 /* スクロールで教室名を上部に固定 20160812 */
-#schoolName h1 {z-index: 2;}
+#schoolName h1 {
+    padding: 20px 0 1em 0;
+    background: linear-gradient(-135deg, #b99984 3.5px, transparent 0) 0 3.5px, linear-gradient(135deg, #b99984 3.5px, #ffffff 0) 0 3.5px;
+    background-color: #ffffff;
+    background-position: left top !important;
+    background-repeat: repeat-x !important;
+    background-size: 7px 7px;
+    margin-top: -1px;
+}
+#schoolName h1 a{
+    color: #5b3219;
+    font-size: 1.4em;
+}
+/*#schoolName h1 {z-index: 2;}
 #schoolName h1 {
 	padding: 10px 0 1em 0;
 	background:
@@ -1749,7 +1771,7 @@ html.bgc { background-color:#fffdfa;}
 }
 #schoolName h1.fixed{
 	opacity: 0.95;
-}
+}*/
 /* more readのデザイン変更 20160812 */
 #school .messagebox .moreread a {
     height: 20px;
