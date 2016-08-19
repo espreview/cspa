@@ -109,6 +109,7 @@ $(function() {
 });
 </script>
 <!-- //スクロールで教室名を上部に固定 -->
+<link rel="stylesheet" type="text/css" href="css/sp/list.css">
 </head>
 
 <body>
@@ -153,10 +154,11 @@ sb.on('click', function(){ks.stop(true,false).toggle();});
 <!-- //search -->
 <div id="schoolName" class="clearfix">
 <h1><a href="/s/school/eriko-cooking-salonJ">eriko cooking salon TOKYO<span>（東京都目黒区）</span></a></h1>
-<p>作る人も食べる人もうれしいお料理をご提案します</p>
+<p>作る人も食べる人もうれしいお料理をご提案します作る人も食べる人もうれしいお料理</p>
+<p id="open_confirm_top" class="last_update">最終更新日:2016/5/24</p>
 </div>
 
-<div id='fb-root'></div><script>(function(d, s, id) { 
+<!-- <div id='fb-root'></div><script>(function(d, s, id) { 
 var js, fjs = d.getElementsByTagName(s)[0]; 
 if (d.getElementById(id)) return; 
 js = d.createElement(s); js.id = id;js.src = '//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3&appId=359762667412926';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk')); 
@@ -176,10 +178,10 @@ var tgt=$('a#sendline');tgt.attr('href','//line.me/R/msg/text/?'+encodeURICompon
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li> 
 <li class='fbbtn'><div class='fb-like' data-href='http://cookingschool.jp/school/eriko-cooking-salonJ' data-send='false' data-layout='button_count' data-action='like' data-share='false' data-width='120' data-show-faces='false'></div></li>
 <li class='line'><a href='#' id='sendline'></a></li>
-</ul></div> 
+</ul></div>  -->
 <section id="school" class="none">
 <div id="top">
-<h2 id="schoolTop">教室情報<p id="open_confirm_top">最終更新日:2016/5/24</p></h2>
+<!-- <h2 id="schoolTop">教室情報<p id="open_confirm_top">最終更新日:2016/5/24</p></h2> -->
 
 <div class="photo swipeshow slideshow">
 <ul class="slides">
@@ -210,26 +212,49 @@ var tgt=$('a#sendline');tgt.attr('href','//line.me/R/msg/text/?'+encodeURICompon
 			</div>
 	
 	<h3>インターネット予約受付中のレッスン</h3>
-	<ul class="accepting">
-		<li>
-				<h4><a href="/s/school/eriko-cooking-salonJ/lesson/d/120279">【基本の家庭料理】夏のおうち中華</a></h4>
-				<div class="inner">
-				<div class="lessonphoto">
-					<a src="https://cookingschool.jp/image/cache/image/upload/lesson_information/00/00/01/23/280x280_93_20160524083037.png" class="colorbox cboxElement"><img src="https://cookingschool.jp/image/cache/image/upload/lesson_information/00/00/01/23/280x280_93_20160524083037.png" height="280" width="280" class="border" alt=""></a>
+	<div id="searchlist">
+			<div class="clm">
+			<!-- レッスン一覧 一覧形式 -->
+			<div class="theme1" id="schoolMessage-120279-1">
+				<div class="linkicon"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+
+				<div class="lesson_table">
+					<div class="pic">
+						<img src="https://cookingschool.jp/image/cache/image/upload/lesson_information/00/00/00/02/120x120_02_20160624011618.png" height="80" width="80" class="border" alt="">
+					</div>
+					<!-- //.pic -->
+
+					<div class="theme_dtl">
+						<p class="date">6月17日(金)&nbsp;10:00〜13:00</p>
+						<h4>さくらんぼのガトーバスク完全プライベートマンツーマンレッスン</h4>
+						<p class="salon_data"><i class="fa fa-map-marker" aria-hidden="true"></i><span>鹿児島県いちき串木野市</span>&#65295;池袋の小さなお菓子・パン教室　T-Labo</p>
+						<p class="reserve">
+							<span class="icon_book">ネット予約可能：<span class="icon_remaining">残席2</span></span>
+						</p>
+						<!-- 詳細ページへのリンク -->
+						<a href="#"></a>
+					</div>
+					<!-- //.theme_dtl -->
 				</div>
-				<dl class="lessonDetail">
-					<dt>■開催日：</dt>
-						<dd>
-							<span> 6月17日</span>
-							</dd>
-					<dt>■受講料：</dt><dd>4,000円</dd>
-					<dt>■定　員：</dt><dd><strong>5</strong>名様</dd>
-					</dl>
+				<!-- //lesson_table -->
+
+				<div class="lesson_icon">
+					<ul class="option clearfix">
+						<li class="icon1"><span class="icon-eye"></span>&nbsp;見学OK</li>
+						<li class="icon2"><span class="icon-leaf"></span>&nbsp;体験</li>
+						<li class="icon3"><span class="icon-smile"></span>&nbsp;初心者歓迎</li>
+						<li class="icon4"><span class="icon-users"></span>&nbsp;親子</li>
+						<li class="icon5"><span class="icon-reddit"></span>&nbsp;子供向け</li>
+						<li class="icon6"><span class="icon-user-tie"></span>&nbsp;男性OK</li>
+						<li class="icon7"><span class="icon-spoon-knife"></span>&nbsp;コース方式</li>
+						<li class="icon8"><span class="icon-pencil2"></span>&nbsp;デモのみ</li>
+					</ul>
 				</div>
-				<p>定番の青椒肉絲（チンジャオロース）や棒棒鶏をしっかり学ぶ基本の中華のレッスンです。</p>
-				<p class="moreLesson"><a href="/s/school/eriko-cooking-salonJ/lesson/d/120279">レッスンの詳細をみる</a></p>
-			</li>
-		</ul>
+				<!-- //lesson_icon -->
+			</div>
+			<!-- // レッスン一覧 一覧形式 -->
+			</div>
+	</div>
 	<a href="/s/school/eriko-cooking-salonJ/lesson" class="btn c1">レッスン情報をもっと見る</a><h3>この教室のレッスン</h3>
 <div class="join">
 <!-- collabo_ration -->

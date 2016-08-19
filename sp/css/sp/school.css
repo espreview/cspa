@@ -40,6 +40,11 @@ html { background:#FFFFFF; }
 	margin-top: -20px;
 }
 
+.last_update{
+    width: 90%!important;
+    margin: -10px auto 5px!important;
+}
+
 #schoolName p a {
 	display:block;
 	text-align:right;
@@ -360,6 +365,10 @@ div#footerArea li.commentBtn a {
     font-size: 15px;
 }
 
+#school .clm{
+	border: none;
+}
+
 #school #top ul{
 	display:block;
 	border-radius:3px;
@@ -379,8 +388,8 @@ div#footerArea li.commentBtn a {
 #school #top li{
 	float:left;
 	display:block;
-	width:50%;
-	border-top:solid 1px #F7EAD2;
+	/*width:50%;
+	border-top:solid 1px #F7EAD2;*/
 }
 #school #top li.ingredient{
 	float:left;
@@ -399,6 +408,13 @@ div#footerArea li.commentBtn a {
 }
 
 #school #top li span{
+	padding:6px 3px;
+}
+#school #top ul.option li{
+	padding: 0 0 0 5px!important;
+	font-size: 11px;
+}
+/*#school #top li span{
 	display:block;
 	padding:6px 3px;
 	font-size: 15px;
@@ -409,7 +425,7 @@ div#footerArea li.commentBtn a {
 #school #top li:nth-child(odd) span {
 	border-right:solid 1px #F7EAD2;
 	border-right: none;
-}
+}*/
 #school #top .lessonphoto {
 	text-align:center;
 	padding:0px;
@@ -1597,8 +1613,13 @@ div.otherRecipes .mgt15_auto {margin:15px;}
 #school .messagebox { font-size:14px; margin: 0 15px 15px; padding-top:10px; border-width:1px 0; border-style:solid; border-color:#e8dcc7;}
 #school .messagebox .moreread a {display:block; font-size:0; line-height:none; text-align:center; padding-top:10px;}
 #school #top .profile.above {margin-bottom:15px; padding:0 0 25px; border:1px solid #e8dbd1; box-shadow:2px 2px 2px #ddd; position:relative;}
-#school #top .profile.above h3 { background-color:#e8dbd1; border-bottom:3px solid #ddbfa8; background-image:none; padding: 5px 0 5px 5px; margin: 0 0 15px 0;}
-#school #top .profile.above h3:before {content:""; width:12px; height:12px; border-radius:50%; background-color:#ddbfa8; display:inline-block; margin:0 5px 0 0; }
+#school #top .profile.above h3 { 
+    background-image: none;
+    padding: 5px 0 5px 5px;
+    margin: 0 0 15px 0;
+    border: none;
+/*background-color:#e8dbd1; border-bottom:3px solid #ddbfa8; background-image:none; padding: 5px 0 5px 5px; margin: 0 0 15px 0;*/}
+#school #top .profile.above h3:before {content:""; /*width:12px; height:12px; border-radius:50%; background-color:#ddbfa8; display:inline-block; margin:0 5px 0 0;*/ }
 #school #top .profile.above img {margin:0 10px;}
 #school #top .profile.above p {padding:0 10px;}
 #school #top .profile.above .moreread img{ border:none; position:absolute; left:43%; bottom:0;}
@@ -1747,6 +1768,9 @@ html.bgc { background-color:#fffdfa;}
     background-repeat: repeat-x !important;
     background-size: 7px 7px;
     margin-top: -1px;
+}
+#schoolName h1.last_update {
+    margin-top: -11px !important;
 }
 #schoolName h1 a{
     color: #5b3219;

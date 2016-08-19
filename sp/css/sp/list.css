@@ -404,6 +404,7 @@ html {
 }
 #school section.schoolnews li a {
     display: block;
+    float: left;
     padding: 0 0 35px;
 }
 #school section.schoolnews li.no a {
@@ -419,7 +420,7 @@ html {
     border: 0 none;
     margin: 0;
 }
-#school #top ul {
+/*#school #top ul {
     border: 1px solid #f7ead2;
     border-radius: 3px;
     display: block;
@@ -456,7 +457,7 @@ html {
 }
 #school #top li:nth-child(2n+1) span {
     border-right: 1px solid #f7ead2;
-}
+}*/
 #school #top .lessonphoto {
     padding: 0;
     text-align: center;

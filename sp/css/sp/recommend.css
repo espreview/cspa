@@ -10,6 +10,11 @@
 .ichioshiRecipe .topRecipe figure img {width:100%; position:relative; vertical-align:bottom;}
 .ichioshiRecipe .topRecipe figure figcaption {position:absolute; width:100%; box-sizing:border-box; bottom:0; left:0; background-color: rgba(255,255,255,0.7); color:#5b3219; font-weight: bold; padding:5px 22px 3px 5px ; font-size:17px; text-align:left; line-height:18px;}
 .ichioshiRecipe .topRecipe figure figcaption:after {content: "\f04b"; font-family: FontAwesome; font-size:18px; line-height:12px; display:inline-block; position:absolute; right:3px; top:50%; margin:-7px 0 0 0;  color:#5b3219;vertical-align:middle;}
+.ichioshiRecipe .topRecipe p{
+    line-height: 1.7em;
+    width: 95%;
+    margin: 0 auto 20px;
+}
 .ichioshiRecipe a {text-decoration:none;}
 .ichioshiRecipe .topRecipe figure p {text-align:left;}
 .ichioshiRecipe .topRecipe .author a {display:block;}
