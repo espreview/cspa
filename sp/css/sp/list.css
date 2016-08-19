@@ -118,6 +118,11 @@ html {
     opacity: 0.5;
     color: #b8b8b8;
 }
+.theme1_school .linkicon{
+    height: initial;
+    top: initial;
+    margin-top: 60px;
+}
 .theme1 .lesson_table{
     width: 100%;
     display: table;

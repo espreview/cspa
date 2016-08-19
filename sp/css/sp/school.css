@@ -24,7 +24,9 @@ html { background:#FFFFFF; }
 #schoolName p {
     width: 95%;
     margin: 0 auto;
-	padding:10px 0 5px;
+	padding:5px 0;
+	font-size: 14px;
+	line-height: 22px;
 }
 
 #schoolName p.open_confirm {
@@ -42,7 +44,8 @@ html { background:#FFFFFF; }
 
 .last_update{
     width: 90%!important;
-    margin: -10px auto 5px!important;
+    margin: 0 auto 5px!important;
+    font-size: 11px!important;
 }
 
 #schoolName p a {
@@ -1613,9 +1616,10 @@ div.otherRecipes .mgt15_auto {margin:15px;}
 #school .messagebox { font-size:14px; margin: 0 15px 15px; padding-top:10px; border-width:1px 0; border-style:solid; border-color:#e8dcc7;}
 #school .messagebox .moreread a {display:block; font-size:0; line-height:none; text-align:center; padding-top:10px;}
 #school #top .profile.above {margin-bottom:15px; padding:0 0 25px; border:1px solid #e8dbd1; box-shadow:2px 2px 2px #ddd; position:relative;}
-#school #top .profile.above h3 { 
+#school #top .profile.above h3 {
+	width: 100%;
     background-image: none;
-    padding: 5px 0 5px 5px;
+    padding: 5px 0;
     margin: 0 0 15px 0;
     border: none;
 /*background-color:#e8dbd1; border-bottom:3px solid #ddbfa8; background-image:none; padding: 5px 0 5px 5px; margin: 0 0 15px 0;*/}
@@ -1761,13 +1765,13 @@ html.bgc { background-color:#fffdfa;}
 
 /* スクロールで教室名を上部に固定 20160812 */
 #schoolName h1 {
-    padding: 20px 0 1em 0;
-    background: linear-gradient(-135deg, #b99984 3.5px, transparent 0) 0 3.5px, linear-gradient(135deg, #b99984 3.5px, #ffffff 0) 0 3.5px;
+    padding: 20px 0 10px;
+    /*background: linear-gradient(-135deg, #b99984 3.5px, transparent 0) 0 3.5px, linear-gradient(135deg, #b99984 3.5px, #ffffff 0) 0 3.5px;*/
     background-color: #ffffff;
-    background-position: left top !important;
+    /*background-position: left top !important;
     background-repeat: repeat-x !important;
     background-size: 7px 7px;
-    margin-top: -1px;
+    margin-top: -1px;*/
 }
 #schoolName h1.last_update {
     margin-top: -11px !important;
