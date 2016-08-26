@@ -35,6 +35,54 @@ html { background:#FFFFFF; }
 	padding:3px 3px 0 0;
 }
 
+.btnSNS{
+	width: 90%;
+	margin: 0 auto;
+	padding: 2px 4px 2px 3px;
+	background: #fffaef;
+    border: 1px #ece4d2 solid;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+.btnSNS a{
+	text-decoration: none;
+	color: #5b3219;
+}
+.btnSNS ul{
+	width: 100%;
+	margin: 0 auto;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	text-align: center;
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
+    border: 1px #ece4d2 solid;
+}
+.btnSNS li{
+	width: 24%;
+	float: left;
+	padding: 3px 0;
+	border-right: 1px #ece4d2 dashed;
+}
+.btnSNS li:first-child{
+	width: 25%;
+}
+.btnSNS li:last-child{
+	width: 23%;
+	border-right: 0px;
+}
+.btnSNS li p{
+	font-size: 10px;
+}
+.btnSNS li .fa-heart{ color: #ff2140; }
+.btnSNS li .fa-twitter{	font-size: 18px; color: #55acee; }
+.btnSNS li .fa-facebook{ font-size: 18px; color: #3b579d!important;}
+
 #open_confirm_top {
 	text-align:right;
 	font-size:10px;
