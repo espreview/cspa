@@ -1765,20 +1765,15 @@ html.bgc { background-color:#fffdfa;}
 
 /* スクロールで教室名を上部に固定 20160812 */
 #schoolName h1 {
-    padding: 20px 0 10px;
-    /*background: linear-gradient(-135deg, #b99984 3.5px, transparent 0) 0 3.5px, linear-gradient(135deg, #b99984 3.5px, #ffffff 0) 0 3.5px;*/
-    background-color: #ffffff;
-    /*background-position: left top !important;
-    background-repeat: repeat-x !important;
-    background-size: 7px 7px;
-    margin-top: -1px;*/
+    padding: 20px 0 10px!important;
+    background: #ffffff!important;
 }
 #schoolName h1.last_update {
     margin-top: -11px !important;
 }
 #schoolName h1 a{
-    color: #5b3219;
-    font-size: 1.4em;
+    color: #5b3219!important;
+    font-size: 1.4em!important;
 }
 /*#schoolName h1 {z-index: 2;}
 #schoolName h1 {

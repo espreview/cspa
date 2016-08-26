@@ -474,11 +474,12 @@ html {
     width: 60px;
 }
 #school #top h3, h3.newsttl {
+    width: 95%;
+    margin-bottom: 15px;
+    padding: 6px 2.5%;
     background: url("../../image/sp/clip.png") no-repeat scroll 5px center / 17px 15px #f9efdd;
     border-bottom: 1px dotted #5a3219;
     color: #5a3219;
-    margin-bottom: 15px;
-    padding: 6px 6px 6px 25px;
 }
 #school #top .profile {
     margin: 0 15px;
