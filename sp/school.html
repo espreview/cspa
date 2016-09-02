@@ -111,6 +111,10 @@ $(function() {
 <!-- //スクロールで教室名を上部に固定 -->
 <link rel="stylesheet" type="text/css" href="css/sp/list.css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- モーダルウィンドウ -->
+<link rel="stylesheet" type="text/css" href="css/sp/modal.css">
+<script src="script/sp/modal.js"></script>
+<!-- //モーダルウィンドウ -->
 </head>
 
 <body>
@@ -167,11 +171,29 @@ $(function(){
 });
 </script>
 <div class="btnSNS">
-<ul class="clearfix">
+<!-- メニューが3つの場合 -->
+<ul class="btnSNS3 clearfix">
 	<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i><p>お気に入り</p></a></li>
-	<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><p class="mt">twitter</p></a></li>
-	<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><p>facebook</p></a></li>
-	<li><a href="#"><img src="image/sp/LINE_Text_Logo_TypeA.png" width="31" height="11"><p>LINE</p></a></li>
+	<li>
+		<!-- ここからモーダルウィンドウ -->
+		<div id="modal-content">
+			<!-- モーダルウィンドウのコンテンツ開始 -->
+			<h4>情報を投稿・シェアするSNSを選択してください。</h4>
+			<table>
+				<tr>
+					<td><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><p class="mt">twitter</p></a></td>
+					<td><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><p>facebook</p></a></td>
+					<td><a href="#"><img src="image/sp/LINE_Text_Logo_TypeA.png" width="45" height="16"><p>LINE</p></a></td>
+				</tr>
+			</table>
+			<p id="btnSNSClose"><a id="modal-close" class="button-link">閉じる</a></p>
+			<!-- モーダルウィンドウのコンテンツ終了 -->
+		</div>
+
+		<a id="modal-open" class="button-link"><i class="fa fa-share-alt" aria-hidden="true"></i><p>シェア</p></a>
+		<!-- ここまでモーダルウィンドウ -->
+	</li>
+	<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><p>メールで送る</p></a></li>
 </ul>
 </div>
 

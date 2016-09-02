@@ -37,7 +37,7 @@ html { background:#FFFFFF; }
 
 .btnSNS{
 	width: 90%;
-	margin: 0 auto;
+	margin: 0 auto 20px;
 	padding: 2px 4px 2px 3px;
 	background: #fffaef;
     border: 1px #ece4d2 solid;
@@ -52,9 +52,9 @@ html { background:#FFFFFF; }
 .btnSNS ul{
 	width: 100%;
 	margin: 0 auto;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	text-align: center;
 	background: rgb(255,255,255);
 	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%);
@@ -68,6 +68,7 @@ html { background:#FFFFFF; }
 	float: left;
 	padding: 3px 0;
 	border-right: 1px #ece4d2 dashed;
+	list-style: none;
 }
 .btnSNS li:first-child{
 	width: 25%;
@@ -76,12 +77,23 @@ html { background:#FFFFFF; }
 	width: 23%;
 	border-right: 0px;
 }
+.btnSNS .btnSNS3 li{
+	width: 33%;
+	float: left;
+	padding: 3px 0;
+	border-right: 1px #ece4d2 dashed;
+}
+.btnSNS .btnSNS3 li:last-child{
+	border-right: 0px;
+}
 .btnSNS li p{
 	font-size: 10px;
 }
 .btnSNS li .fa-heart{ color: #ff2140; }
-.btnSNS li .fa-twitter{	font-size: 18px; color: #55acee; }
-.btnSNS li .fa-facebook{ font-size: 18px; color: #3b579d!important;}
+.btnSNS li .fa-twitter{	font-size: 25px; color: #55acee; }
+.btnSNS li .fa-facebook{ font-size: 25px; color: #3b579d!important;}
+.btnSNS li .fa-envelope{ color: #009688;}
+.btnSNS li .fa-smile-o{ font-size: 17px; color: #ee7d00; }
 
 #open_confirm_top {
 	text-align:right;

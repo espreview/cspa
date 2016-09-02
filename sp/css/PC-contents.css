@@ -6022,13 +6022,13 @@ p.pickBlown{
 .fullClock .info .clockBlock .time{
 	color:#7396bc;
 	font-weight:bold;
-	margin:0 0 0 0 ;
+	margin:0 0 0 0;
 
 }
 .fullClock .info .clockBlock .supp{
 	color:#999;
 	font-size:10px;
-	margin:0 0 0 0 ;
+	margin:0 0 0 0;
 	}
 
 #mainArea.kitchen2011 .inbox.type2{
@@ -9836,7 +9836,7 @@ a:hover img {
 
 #wain .main .sec02 .seccontent dl.bl03 dd {
 	padding:0 24px 25px 12px;
-	position: relative ;
+	position: relative;
 }
 
 #wain .main .sec02 .seccontent dl.bl03 dd .imgL {
@@ -12266,7 +12266,7 @@ label.agree span {
 
 /* 2014.11.19 生徒の声→クチコミ*/
 .kuchikomiArea {
-	margin:10px 0 ;
+	margin:10px 0;
 }
 .kuchikomiArea .userimg {
 	float:left;

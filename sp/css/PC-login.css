@@ -3851,7 +3851,7 @@ ul#datetime select.day {
 	width:205px;
 	float:left;
 	background: url("https://admin.cookingschool.jp/image/top/box_arrow.gif") no-repeat scroll 170px center rgba(0, 0, 0, 0);
-	margin:0px 15px 0 0 ;
+	margin:0px 15px 0 0;
 	border-right:1px dotted #999;
 	padding-right:10px;
 }
@@ -4325,7 +4325,7 @@ table.settingTable td.vatop {
 	outline:none;
 	background:none;
 	font-family:"Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Meiryo","メイリオ", "Osaka", "MS PGothic", arial, helvetica, sans-serif;
-	color:#fff ;
+	color:#fff;
 	font-size:14px;
 	height:26px;
 	padding: 0 10px 0 6px;
@@ -4385,7 +4385,7 @@ select.selected + .minict_wrapper:after {
 .sec1 > p,.sec2 > p,.sec3 > p { padding:0 15px; margin-bottom:0; display:inline-block; vertical-align:top;}
 .sec1 ul {margin:5px 0 0 40px; display:inline-block;}
 .sec1 ul li { color:#ff0000; font-weight:bold; }
-.sec1 .aboutkojinune { margin:0 15px ;}
+.sec1 .aboutkojinune { margin:0 15px;}
 .sec1 .aboutkojinune dt {font-size:14px; font-weight:bold; color:#db7500; background-color:#fcf4e8; display:block; padding:6px 10px; margin:5px 0 0 0; border-width:1px 1px 3px 1px; border-style:solid; border-color:#db7500; border-radius:5px; background-image:url(../image/arrowBtm.png); background-repeat:no-repeat; background-position:99% 50%; cursor:pointer;}
 .sec1 .aboutkojinune dt.open { background-image:url(../image/arrowTop.png); background-repeat:no-repeat; background-position:99% 50%; border-radius:5px 5px 0 0; border-bottom:1px solid #e88c00;}
 .sec1 .aboutkojinune dd{ display: none; padding:10px; margin:0; border-width:0 1px 1px 1px; border-style: dotted; border-color:#e88c00;}

@@ -76,6 +76,10 @@ googletag.pubads().enableSingleRequest();
 googletag.enableServices();
 });
 </script>
+<!-- モーダルウィンドウ -->
+<link rel="stylesheet" type="text/css" href="css/sp/modal.css">
+<script src="script/sp/modal.js"></script>
+<!-- //モーダルウィンドウ -->
 </head>
 
 <body>
@@ -191,10 +195,43 @@ sb.on('click', function(){ks.stop(true,false).toggle();});
 <!-- //search -->
 <div id="schoolName" class="clearfix">
 <h1><a href="/s/school/eriko-cooking-salonJ">eriko cooking salon TOKYO<span>（東京都目黒区）</span></a></h1>
-<p>作る人も食べる人もうれしいお料理をご提案します作る人も食べる人もうれしいお料理</p>
 <p id="open_confirm_top" class="last_update">最終更新日:2016/5/24</p>
 </div>
 
+<script>
+$(function(){
+     $(".btnSNS").click(function(){
+         window.location=$(this).find("a").attr("href");
+         return false;
+    });
+});
+</script>
+<div class="btnSNS">
+<!-- メニューが3つの場合 -->
+<ul class="btnSNS3 clearfix">
+  <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i><p>お気に入り</p></a></li>
+  <li>
+		<!-- ここからモーダルウィンドウ -->
+		<div id="modal-content">
+			<!-- モーダルウィンドウのコンテンツ開始 -->
+			<h4>情報を投稿・シェアするSNSを選択してください。</h4>
+			<table>
+				<tr>
+					<td><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><p class="mt">twitter</p></a></td>
+					<td><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><p>facebook</p></a></td>
+					<td><a href="#"><img src="image/sp/LINE_Text_Logo_TypeA.png" width="45" height="16"><p>LINE</p></a></td>
+				</tr>
+			</table>
+			<p id="btnSNSClose"><a id="modal-close" class="button-link">閉じる</a></p>
+			<!-- モーダルウィンドウのコンテンツ終了 -->
+		</div>
+
+		<a id="modal-open" class="button-link"><i class="fa fa-share-alt" aria-hidden="true"></i><p>シェア</p></a>
+		<!-- ここまでモーダルウィンドウ -->
+	</li>
+  <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><p>メールで送る</p></a></li>
+</ul>
+</div>
 <!-- <div id='fb-root'></div><script>(function(d, s, id) { 
 var js, fjs = d.getElementsByTagName(s)[0]; 
 if (d.getElementById(id)) return; 
