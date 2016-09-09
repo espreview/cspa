@@ -4,10 +4,6 @@ html { background:#FFFFFF; }
 /*===================================
 教室情報　header
 ===================================*/
-.appealBox img {
-	float:left;
-	margin-right:10px;
-}
 #schoolName h1 {
 	margin:0;
 	font-size:14px;
@@ -109,7 +105,7 @@ html { background:#FFFFFF; }
     border-right: 1px #dddddd dashed;
 }
 .btnSNS2 li .fa-twitter{ font-size: 18px; color: #55acee; }
-.btnSNS2 li .fa-facebook{ font-size: 18px; color: #3b579d!important;}
+.btnSNS2 li .fa-facebook{ font-size: 17px; color: #3b579d!important;}
 /* //for recipe.html */
 
 #open_confirm_top {
@@ -913,129 +909,6 @@ div#footerArea li.commentBtn a {
 }
 
 /*===================================
-教室情報　レシピ
-===================================*/
-
-#school #recipe .recipebox {
-	margin:0 15px 0 15px;
-}
-#school .recipeBtnBox{
-	width: 70%;
-	margin: 0 auto 10px;
-	text-align: center;
-}
-#school #recipe .recipebox li {
-	padding-bottom:15px;
-	margin-bottom:15px;
-	list-style:none;
-	border-bottom:solid 2px #F7EAD2;
-}
-#school .appealBox .recipebox li.detail {
-	padding:0;
-	margin:0 8px 0 -11px;
-	border:none;
-}
-#school .appealBox .detail.recipebox {margin:0 0 5px;}
-#school .appealBox .recipeBtnBox .detail.recipebox {margin:0 0 10px;}
-#school .appealBox .detail.recipebox li.detail {
-	margin:0 1px 0 0;
-	display: inline-block;
-}
-#school #recipe .recipebox li a.box {
-	display:block;
-	padding:15px 15px 15px 0;
-	text-decoration:none;
-	color:#5B3219;
-	background:url(../../image/sp/lesson-arrow.png) no-repeat right center;
-	-webkit-background-size:7px 13px;
-	-moz-background-size:7px 13px;
-	background-size:7px 13px;
-}
-#school #recipe .recipebox li img {
-	float:left;
-	margin-right:10px;
-}
-#school #recipe .recipebox h3 {
-	padding:0;
-	margin:0;
-	background:none;
-	border:none;
-	color:#5B3219;
-}
-#school .appealBox .recipebox p {
-	font-size:10px;
-}
-#school .appealBox .recipebox li p.tasty {
-	display:inline-block;
-	margin-top:3px;
-	padding:0 3px;
-	background:#F7F7F7;
-	border:solid 1px #CCCCCC;
-	border-radius:3px;
-}
-#school .appealBox .recipebox li p span {
-	font-size:12px;
-	font-weight:bold;
-	color:#FF6666;
-}
-#school .appealBox .recipebox li a.favobtn,#school #recipe .recipebox li span.favobtn {
-	display:inline-block;
-	padding:1px 6px;
-	font-weight:bold;
-	text-decoration:none;
-	color:#333;
-	border:solid 1px #CCCCCC;
-	border-radius:3px;
-	font-size:11px;
-	background: #ebebeb; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffffff 0%, #ebebeb 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #ffffff 0%,#ebebeb 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
-	text-align:center;
-}
-
-#school #recipe .recipebox li a.favobtn {
-	color:#333;
-}
-
-#school #recipe .recipebox li span.favobtn {
-	color:#AAA;
-}
-
-#school #recipe .recipebox li a.favobtn span,#school #recipe .recipebox li span.favobtn span {
-	display:block;
-	padding-left:15px;
-	background:url(../../image/sp/favo.png) no-repeat left center;
-}
-/* 2016-08-10 add kawai */
-#school #top .recipeSns ul.recipeBtnBox {
-    width: 90%;
-    margin-bottom: 20px;
-}
-#school #top .recipeSns ul.recipeBtnBox li {
-    float: left;
-    display: block;
-    width: 30%;
-    margin: 0px 3px;
-    border-top: none;
-    background: none;
-}
-#school #top .recipeSns ul.recipeBtnBox li:nth-child(2) {
-    margin-left: -5px;
-}
-#school #top .recipeSns ul.recipeBtnBox li.fbbtn {
-    margin: -6px 5px 0 -5px;
-}
-#school #top .recipeSns ul.recipeBtnBox li:nth-child(3) {
-    margin-right: 0;
-}
-/* //2016-08-10 add kawai */
-
-/*===================================
 教室情報　生徒の声
 ===================================*/
 
@@ -1676,8 +1549,6 @@ margin-left:2px;
 /* 2015.4.8 修正*/
 #schoolName h1 a { color:#fff; text-decoration:none; display:block;
     font-size: 1.2em;}
-.appealBox .fbbtn {width:auto; vertical-align:top; margin-top: -4px;}
-.appealBox .line img { margin-right: 0;}
 
 /* 2015.4.21 修正*/
 #school #top .career { margin:10px 15px 0; font-size:small; line-height:17px; overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2;}

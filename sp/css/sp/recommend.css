@@ -8,8 +8,33 @@
 .ichioshiRecipe .topRecipe figure {text-align:center; color:#333; margin-bottom:10px;}
 .ichioshiRecipe .topRecipe figure a { position:relative; display:inline-block; border:1px solid #ccc; width:100%; max-width:320px; height:auto}
 .ichioshiRecipe .topRecipe figure img {width:100%; position:relative; vertical-align:bottom;}
-.ichioshiRecipe .topRecipe figure figcaption {position:absolute; width:100%; box-sizing:border-box; bottom:0; left:0; background-color: rgba(255,255,255,0.7); color:#5b3219; font-weight: bold; padding:5px 22px 3px 5px; font-size:17px; text-align:left; line-height:18px;}
-.ichioshiRecipe .topRecipe figure figcaption:after {content: "\f04b"; font-family: FontAwesome; font-size:18px; line-height:12px; display:inline-block; position:absolute; right:3px; top:50%; margin:-7px 0 0 0;  color:#5b3219;vertical-align:middle;}
+.ichioshiRecipe .topRecipe figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 18px;
+    color: #fff;
+    background-color: rgba(91,50,25,0.2);
+    font-weight: bold;
+    font-size: 17px;
+    padding: 7px 10px;
+    margin: 0 10px 0 0;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.ichioshiRecipe .topRecipe figure figcaption:after {
+    content: "\f054";
+    font-family: FontAwesome;
+    font-size: 13px;
+    line-height: 12px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    margin: -9px 0 0 0;
+    vertical-align: middle;
+}
 .ichioshiRecipe .topRecipe p{
     line-height: 1.7em;
     width: 95%;
@@ -21,7 +46,16 @@
 .ichioshiRecipe .topRecipe .author {background-color:#f5f5f5; border-radius:10px; border:1px solid #e3e3e3; position:relative; margin:10px 0 0;}
 .ichioshiRecipe .topRecipe .author dl { color:#5a3219; padding:3px 5px 5px 5px; font-size:14px; overflow:hidden; }
 .ichioshiRecipe .topRecipe .author dl dt { float:left; margin-right:8px; width:10%; min-width:80px;}
-.ichioshiRecipe .topRecipe .author dl dt img {vertical-align:bottom; border:1px solid #ccc; width:100%; max-width:120px; height:auto; vertical-align:bottom; border-radius: 50%;}
+.ichioshiRecipe .topRecipe .author dl dt img {
+    vertical-align:bottom;
+    border:1px solid #ccc;
+    height:auto;
+    vertical-align:bottom;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
 .ichioshiRecipe .topRecipe .author dl dd {font-size:14px;}
 .ichioshiRecipe .topRecipe .author dl .nameTeacher { font-weight:bold; color:#333;}
 .ichioshiRecipe .topRecipe .author dl .nameClass { margin-bottom:5px; overflow:hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
