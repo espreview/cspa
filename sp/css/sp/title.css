@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/****************************
+    h1
+****************************/
+/*　管理番号：h1-02　*/
+#schoolName h1 {
+  width: 95%;
+  margin: 0 auto;
+  font-size: 1.4em;
+  padding: 20px 0 10px;
+  background: #ffffff;
+  color: #5b3219;
+  text-align: center;
+}
+#schoolName h1 a{
+  color: #5b3219;
+  text-decoration: none;
+}
+#schoolName h1 span {
+  display: block;
+  font-size: 11px;
+  font-weight: normal;
+}
+#schoolName p {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+#schoolName p.open_confirm {
+  text-align: right;
+  font-weight: x-small;
+  padding: 3px 3px 0 0;
+}
+#schoolName h1.last_update {
+  margin-top: -11px !important;
+}
+/**/
+#schoolName h1.searchTitle{  
+  width: 90%;
+  margin: 15px auto;
+  padding: 0 0 0 2%;
+  font-size: 16px;
+  text-align: left;
+  border-left: 4px #ff9900 solid;
+}
+
+/*　レシピ　*/
+
+/****************************
+    h2
+****************************/
+/*　教室情報　*/
+
+/****************************
+    h3
+****************************/
+/*　管理番号：h3-04　*/
+#school #top h3, h3.newsttl {
+  width: 94%;
+  margin: 30px auto 10px;
+  padding: 15px 3%;
+  color: #5b3219;
+  border-top: 1px dotted #5A3219;
+  background: rgb(253,249,235);
+  background: -moz-linear-gradient(top,  rgba(253,249,235,1) 0%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(253,249,235,1) 0%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom,  rgba(253,249,235,1) 0%,rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdf9eb', endColorstr='#ffffff',GradientType=0 );
+}
+
+#school #top h3:before, h3.newsttl:before {
+  color: #5b3219;
+  margin-right: 5px;
+  font-family: "FontAwesome";
+  content: "\f0c6";
+  font-weight: lighter;
+  position: relative;
+  display: inline-block;
+}
+
+/* 管理番号：なし　レシピ（recipe.html）系 */
+div.pickup {
+  text-align:center;
+}
+div.pickup a {
+  text-decoration: none;
+  color: #4a1c00;
+}
+div.pickup div.pickupTitle{
+  width: 94%;
+  margin: 0 auto 10px;
+  background: url(../../image/sp/icon-recipePickup.png) no-repeat;
+  text-align: left;
+}
+div.pickup h2{
+  padding-left: 30px;
+}
+
+a.recipePickuph3 {
+    color: #4a1c00;
+}
+div.recipePickupTitle{
+  padding: 7px 2%;
+  background: #fffaef;
+  background-image: radial-gradient(#ffe4b3 20%, transparent 0), radial-gradient(#ffe4b3 20%, transparent 0);
+  background-image: -webkit-radial-gradient(#ffe4b3 20%, transparent 0), radial-gradient(#ffe4b3 20%, transparent 0);
+  background-image: -moz-radial-gradient(#ffe4b3 20%, transparent 0), radial-gradient(#ffe4b3 20%, transparent 0);
+  background-position: 0 0, 8px 8px;
+  background-size: 15px 15px;
+}
+div.recipePickupTitle h3 {
+  float: left;
+  width: 94%;
+  margin-left: 1%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+div.recipePickupTitle i {
+  display: block;
+  float: left;
+  width: 5%;
+  margin-top: 3px;
+  text-align: right;
+}

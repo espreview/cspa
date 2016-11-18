@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="ja">
 <head>
@@ -50,8 +49,9 @@ $(function(){
 </script><script id="facebook-jssdk" src="//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.6&appId=359762667412926"></script>
 <script language="JavaScript" src="https://cookingschool.jp/script/gtm.jsp" type="text/JavaScript"></script>
 <link href="https://cookingschool.jp/css/sp/common.css?v=20150121" rel="stylesheet" type="text/css">
-<link href="https://cookingschool.jp/css/sp/top.css" rel="stylesheet" type="text/css">
-<link href="https://cookingschool.jp/css/sp/school.css?v=20150907" rel="stylesheet" type="text/css">
+<link href="css/sp/top.css" rel="stylesheet" type="text/css">
+<link href="css/sp/school.css" rel="stylesheet" type="text/css">
+<link href="css/sp/title.css" rel="stylesheet" type="text/css">
 <link href="https://cookingschool.jp/css/font-awesome.min.css" rel="stylesheet">
 <!-- FB-insight -->
 <meta property="fb:admins" content="100001844550496" />
@@ -193,26 +193,30 @@ sb.on('click', function(){ks.stop(true,false).toggle();});
 </div>
 </form></div>
 <!-- //search -->
-<!-- title -->
-<div id="schoolName" class="clearfix">
-<h1>レシピランキング</h1>
+<!-- indent -->
+<div class="pickup" style="margin-top: 10px;">
+<div class="pickupTitle"><h2 class="pickup">スタッフイチオシ</h2></div>
 </div>
-<!-- //title -->
-<ul id="social"><script> 
-$(function(){ 
-var url = 'http://cookingschool.jp/s/recipe/ranking'; 
-var title = 'レシピ ランキング'; 
-var imagesrc = '/image/sp/linebutton_20x20.png'; 
-if(window.parent.screen.width>=360) imagesrc = '/image/sp/linebutton_82x20.png'; 
-var tgt=$('a#sendline');tgt.attr('href','//line.me/R/msg/text/?'+encodeURIComponent(title+'\n'+url));tgt.append('<img src="'+imagesrc+'" height="20" alt="LINEで送る" />'); 
-}); 
-</script> 
-<div class='appealBox'><ul> 
-<li class='social'><a href='http://twitter.com/share' class='twitter-share-button' data-url='http://cookingschool.jp/recipe/ranking' data-text='レシピ ランキング' data-related='' data-lang='ja' data-size='' data-count='none'>Tweet</a></li> 
-<li class='fbbtn'><div class='fb-like' data-href='http://cookingschool.jp/recipe/ranking' data-send='false' data-layout='button_count' data-action='like' data-share='false' data-width='120' data-show-faces='false'></div></li>
-<li class='line'><a href='#' id='sendline'></a></li>
-</ul></div> 
-</ul><!-- wrap -->
+<!-- //indent -->
+
+<script>
+$(function(){
+     $(".btnSNS").click(function(){
+         window.location=$(this).find("a").attr("href");
+         return false;
+    });
+});
+</script>
+<div class="btnSNS btnSNS2">
+<!-- メニューが3つの場合 -->
+<ul class="btnSNS3 clearfix">
+  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><p class="mt">twitter</p></a></li>
+  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><p>facebook</p></a></li>
+  <li><a href="#"><img src="image/sp/LINE_Text_Logo_TypeA.png" width="32" height="11"><p>LINE</p></a></li>
+</ul>
+</div>
+
+<!-- wrap -->
 <section id="wrap">
 <div id="top">
 

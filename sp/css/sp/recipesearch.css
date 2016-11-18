@@ -4,7 +4,7 @@
 .sec_h3 p {display: table-cell; vertical-align: middle;}
 .sec_h3.collabo { background-image: url("../../image/sp/collabo_icon.png"); padding-right:5px;}
 .recipeSearch { margin-bottom:15px;}
-.recipeSearch .KwSearch_top {background: none repeat scroll 0 0 #fff;  border-bottom: none; padding: 10px;}
+.recipeSearch .KwSearch_top { border-bottom: none; padding: 10px;}
 .ctgSelect {margin:0 10px; list-style:none; border-top: 1px solid #ece4d2;}
 .ctgSelect ul { list-style:none; display: none;}
 .ctgSelect li.selected > ul { display: block;}
@@ -25,6 +25,7 @@
     line-height: 25px;
     padding: 5px 0 5px 10px;
     text-decoration: none;
+    background: #fff;
 }
 .ctgSelect legend.selected { background-image: url("../../image/sp/new/accordion_3.png"); background-position: 97% 8px; background-repeat: no-repeat;}
 .recipeSearch_button {margin:10px 0;}
@@ -294,60 +295,23 @@ background-position: 97% 8px;
 .ctg_list li a p {font-size: 10px; color:#86a727;}
 .ctg_list li a p.tasty {background: none repeat scroll 0 0 #f7f7f7; border: 1px solid #cccccc; border-radius: 3px; display: inline-block; margin-top: 3px; padding: 0 3px; color:#333;}
 .ctg_list li a p span { color: #ff6666; font-size: 12px; font-weight: bold;}
-#otherway .recipeSearch {border:1px solid #c0b6ac; padding:0; margin:0 10px;}
 #otherway .recipeSearch li {min-height:0px;}
-#otherway .otherway { background:url(../../image/sp/bg_button.png) repeat top; color:#695d52; font-size:14px; font-weight:bold; padding:3px 10px; margin:10px 10px 0 ; border-width:1px 1px 0 1px; border-color:#c0b6ac; border-style:solid;}
+#otherway{
+  width: 91%;
+  margin: 0 auto;
+  padding: 5px 2%;
+  background: #fffaef;
+}
+#otherway .otherway { 
+  color:#695d52;
+  font-size:14px;
+  font-weight:bold;
+}
 #otherway .otherway i {padding-right:5px;}
 .btn_searchAgain {text-align:center; margin:10px 0;}
 .btn_searchAgain a {display: inline-block; background:url(../../image/sp/bg_button.png) repeat top; border:1px solid #c0b6ac; color:#695d52; padding:4px 0; text-decoration:none; width:90%; position:relative; box-sizing:border-box; font-weight:bold; }
 .btn_searchAgain a:before { content: "\f002"; font-family: FontAwesome; position:absolute; left:10px; }
 
-div.pickup {
-	text-align:center;
-}
-div.pickup a {
-  text-decoration: none;
-  color: #4a1c00;
-}
-div.pickup div.pickupTitle{
-  width: 94%;
-  margin: 0 auto 10px;
-  background: url(../../image/sp/icon-recipePickup.png) no-repeat;
-  text-align: left;
-}
-div.pickup h2{
-  padding-left: 30px;
-}
-/* 2016-09-09 add */
-a.recipePickuph3 {
-    color: #4a1c00;
-}
-div.recipePickupTitle{
-  padding: 7px 2%;
-  background: #fffaef;
-  background-image: radial-gradient(#ffe4b3 20%, transparent 0), radial-gradient(#ffe4b3 20%, transparent 0);
-  background-image: -webkit-radial-gradient(#ffe4b3 20%, transparent 0), radial-gradient(#ffe4b3 20%, transparent 0);
-  background-image: -moz-radial-gradient(#ffe4b3 20%, transparent 0), radial-gradient(#ffe4b3 20%, transparent 0);
-  background-position: 0 0, 8px 8px;
-  background-size: 15px 15px;
-}
-div.recipePickupTitle h3 {
-  float: left;
-  width: 94%;
-  margin-left: 1%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  text-align: center;
-}
-div.recipePickupTitle i {
-  display: block;
-  float: left;
-  width: 5%;
-  margin-top: 3px;
-  text-align: right;
-}
-/* //2016-09-09 add */
 div.pickup ul.bxslider{
   margin: 0 auto;
 }

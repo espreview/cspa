@@ -4,33 +4,6 @@ html { background:#FFFFFF; }
 /*===================================
 教室情報　header
 ===================================*/
-#schoolName h1 {
-	margin:0;
-	font-size:14px;
-	padding:6px;
-	background:#5b3219;
-	color:#FFFFFF;
-	text-align: center;
-}
-#schoolName h1 span {
-	display: block;
-	font-size:11px;
-	font-weight:normal;
-}
-#schoolName p {
-    width: 95%;
-    margin: 0 auto;
-	padding:5px 0;
-	font-size: 14px;
-	line-height: 22px;
-}
-
-#schoolName p.open_confirm {
-	text-align:right;
-	font-weight:x-small;
-	padding:3px 3px 0 0;
-}
-
 .btnSNS{
 	width: 90%;
 	margin: 0 auto 20px;
@@ -82,14 +55,78 @@ html { background:#FFFFFF; }
 .btnSNS .btnSNS3 li:last-child{
 	border-right: 0px;
 }
-.btnSNS li p{
-	font-size: 10px;
-}
+.btnSNS li span{ font-size: 10px; color: #fff;}
+.btnSNS li p{ font-size: 10px;}
 .btnSNS li .fa-heart{ color: #ff2140; }
 .btnSNS li .fa-twitter{	font-size: 25px; color: #55acee; }
 .btnSNS li .fa-facebook{ font-size: 25px; color: #3b579d!important;}
 .btnSNS li .fa-envelope{ color: #009688;}
-.btnSNS li .fa-smile-o{ font-size: 17px; color: #ee7d00; }
+.btnSNS li .fa-smile-o{ font-size: 16px; color: #ee7d00; }
+
+.btnSNSSub{
+	width: 90%;
+	max-height: 20px;
+	margin: 0 auto 10px;
+	padding: 5px 4px 12px 3px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-align: center;
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
+    border: 1px #ece4d2 solid;
+}
+.btnSNSSub a{ text-decoration: none; font-weight: bold; color: #ee7d00; }
+.btnSNSSub .fa-smile-o{ margin-top: 5px; }
+.btnSNSSub span{
+	margin-left: 10px;
+	font-size: 12px;
+	color: #5b3219;
+}
+
+/* 吹き出し */
+.btnSNS li .arrow_box,
+.btnSNSSub .arrow_box {
+	position: relative;
+    padding: 3px!important;
+	background: #fff;
+    border: #ece4d2 1px solid;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+	color: #5A3219;
+}
+.btnSNS li .arrow_box:after,
+.btnSNSSub .arrow_box:after {
+	content: " ";
+	height: 0;
+	width: 0;
+	margin-top: -2px;
+	right: 100%;
+	top: 50%;
+	position: absolute;
+	pointer-events: none;
+	border: solid transparent;
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #fff;
+	border-width: 2px;
+    border: #ece4d2 1px solid;
+}
+/* //吹き出し */
+
+/* 注意書き */
+.btnAttention{
+	width: 90%;
+	margin: 0 auto 20px;
+	text-align: center;
+	font-size: 0.8em;
+	color: #5b3219;
+}
+.btnAttention .fa-smile-o{ color: #ee7d00; margin-right: 5px; }
+/* //注意書き */
 
 /* for recipe.html */
 .btnSNS2{
@@ -490,18 +527,6 @@ div#footerArea li.commentBtn a {
 	padding: 0 0 0 5px!important;
 	font-size: 11px;
 }
-/*#school #top li span{
-	display:block;
-	padding:6px 3px;
-	font-size: 15px;
-}
-#school #top li:nth-child(2), #school #top li:first-child {
-	border-top:none;
-}
-#school #top li:nth-child(odd) span {
-	border-right:solid 1px #F7EAD2;
-	border-right: none;
-}*/
 #school #top .lessonphoto {
 	text-align:center;
 	padding:0px;
@@ -513,30 +538,6 @@ div#footerArea li.commentBtn a {
 	margin:0 2px;
 	padding:0;
 }
-/* 2016-08-12 edit kawai */
-#school #top h3, h3.newsttl {
-    width: 94%;
-    margin: 30px auto 10px;
-    padding: 15px 3%;
-    color: #5b3219;
-    border-top: 1px dotted #5A3219;
-    background: rgb(253,249,235);
-	background: -moz-linear-gradient(top,  rgba(253,249,235,1) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-linear-gradient(top,  rgba(253,249,235,1) 0%,rgba(255,255,255,1) 100%);
-	background: linear-gradient(to bottom,  rgba(253,249,235,1) 0%,rgba(255,255,255,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdf9eb', endColorstr='#ffffff',GradientType=0 );
-}
-
-#school #top h3:before, h3.newsttl:before {
-    color: #5b3219;
-	margin-right: 5px;
-	font-family: "FontAwesome";
-	content: "\f0c6";
-	font-weight: lighter;
-	position: relative;
-	display: inline-block;
-}
-/* //2016-08-12 edit kawai */
 #school #top .profile {
 	margin: 0 15px;
 }
@@ -1546,10 +1547,6 @@ margin-left:2px;
 	right:-5px;
 }
 
-/* 2015.4.8 修正*/
-#schoolName h1 a { color:#fff; text-decoration:none; display:block;
-    font-size: 1.2em;}
-
 /* 2015.4.21 修正*/
 #school #top .career { margin:10px 15px 0; font-size:small; line-height:17px; overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
 #school .gentei { display:block; padding:3px; margin:15px 10px 0; text-align:center; text-decoration:none; background:#E7AE69; color:#FFF; text-shadow:1px 1px 0 #DA9D5A; border-radius:5px; box-shadow: 0px 0px 4px rgba(0,0,0,0.4); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.4); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.4); }
@@ -1563,15 +1560,31 @@ div.otherRecipes .mgt15_auto {margin:15px;}
 /* 教室ページ改修2015.605 */
 #school .messagebox { font-size:14px; margin: 0 15px 15px; padding-top:10px; border-width:1px 0; border-style:solid; border-color:#e8dcc7;}
 #school .messagebox .moreread a {display:block; font-size:0; line-height:none; text-align:center; padding-top:10px;}
-#school #top .profile.above {margin-bottom:15px; padding:0 0 25px; border:1px solid #e8dbd1; box-shadow:2px 2px 2px #ddd; position:relative;}
+#school #top .profile.above {
+	margin-bottom:15px;
+	padding:0 0 25px;
+	border:1px solid #e8dbd1;
+	box-shadow:2px 2px 2px #ddd;
+	position:relative;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
 #school #top .profile.above h3 {
 	width: 100%;
     background-image: none;
-    padding: 5px 0;
-    margin: 0 0 15px 0;
+    padding: 5px 0;    
+    margin: 5px 0;
     border: none;
-/*background-color:#e8dbd1; border-bottom:3px solid #ddbfa8; background-image:none; padding: 5px 0 5px 5px; margin: 0 0 15px 0;*/}
-#school #top .profile.above h3:before {content:""; /*width:12px; height:12px; border-radius:50%; background-color:#ddbfa8; display:inline-block; margin:0 5px 0 0;*/ }
+    text-align: center;
+    line-height: 1.2em;
+}
+#school #top .profile.above h3 span {
+	font-size: 0.8em;
+	font-weight: normal;
+	color: #b99984;
+}
+#school #top .profile.above h3:before {content:"";}
 #school #top .profile.above img {margin:0 10px;}
 #school #top .profile.above p {padding:0 10px;}
 #school #top .profile.above .moreread img{ border:none; position:absolute; left:43%; bottom:0;}
@@ -1712,17 +1725,6 @@ html.bgc { background-color:#fffdfa;}
 }
 
 /* スクロールで教室名を上部に固定 20160812 */
-#schoolName h1 {
-    padding: 20px 0 10px!important;
-    background: #ffffff!important;
-}
-#schoolName h1.last_update {
-    margin-top: -11px !important;
-}
-#schoolName h1 a{
-    color: #5b3219!important;
-    font-size: 1.4em!important;
-}
 /*#schoolName h1 {z-index: 2;}
 #schoolName h1 {
 	padding: 10px 0 1em 0;

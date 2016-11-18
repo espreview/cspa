@@ -19,7 +19,7 @@
 <meta name="format-detection" content="telephone=no">
 <link href="https://cookingschool.jp/css/sp/common.css?v=20150121" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cookingschool.jp/css/colorbox.css" type="text/css" media="all" />
-<link href="https://cookingschool.jp/css/sp/top.css" rel="stylesheet" type="text/css">
+<link href="css/sp/top.css" rel="stylesheet" type="text/css">
 
 <script language="JavaScript" src="https://cookingschool.jp/script/jquery.js" type="text/JavaScript"></script>
 <script language="JavaScript" src="https://cookingschool.jp/script/jquery.colorbox.js" type="text/JavaScript"></script>
@@ -55,6 +55,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="https://cookingschool.jp/css/label_badge.css" type="text/css" media="all" />
 <link rel="stylesheet" href="https://cookingschool.jp/css/font-awesome.min.css" type="text/css" media="all" />
 <link href="css/sp/school.css" rel="stylesheet" type="text/css">
+<link href="css/sp/title.css" rel="stylesheet" type="text/css">
 <!-- FB-insight -->
 <meta property="fb:admins" content="100001844550496" />
 
@@ -164,6 +165,46 @@ $(function(){
 <div class="btnSNS">
 <!-- メニューが4つの場合 -->
 <ul class="clearfix">
+  <li>
+    <a href="#">
+      <i class="fa fa-heart" aria-hidden="true"></i>
+      <span class="arrow_box">19</span>
+      <p>お気に入り</p>
+    </a>
+  </li>
+  <li>
+    <!-- ここからモーダルウィンドウ -->
+    <div id="modal-content">
+      <!-- モーダルウィンドウのコンテンツ開始 -->
+      <h4>情報を投稿・シェアするSNSを選択してください。</h4>
+      <table>
+        <tr>
+          <td><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><p class="mt">twitter</p></a></td>
+          <td><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><p>facebook</p></a></td>
+          <td><a href="#"><img src="image/sp/LINE_Text_Logo_TypeA.png" width="45" height="16"><p>LINE</p></a></td>
+        </tr>
+      </table>
+      <p id="btnSNSClose"><a id="modal-close" class="button-link">閉じる</a></p>
+      <!-- モーダルウィンドウのコンテンツ終了 -->
+    </div>
+
+    <a id="modal-open" class="button-link"><i class="fa fa-share-alt" aria-hidden="true"></i><p>シェア</p></a>
+    <!-- ここまでモーダルウィンドウ -->
+  </li>
+  <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><p>メールで送る</p></a></li>
+  <li>
+    <a href="#">
+      <i class="fa fa-smile-o" aria-hidden="true"></i>
+      <span class="arrow_box">219</span>
+      <p>美味しそう</p>
+    </a>
+  </li>
+</ul>
+</div>
+
+<div class="btnSNS">
+<!-- メニューが3つの場合 -->
+<ul class="btnSNS3 clearfix">
   <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i><p>お気に入り</p></a></li>
   <li>
     <!-- ここからモーダルウィンドウ -->
@@ -185,9 +226,17 @@ $(function(){
     <!-- ここまでモーダルウィンドウ -->
   </li>
   <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><p>メールで送る</p></a></li>
-  <li><a href="#"><i class="fa fa-smile-o" aria-hidden="true"></i><p>美味しそう</p></a></li>
 </ul>
 </div>
+
+<!-- 美味しそうボタン -->
+<div class="btnSNSSub">
+<a href="#">
+  <p><i class="fa fa-smile-o" aria-hidden="true"></i><span>美味しそう</span>
+      <span class="arrow_box">219</span></p>
+</a>
+</div>
+<p class="btnAttention">※「<i class="fa fa-smile-o" aria-hidden="true"></i>美味しそう」ボタンはログインしなくてもご利用いただけます。</p>
 
 <div style="margin-top:15px;margin-bottom:10px;"><script async
 src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
