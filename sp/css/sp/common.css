@@ -770,20 +770,16 @@ ul li.btnSubmit a {
 .footLink a:hover {
     text-decoration: none;
 }
-nav {
-    margin-bottom: 1px;
-}
+nav {}
 nav ul {
-    box-shadow: 0 1px 3px 0 #6f6057;
     display: table;
     height: auto;
     table-layout: fixed;
     width: 100%;
 }
 nav ul li {
-    background-color: #b99984;
-    border-left: 1px solid #7c5943;
-    box-shadow: 1px 0 1px #eed9cb inset;
+    background-color: #542d1c;
+    border-left: 1px solid #75523f;
     display: table-cell;
     padding: 0;
     position: relative;
@@ -806,11 +802,7 @@ nav ul li:first-child {
     border-left: 0 none;
 }
 nav ul li.stay {
-    background: none repeat scroll 0 0 #e5d8c8;
-}
-nav ul li.stay a {
-    color: #e54545;
-    text-shadow: 1px 1px 1px #fff;
+    border-bottom: 3px solid #f68606;
 }
 nav ul li.kerning a {
     letter-spacing: -0.1em;
@@ -826,6 +818,7 @@ nav ul li.home a {
 }
 header {
     background: none repeat scroll 0 0 #fffaef;
+    border-top: 5px solid #5b3219;
     height: 51px;
     position: relative;
 }

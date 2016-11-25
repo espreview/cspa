@@ -4,6 +4,38 @@ html { background:#FFFFFF; }
 /*===================================
 教室情報　header
 ===================================*/
+.btnOverlay{
+	position: relative;
+	width: 280px;
+	height: 280px;
+}
+.btnOverlay .btnOverLayBody{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 50px;
+	font-size: xx-small;
+	color: #ee7d00;
+}
+.btnOverlay .btnOverLayIcon{
+	width: 44px;
+	height: 37px;
+	margin: 0 auto 3px;
+	padding-top: 7px;
+	border: 2px #ee7d00 solid;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	background: rgba(255,255,255,0.95);
+	text-align: center;
+}
+.btnOverlay .btnOverLayBody .btnOverLayIcon i{
+	font-size: 30px;
+}
+.btnOverlay .btnOverLayBody .btnOverLayIcon.on{
+	background: #ee7d00;
+	color: #fff;
+}
 .btnSNS{
 	width: 90%;
 	margin: 0 auto 20px;
@@ -119,7 +151,7 @@ html { background:#FFFFFF; }
 
 /* 注意書き */
 .btnAttention{
-	width: 90%;
+	width: 95%;
 	margin: 0 auto 20px;
 	text-align: center;
 	font-size: 0.8em;
@@ -874,7 +906,7 @@ div#footerArea li.commentBtn a {
 #school .recipeTitle .recipeName i{
 	font-size: 13px;
 	background: #8fb721;
-	padding: 7px;
+	padding: 7px 8px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;

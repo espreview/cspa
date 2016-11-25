@@ -17,7 +17,7 @@
 <meta property="fb:app_id" content="359762667412926" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
 <meta name="format-detection" content="telephone=no">
-<link href="https://cookingschool.jp/css/sp/common.css?v=20150121" rel="stylesheet" type="text/css">
+<link href="css/sp/common.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cookingschool.jp/css/colorbox.css" type="text/css" media="all" />
 <link href="css/sp/top.css" rel="stylesheet" type="text/css">
 
@@ -145,8 +145,15 @@ ks.stop(true,false).toggle();
 <!-- //recipeTitle -->
 
 <div id="top">
-<div class="photo">
-<a href="/image/upload/recipe/00/00/01/89/74_20150902185254.JPG" class="colorbox"><img src="https://cookingschool.jp/image/cache/image/upload/recipe/00/00/01/89/280x280_74_20150902185254.png" id="picture" alt="海老の生ハム巻きフリット  "></a></div>
+<div class="photo btnOverlay">
+  <a href="/image/upload/recipe/00/00/01/89/74_20150902185254.JPG" class="colorbox"><img src="https://cookingschool.jp/image/cache/image/upload/recipe/00/00/01/89/280x280_74_20150902185254.png" id="picture" alt="海老の生ハム巻きフリット"></a>
+  <div class="btnOverLayBody">
+    <div class="btnOverLayIcon"><i class="fa fa-smile-o" aria-hidden="true"></i></div>
+    <!-- 「美味しそう」に追加済の場合： class="btnOverLayIcon　on" -->
+    <p>美味しそう</p>
+  </div>
+</div>
+<!-- //photo -->
 <div class="recipetxt">
 <p>生ハムを巻いた海老をカリッと揚げたおつまみ。炭酸水の効果で衣がかりっとサクサク。レモンをきゅっと絞って、冷えたリースリングと共に。    
 <br />
@@ -236,7 +243,7 @@ $(function(){
       <span class="arrow_box">219</span></p>
 </a>
 </div>
-<p class="btnAttention">※「<i class="fa fa-smile-o" aria-hidden="true"></i>美味しそう」ボタンはログインしなくてもご利用いただけます。</p>
+<p class="btnAttention">「<i class="fa fa-smile-o" aria-hidden="true"></i>美味しそう」ボタンはログインしなくてもご利用いただけます。</p>
 
 <div style="margin-top:15px;margin-bottom:10px;"><script async
 src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
