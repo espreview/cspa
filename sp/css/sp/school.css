@@ -8,8 +8,7 @@ html { background:#FFFFFF; }
 	position: relative;
 	width: 280px;
 	height: 280px;
-}
-.btnOverlay .btnOverLayBody{
+}.btnOverlay .btnOverLayBody{
 	position: absolute;
 	top: 10px;
 	right: 10px;
@@ -17,6 +16,19 @@ html { background:#FFFFFF; }
 	font-size: xx-small;
 	color: #ee7d00;
 }
+.btnOverlay .delicious_off{
+	width: 50px;
+	height: 50px;
+	background: url(../../image/sp/delicious_off.png) left top no-repeat;
+	background-size: 50px;
+}
+.btnOverlay .delicious_on{
+	width: 50px;
+	height: 50px;
+	background: url(../../image/sp/delicious_on.png) left top no-repeat;
+	background-size: 50px;
+}
+/*
 .btnOverlay .btnOverLayIcon{
 	width: 44px;
 	height: 37px;
@@ -35,7 +47,7 @@ html { background:#FFFFFF; }
 .btnOverlay .btnOverLayBody .btnOverLayIcon.on{
 	background: #ee7d00;
 	color: #fff;
-}
+}*/
 .btnSNS{
 	width: 90%;
 	margin: 0 auto 20px;
