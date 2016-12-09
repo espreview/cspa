@@ -18,7 +18,7 @@ html { background:#FFFFFF; }
 .btnOverlay .btnOverLayBody p{
 	margin-top: 5px;
 	text-align: center;
-	font-size: x-small;
+	font-size: 10px;
 	font-weight: bold;
 }
 .btnOverlay .delicious_off{
