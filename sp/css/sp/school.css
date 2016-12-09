@@ -8,18 +8,13 @@ html { background:#FFFFFF; }
 	position: relative;
 	width: 280px;
 	height: 280px;
-}
-.btnOverlay .btnOverLayBody{
+}.btnOverlay .btnOverLayBody{
 	position: absolute;
-	top: 240px;
+	top: 10px;
 	right: 10px;
 	width: 50px;
-	text-align: center;
-}
-.btnOverlay .btnOverLayBody p{
-	margin-top: 5px;
-	font-size: x-small;
-	font-weight: bold;
+	font-size: xx-small;
+	color: #ee7d00;
 }
 .btnOverlay .delicious_off{
 	width: 50px;
@@ -32,7 +27,6 @@ html { background:#FFFFFF; }
 	height: 50px;
 	background: url(../../image/sp/delicious_on.png) left top no-repeat;
 	background-size: 50px;
-	color: #ee7d00;
 }
 /*
 .btnOverlay .btnOverLayIcon{
@@ -281,7 +275,7 @@ div#footerArea li.commentBtn a {
 ===================================*/
 #school #top .photo{
 	width: 280px;
-	height: 300px;
+	height: 280px;
 	margin-bottom: 10px;
 	margin-left:auto;
 	margin-right:auto;
@@ -524,8 +518,6 @@ div#footerArea li.commentBtn a {
 
 
 #school #top .recipetxt p{
-	width: 90%;
-	margin: 0 auto;
 	padding:10px;
     font-size: 15px;
 }
