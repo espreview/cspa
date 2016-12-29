@@ -11,14 +11,14 @@ html { background:#FFFFFF; }
 }
 .btnOverlay .btnOverLayBody{
 	position: absolute;
-	top: 240px;
+	top: 235px;
 	right: 10px;
 	width: 50px;
 }
 .btnOverlay .btnOverLayBody p{
-	margin-top: 5px;
+	margin-top: 2px;
 	text-align: center;
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: bold;
 }
 .btnOverlay .delicious_off{
@@ -27,11 +27,17 @@ html { background:#FFFFFF; }
 	background: url(../../image/sp/delicious_off.png) left top no-repeat;
 	background-size: 50px;
 }
+.btnOverlay .btnOverLayBody p.delicious_off2{
+	color: #979797;
+}
 .btnOverlay .delicious_on{
 	width: 50px;
 	height: 50px;
 	background: url(../../image/sp/delicious_on.png) left top no-repeat;
 	background-size: 50px;
+}
+.btnOverlay .btnOverLayBody p.delicious_on2{
+	color: #e79e26;
 }
 /*
 .btnOverlay .btnOverLayIcon{
@@ -106,7 +112,8 @@ html { background:#FFFFFF; }
 }
 .btnSNS li span{ font-size: 10px; color: #fff;}
 .btnSNS li p{ font-size: 10px;}
-.btnSNS li .fa-heart{ color: #ff2140; }
+.btnSNS li .fa-heart.on{ color: #ff2140; }
+.btnSNS li .fa-heart.off{ color: #aaa; }
 .btnSNS li .fa-twitter{	font-size: 25px; color: #55acee; }
 .btnSNS li .fa-facebook{ font-size: 25px; color: #3b579d!important;}
 .btnSNS li .fa-envelope{ color: #009688;}
@@ -194,17 +201,41 @@ html { background:#FFFFFF; }
 .btnSNS2 li .fa-facebook{ font-size: 17px; color: #3b579d!important;}
 /* //for recipe.html */
 
+
+.appealBox img {
+	float:left;
+	margin-right:10px;
+}
+#schoolName h1 {
+	margin:0;
+	font-size:14px;
+	padding:6px;
+	background:#5b3219;
+	color:#FFFFFF;
+	text-align: center;
+}
+#schoolName h1 span {
+	display: block;
+	font-size:11px;
+	font-weight:normal;
+}
+#schoolName p {
+    width: 95%;
+    margin: 0 auto;
+	padding:10px 0 5px;
+}
+
+#schoolName p.open_confirm {
+	text-align:right;
+	font-weight:x-small;
+	padding:3px 3px 0 0;
+}
+
 #open_confirm_top {
 	text-align:right;
 	font-size:10px;
 	padding:3px 3px 0 0;
 	margin-top: -20px;
-}
-
-.last_update{
-    width: 90%!important;
-    margin: 0 auto 5px!important;
-    font-size: 11px!important;
 }
 
 #schoolName p a {
@@ -363,6 +394,7 @@ div#footerArea li.commentBtn a {
     display: block;
 	font-size: 15px;
     padding: 6px;
+    word-break: break-all;
 }
 
 #school .type1 dd span.default {
@@ -387,19 +419,8 @@ div#footerArea li.commentBtn a {
 }
 
 #school .type1 dd.no a {
-    height: 35px;
-    margin-top: -27px;
-    opacity: 0.8;
-    background: #fff;
-    background: url(../../image/sp/bg_arrow_b.png) no-repeat center bottom, -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.85) 55%, rgba(255,255,255,1) 100%);
-    background: url(../../image/sp/bg_arrow_b.png) no-repeat center bottom, -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.85) 55%,rgba(255,255,255,1) 100%);
-    background: url(../../image/sp/bg_arrow_b.png) no-repeat center bottom, linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.85) 55%,rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
-    background-size: 30px 21px;
-}
-
-#school .type1 dd.no {
-    padding-bottom: 0;
+	background: url(../../image/sp/bg_arrow_b.png) no-repeat center bottom;
+	background-size: 36px 25px;
 }
 
 #school .type1 dd.on a {
@@ -486,8 +507,6 @@ div#footerArea li.commentBtn a {
 	border:none;
 	border-radius:0px;
 	border-bottom:dotted 1px #b99984;
-    background: url(../../image/sp/bg_arrow_b.png) no-repeat center bottom;
-    background-size: 30px 21px;
 }
 
 #school section.schoolnews li a {
@@ -496,15 +515,8 @@ div#footerArea li.commentBtn a {
 }
 
 #school section.schoolnews li.no a {
-    padding-bottom: 35px;
-    margin-top: -40px;
-    margin-bottom: 10px;
-    opacity: 0.6;
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(253,249,235,1) 100%);
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(253,249,235,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(253, 249, 235) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f9efdd',GradientType=0 );
-}
+	background: url(../../image/sp/bg_arrow_b.png) no-repeat center bottom;
+	background-size: 36px 25px;
 }
 
 #school section.schoolnews li.on a {
@@ -523,20 +535,16 @@ div#footerArea li.commentBtn a {
 
 
 #school #top .recipetxt p{
-	width: 90%;
-	margin: 0 auto;
-	padding:10px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
     font-size: 15px;
-}
-
-#school .clm{
-	border: none;
 }
 
 #school #top ul{
 	display:block;
 	border-radius:3px;
-	font-size: small;
+	font-size:larger;
 }
 
 #school #top .content,#school #top .feature {
@@ -574,9 +582,12 @@ div#footerArea li.commentBtn a {
 #school #top li span{
 	padding:6px 3px;
 }
-#school #top ul.option li{
-	padding: 0 0 0 5px!important;
-	font-size: 11px;
+#school #top li:nth-child(2), #school #top li:first-child {
+	border-top:none;
+}
+#school #top li:nth-child(odd) span {
+	border-right:solid 1px #F7EAD2;
+	border-right: none;
 }
 #school #top .lessonphoto {
 	text-align:center;
@@ -589,6 +600,30 @@ div#footerArea li.commentBtn a {
 	margin:0 2px;
 	padding:0;
 }
+/* 2016-08-12 edit kawai */
+#school #top h3, h3.newsttl {
+    width: 94%;
+    margin: 30px auto 10px;
+    padding: 15px 3%;
+    color: #5b3219;
+    border-top: 1px dotted #5A3219;
+    background: rgb(253,249,235);
+	background: -moz-linear-gradient(top,  rgba(253,249,235,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(253,249,235,1) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom,  rgba(253,249,235,1) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdf9eb', endColorstr='#ffffff',GradientType=0 );
+}
+
+#school #top h3:before, h3.newsttl:before {
+    color: #5b3219;
+	margin-right: 5px;
+	font-family: "FontAwesome";
+	content: "\f0c6";
+	font-weight: lighter;
+	position: relative;
+	display: inline-block;
+}
+/* //2016-08-12 edit kawai */
 #school #top .profile {
 	margin: 0 15px;
 }
@@ -891,7 +926,7 @@ div#footerArea li.commentBtn a {
 #school h2{
 	background:#E7D8A5;
 	padding:3px 6px;
-	font-sizes:16px;
+	font-size:16px;
 	color:#5A3219;
 	box-shadow:0px 0px 5px #666666;
 }
@@ -925,7 +960,7 @@ div#footerArea li.commentBtn a {
 #school .recipeTitle .recipeName i{
 	font-size: 13px;
 	background: #8fb721;
-	padding: 7px 8px;
+	padding: 7px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -958,6 +993,100 @@ div#footerArea li.commentBtn a {
 }
 #school #photo li:nth-child(odd) {
 	margin-right:10px;
+}
+
+/*===================================
+教室情報　レシピ
+===================================*/
+
+#school #recipe .recipebox {
+	margin:0 15px 0 15px;
+}
+#school #recipe .recipebox li {
+	padding-bottom:15px;
+	margin-bottom:15px;
+	list-style:none;
+	border-bottom:solid 2px #F7EAD2;
+}
+#school .appealBox .recipebox li.detail {
+	padding:0;
+	margin:0 8px 0 -11px;
+	border:none;
+}
+#school .appealBox .detail.recipebox {margin:0 0 5px;}
+#school .appealBox .detail.recipebox li.detail {
+	margin:0 1px 0 0;
+	display: inline-block;
+}
+#school #recipe .recipebox li a.box {
+	display:block;
+	padding:15px 15px 15px 0;
+	text-decoration:none;
+	color:#5B3219;
+	background:url(../../image/sp/lesson-arrow.png) no-repeat right center;
+	-webkit-background-size:7px 13px;
+	-moz-background-size:7px 13px;
+	background-size:7px 13px;
+}
+#school #recipe .recipebox li img {
+	float:left;
+	margin-right:10px;
+}
+#school #recipe .recipebox h3 {
+	padding:0;
+	margin:0;
+	background:none;
+	border:none;
+	color:#5B3219;
+}
+#school .appealBox .recipebox p {
+	font-size:10px;
+}
+#school .appealBox .recipebox li p.tasty {
+	display:inline-block;
+	margin-top:3px;
+	padding:0 3px;
+	background:#F7F7F7;
+	border:solid 1px #CCCCCC;
+	border-radius:3px;
+}
+#school .appealBox .recipebox li p span {
+	font-size:12px;
+	font-weight:bold;
+	color:#FF6666;
+}
+#school .appealBox .recipebox li a.favobtn,#school #recipe .recipebox li span.favobtn {
+	display:inline-block;
+	padding:1px 6px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#333;
+	border:solid 1px #CCCCCC;
+	border-radius:3px;
+	font-size:11px;
+	background: #ebebeb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ebebeb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#ebebeb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+	text-align:center;
+}
+
+#school #recipe .recipebox li a.favobtn {
+	color:#333;
+}
+
+#school #recipe .recipebox li span.favobtn {
+	color:#AAA;
+}
+
+#school #recipe .recipebox li a.favobtn span,#school #recipe .recipebox li span.favobtn span {
+	display:block;
+	padding-left:15px;
+	background:url(../../image/sp/favo.png) no-repeat left center;
 }
 
 /*===================================
@@ -1598,6 +1727,11 @@ margin-left:2px;
 	right:-5px;
 }
 
+/* 2015.4.8 修正*/
+#schoolName h1 a { color:#fff; text-decoration:none; display:block;}
+.appealBox .fbbtn {width:auto; vertical-align:top; margin-top: -4px;}
+.appealBox .line img { margin-right: 0;}
+
 /* 2015.4.21 修正*/
 #school #top .career { margin:10px 15px 0; font-size:small; line-height:17px; overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
 #school .gentei { display:block; padding:3px; margin:15px 10px 0; text-align:center; text-decoration:none; background:#E7AE69; color:#FFF; text-shadow:1px 1px 0 #DA9D5A; border-radius:5px; box-shadow: 0px 0px 4px rgba(0,0,0,0.4); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.4); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.4); }
@@ -1611,34 +1745,12 @@ div.otherRecipes .mgt15_auto {margin:15px;}
 /* 教室ページ改修2015.605 */
 #school .messagebox { font-size:14px; margin: 0 15px 15px; padding-top:10px; border-width:1px 0; border-style:solid; border-color:#e8dcc7;}
 #school .messagebox .moreread a {display:block; font-size:0; line-height:none; text-align:center; padding-top:10px;}
-#school #top .profile.above {
-	margin-bottom:15px;
-	padding:0 0 25px;
-	border:1px solid #e8dbd1;
-	box-shadow:2px 2px 2px #ddd;
-	position:relative;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-}
-#school #top .profile.above h3 {
-	width: 100%;
-    background-image: none;
-    padding: 5px 0;    
-    margin: 5px 0;
-    border: none;
-    text-align: center;
-    line-height: 1.2em;
-}
-#school #top .profile.above h3 span {
-	font-size: 0.8em;
-	font-weight: normal;
-	color: #b99984;
-}
-#school #top .profile.above h3:before {content:"";}
+#school #top .profile.above {margin-bottom:15px; padding:0 0 25px; border:1px solid #e8dbd1; box-shadow:2px 2px 2px #ddd; position:relative;}
+#school #top .profile.above h3 { background-color:#e8dbd1; border-bottom:3px solid #ddbfa8; background-image:none; padding-left:5px;}
+#school #top .profile.above h3:before {content:""; width:12px; height:12px; border-radius:50%; background-color:#ddbfa8; display:inline-block; margin:0 5px 0 0; }
 #school #top .profile.above img {margin:0 10px;}
 #school #top .profile.above p {padding:0 10px;}
-#school #top .profile.above .moreread img{ border:none; position:absolute; left:43%; bottom:0;}
+#school #top .profile.above .moreread img{ border:none; position:absolute; left:40%; bottom:0;}
 #school #top .profile.above .moreread{color:#000;}
 #school #top .accepting  { padding:0 10px;}
 #school #top .accepting li {border-bottom:1px dotted #5A3219; padding:15px 0; float:none; width:100%;}
@@ -1775,47 +1887,8 @@ html.bgc { background-color:#fffdfa;}
     background-image: url("../../image/sp/new/search.png");
 }
 
-/* スクロールで教室名を上部に固定 20160812 */
-/*#schoolName h1 {z-index: 2;}
-#schoolName h1 {
-	padding: 10px 0 1em 0;
-	background:
-	    linear-gradient(-135deg, #5b3219 3.5px, transparent 0) 0 3.5px,
-	    linear-gradient(135deg, #5b3219 3.5px, #ffffff 0) 0 3.5px;
-	background-color: #5b3219;
-	background-position: left bottom !important;
-	background-repeat: repeat-x !important;
-	background-size: 7px 7px;
-}
-#schoolName .fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-#schoolName h1.fixed{
-	opacity: 0.95;
-}*/
-/* more readのデザイン変更 20160812 */
-#school .messagebox .moreread a {
-    height: 20px;
-    margin-top: -30px;
-    padding-top: 20px;
-    opacity: 0.8;
-    background: #fff;
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.85) 55%, rgba(255,255,255,1) 100%);
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.85) 55%,rgba(255,255,255,1) 100%);
-	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.85) 55%,rgba(255,255,255,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
-}
-#school #top .profile.above .moreread a {
-    height: 20px;
-    margin-top: -30px;
-    padding-top: 20px;
-    opacity: 0.8;
-    background: #fff;
-    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.85) 55%, rgba(255,255,255,1) 100%);
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.85) 55%,rgba(255,255,255,1) 100%);
-	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.85) 55%,rgba(255,255,255,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
-}
+.lesson .sec_h3 {width:100%; display: table; box-sizing: border-box;}
+.sec_h3 p {display: table-cell; vertical-align: middle;width: 75%;}
+.lesson .more { display:table-cell; vertical-align:middle; font-size:12px; line-height:14px; text-align:right; width:90px;}
+.lesson .more a {text-decoration:none; color:#fff; background:#5b3219; border-radius:5px; display: block; padding:3px 5px; text-align:center;}
+.lesson .more a:after {content:"\f138"; font-family: FontAwesome; padding-left:5px; }
