@@ -620,10 +620,11 @@ div.school2 {
     margin-top: 15px;
 }
 div.school2 h4 {
-    background: none repeat scroll 0 0 #b99984;
-    color: #fff;
-    font-size: 11px;
-    padding: 5px 5px 5px 10px;
+    background: none no-repeat scroll 9px 4px / 22px auto #f9efdd;
+    border-bottom: 1px dotted #aa917c;
+    border-top: 4px solid #5b3219;
+    color: #5b3219;
+    padding: 5px 0 5px 15px;
 }
 div.school2 ul {
     margin: 0 15px;
