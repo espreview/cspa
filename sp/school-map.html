@@ -61,10 +61,6 @@ googletag.pubads().enableSingleRequest();
 googletag.enableServices();
 });
 </script>
-<!-- モーダルウィンドウ -->
-<link rel="stylesheet" type="text/css" href="css/sp/modal.css">
-<script src="script/sp/modal.js"></script>
-<!-- //モーダルウィンドウ -->
 </head>
 
 <body>
@@ -182,66 +178,10 @@ sb.on('click', function(){ks.stop(true,false).toggle();});
 <h1><a href="/s/school/eriko-cooking-salonJ">eriko cooking salon TOKYO<span>（東京都目黒区）</span></a></h1>
 </div>
 
-
-<script>
-$(function(){
-     $(".btnSNS").click(function(){
-         window.location=$(this).find("a").attr("href");
-         return false;
-    });
-});
-</script>
-<div class="btnSNS">
-<!-- メニューが3つの場合 -->
-<ul class="btnSNS3 clearfix">
-  <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i><p>お気に入り</p></a></li>
-  <li>
-		<!-- ここからモーダルウィンドウ -->
-		<div id="modal-content">
-			<!-- モーダルウィンドウのコンテンツ開始 -->
-			<h4>情報を投稿・シェアするSNSを選択してください。</h4>
-			<table>
-				<tr>
-					<td><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><p class="mt">twitter</p></a></td>
-					<td><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><p>facebook</p></a></td>
-					<td><a href="#"><img src="image/sp/LINE_Text_Logo_TypeA.png" width="45" height="16"><p>LINE</p></a></td>
-				</tr>
-			</table>
-			<p id="btnSNSClose"><a id="modal-close" class="button-link">閉じる</a></p>
-			<!-- モーダルウィンドウのコンテンツ終了 -->
-		</div>
-
-		<a id="modal-open" class="button-link"><i class="fa fa-share-alt" aria-hidden="true"></i><p>シェア</p></a>
-		<!-- ここまでモーダルウィンドウ -->
-	</li>
-  <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><p>メールで送る</p></a></li>
-</ul>
-</div>
-<!-- <div id='fb-root'></div><script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;js.src = '//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3&appId=359762667412926';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
-$(function(){
-var url = 'http://cookingschool.jp/s/school/eriko-cooking-salonJ';
-if(url.split('?').length<2){url+='?';} else {url+='&';}
-url+='utm_source=line_sp';
-var imagesrc = '/image/sp/linebutton_20x20.png';
-if(window.parent.screen.width>=360) imagesrc = '/image/sp/linebutton_82x20.png';
-var tgt=$('a#sendline');tgt.attr('href','//line.me/R/msg/text/?'+encodeURIComponent(document.title+'\n'+url));tgt.append('<img src="'+imagesrc+'" height="20" alt="LINEで送る" />');
-});
-</script>
-<div class='appealBox'><ul>
-<li class="fan">ファン：<span>40人</span></li>
-<li class='social'>
-<a href='http://twitter.com/share' class='twitter-share-button' data-url='http://cookingschool.jp/school/eriko-cooking-salonJ' data-text='eriko cooking salon TOKYO（東京都目黒区）の教室情報 | 料理教室検索サイト「クスパ」' data-related='' data-lang='ja' data-size='' data-count='none'>>Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
-<li class='fbbtn'><div class='fb-like' data-href='http://cookingschool.jp/school/eriko-cooking-salonJ' data-send='false' data-layout='button_count' data-action='like' data-share='false' data-width='120' data-show-faces='false'></div></li>
-<li class='line'><a href='#' id='sendline'></a></li>
-</ul></div>  -->
 <section id="school" class="none">
 <div id="lessonBody">
 <h2>教室地図</h2>
-<p>教室周辺の地図を表示しています。プライバシー保護のため、正確な住所を表示していない場合があります。正確な住所は教室にお問合わせ下さい。</p>
+<p class="desc">教室周辺の地図を表示しています。プライバシー保護のため、正確な住所を表示していない場合があります。正確な住所は教室にお問合わせ下さい。</p>
 <script>$(function(){setHref($('a#showmapapp'));});</script>
 <a href="javascript:void(0);" id="showmapapp" class="btn c1" style="padding:0;margin-left:80px;margin-right:80px;" target="_blank">地図アプリで見る</a>
 <div class="map border" style="margin:0 auto; width: 90%; height: 280px;" id="googlemap"></div></div>
