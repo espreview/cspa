@@ -568,12 +568,10 @@ ul#switch li a span {
 }
  /*for レシピ　検索条件の絞り込み*/
 .KwSearch_top {
-    background: none repeat scroll 0 0 #ece4d2;
     border-bottom: 1px solid #bab2a2;
     padding: 10px;
 }
 .formInner {
-    background: none repeat scroll 0 0 #f9efdd;
     border: 1px solid #bab2a2;
     border-radius: 4px;
     overflow: hidden;
@@ -582,8 +580,9 @@ ul#switch li a span {
 .KwSearch_top .SearchFormInput {
     border: medium none;
     float: left;
-    padding: 6px;
+    padding: 5px 0 5px 10px;
     width: 82%;
+    height: 20px;
 }
 .KwSearch_top .SearchFormSubmit {
     background: none repeat scroll 0 0 #fff;
@@ -593,6 +592,7 @@ ul#switch li a span {
     margin: -1px 3px 0 0;
     padding: 7px;
     width: 20px;
+    border-top: 3px solid #e9ae4e;
 }
 .trigger span.open-close {
     background: url("../../image/sp/point_plus.png") no-repeat scroll right top rgba(0, 0, 0, 0);
