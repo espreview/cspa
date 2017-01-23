@@ -1,13 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-.ichioshiRecipe h2,h2.ichioshiRecipe {
-    font-size: 16px;
-    line-height: 16px;
-    padding: 10px 0 10px 5px;
-    color:#5a3219;
-    font-weight:bold;
-    border-top: 3px solid #e9ae4e;
-}
 .ichioshiRecipe .author h3 { background: #96b835; box-shadow:1px 2px 2px 0 #999; color: #fff; font-size: 14px; line-height: 1; margin: 8px -10px 5px -5px; padding: 5px 5px 5px 10px; width: 100px; position:relative;}
 .ichioshiRecipe .author h3:after{content: " "; position: absolute; top: 100%; left: 0; border-style: solid; border-width: 0 4px 4px 0; border-color: transparent; border-right-color: #666;}
 .ichioshiRecipe .topRecipe { margin:0 15px 25px; line-height:18px;}
