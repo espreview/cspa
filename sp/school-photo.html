@@ -56,10 +56,6 @@ googletag.pubads().enableSingleRequest();
 googletag.enableServices();
 });
 </script>
-<!-- モーダルウィンドウ -->
-<link rel="stylesheet" type="text/css" href="css/sp/modal.css">
-<script src="script/sp/modal.js"></script>
-<!-- //モーダルウィンドウ -->
 </head>
 
 <body>
@@ -172,42 +168,7 @@ sb.on('click', function(){ks.stop(true,false).toggle();});
 <!-- //search -->
 <div id="schoolName" class="clearfix">
 <h1><a href="/s/school/wkichen">ヨガインストラクターのお料理教室 W Kitchen<span>（東京都北区）</span></a></h1>
-<p>Yogaと食を結び、心と身体を癒す時間をご提供しています。ご自愛メソッドに☆</p>
-</div>
-
-<script>
-$(function(){
-     $(".btnSNS").click(function(){
-         window.location=$(this).find("a").attr("href");
-         return false;
-    });
-});
-</script>
-<div class="btnSNS">
-<!-- メニューが3つの場合 -->
-<ul class="btnSNS3 clearfix">
-	<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i><p>お気に入り</p></a></li>
-	<li>
-		<!-- ここからモーダルウィンドウ -->
-		<div id="modal-content">
-			<!-- モーダルウィンドウのコンテンツ開始 -->
-			<h4>情報を投稿・シェアするSNSを選択してください。</h4>
-			<table>
-				<tr>
-					<td><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><p class="mt">twitter</p></a></td>
-					<td><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><p>facebook</p></a></td>
-					<td><a href="#"><img src="image/sp/LINE_Text_Logo_TypeA.png" width="45" height="16"><p>LINE</p></a></td>
-				</tr>
-			</table>
-			<p id="btnSNSClose"><a id="modal-close" class="button-link">閉じる</a></p>
-			<!-- モーダルウィンドウのコンテンツ終了 -->
-		</div>
-
-		<a id="modal-open" class="button-link"><i class="fa fa-share-alt" aria-hidden="true"></i><p>シェア</p></a>
-		<!-- ここまでモーダルウィンドウ -->
-	</li>
-	<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><p>メールで送る</p></a></li>
-</ul>
+<p class="desc">Yogaと食を結び、心と身体を癒す時間をご提供しています。ご自愛メソッドに☆</p>
 </div>
 
 <section id="school" class="none">

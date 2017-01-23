@@ -12,6 +12,17 @@
   color: #5b3219;
   text-align: center;
 }
+#schoolName h1.last_update {
+  margin-top: -11px !important;
+}
+#schoolName h1.searchTitle{
+  width: 90%;
+  margin: 15px auto;
+  padding: 0 0 0 2%;
+  font-size: 16px;
+  text-align: left;
+  border-left: 4px #ff9900 solid;
+}
 #schoolName h1 a{
   color: #5b3219;
   text-decoration: none;
@@ -21,29 +32,23 @@
   font-size: 11px;
   font-weight: normal;
 }
-#schoolName p {
-  width: 90%;
-  margin: 0 auto;
-  padding: 5px 0;
+#schoolName p,
+#lessonBody p.desc {
+  width: 94%;
+  margin: 5px auto 15px;
+  padding: 0;
   font-size: 14px;
   line-height: 22px;
+}
+#schoolName p a {
+  display:block;
+  text-align:right;
+  color:#FF6601;
 }
 #schoolName p.open_confirm {
   text-align: right;
   font-weight: x-small;
   padding: 3px 3px 0 0;
-}
-#schoolName h1.last_update {
-  margin-top: -11px !important;
-}
-/**/
-#schoolName h1.searchTitle{  
-  width: 90%;
-  margin: 15px auto;
-  padding: 0 0 0 2%;
-  font-size: 16px;
-  text-align: left;
-  border-left: 4px #ff9900 solid;
 }
 
 /*　レシピ　*/
@@ -52,6 +57,21 @@
     h2
 ****************************/
 /*　教室情報　*/
+#school h2,
+#lessonBody h2 {
+    width: 90%;
+    margin: 15px auto;
+    padding: 0 0 0 2%;
+    font-size: 16px;
+    text-align: left;
+    border-left: 4px #8fb721 solid;
+    color: #5b3219;
+}
+#school h2 span,
+#lessonBody h2 span {
+    font-size: 12px;
+    font-weight: normal;
+}
 
 /****************************
     h3
