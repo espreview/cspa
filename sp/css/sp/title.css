@@ -3,25 +3,22 @@
     h1
 ****************************/
 /*　管理番号：h1-02　*/
-#schoolName h1 {
+#schoolName h1,
+#lessonBody h1.subPage {
   width: 95%;
   margin: 0 auto;
-  font-size: 1.4em;
+  font-size: 18px;
   padding: 20px 0 10px;
   background: #ffffff;
   color: #5b3219;
   text-align: center;
+  overflow: hidden;
+}
+#lessonBody h1.subPage {
+  padding: 15px 0 10px;
 }
 #schoolName h1.last_update {
   margin-top: -11px !important;
-}
-#schoolName h1.searchTitle{
-  width: 90%;
-  margin: 15px auto;
-  padding: 0 0 0 2%;
-  font-size: 16px;
-  text-align: left;
-  border-left: 4px #ff9900 solid;
 }
 #schoolName h1 a{
   color: #5b3219;
@@ -32,10 +29,21 @@
   font-size: 11px;
   font-weight: normal;
 }
+#schoolName h1.subPage span,
+#lessonBody h1.subPage span{
+  display: inline;
+  font-size: 11px!important;
+  font-weight: normal;
+}
+#lessonBody h1.subPage span{
+  display: inline-block;
+  margin-top: -2px;
+  vertical-align: middle;
+}
 #schoolName p,
 #lessonBody p.desc {
   width: 94%;
-  margin: 5px auto 15px;
+  margin: 0 auto 15px;
   padding: 0;
   font-size: 14px;
   line-height: 22px;
@@ -59,19 +67,64 @@
 /*　教室情報　*/
 #school h2,
 #lessonBody h2 {
-    width: 90%;
-    margin: 15px auto;
-    padding: 0 0 0 2%;
-    font-size: 16px;
-    text-align: left;
-    border-left: 4px #8fb721 solid;
-    color: #5b3219;
+  width: 95%;
+  margin: 0 auto;
+  font-size: 1.4em;
+  padding: 15px 0 10px;
+  background: #ffffff;
+  color: #5b3219;
+  text-align: center;
 }
 #school h2 span,
 #lessonBody h2 span {
-    font-size: 12px;
-    font-weight: normal;
+  font-size: 12px;
+  font-weight: normal;
 }
+
+#schoolName.subPage{
+  padding: 2px 0 0;
+  background: #f6f6f6;
+}
+#schoolName h2.subPage{
+  width: 95%;
+  margin: 0 auto;
+  padding: 2px 2.5% 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: #f6f6f6;
+  text-align: left;
+  font-size: 0.8em;
+}
+#schoolName h2.subPage span{
+  font-weight: normal;
+}
+#schoolName h2.subPage a{
+  color: #5b3219;
+  text-decoration: none;
+}
+
+#school .sec_h3 {
+  width: 95%;
+  padding: 5px 2.5% 2px;
+  background: none no-repeat scroll 9px 4px / 22px auto #f9efdd;
+  border-bottom: 1px dotted #aa917c;
+  border-top: 4px solid #5b3219;
+  text-align: left;
+  font-size: 16px;
+  color: #5b3219;
+}
+#school .sec_h3.search {
+  background-image: url("../../image/sp/new/search.png");
+}
+#school .sec_h3 span{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 2px 5px;
+}
+
+.lesson .sec_h3 {width:100%; display: table; box-sizing: border-box;}
+.sec_h3 p {display: table-cell; vertical-align: middle;width: 75%;}
 
 /****************************
     h3
