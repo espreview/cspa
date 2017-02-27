@@ -704,9 +704,9 @@ html {
     text-shadow: 1px 1px 0 #fff;
 }
 #school {
-    margin: 10px 0;
+    /*margin: 10px 0;*/
 }
-#school h2,
+/*#school h2,
 #lessonBody h2 {
     width: 90%;
     margin: 15px auto;
@@ -720,7 +720,7 @@ html {
 #lessonBody h2 span {
     font-size: 12px;
     font-weight: normal;
-}
+}*/
 #school #photo {
     text-align: center;
 }

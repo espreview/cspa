@@ -878,10 +878,10 @@ div#footerArea li.commentBtn a {
 	font-size: 13px;
 	background: #8fb721;
 	padding: 7px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    color: #fff;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #fff;
 }
 #school .recipeTitle .recipeName h2{
 	display: table-cell;
@@ -889,6 +889,8 @@ div#footerArea li.commentBtn a {
 	box-shadow: none;
 	font-size: 18px;
 	border: none;
+  text-align: left;
+  padding-left: 7px;
 }
 #school .recipeTitle p{
 	width: 95%;
@@ -1011,6 +1013,7 @@ div#footerArea li.commentBtn a {
 ===================================*/
 
 #school #voice {
+  margin-top: -5px;
 }
 #school #voice dl {
 /*	margin:0 15px 15px 15px; */
@@ -1814,20 +1817,6 @@ html.bgc { background-color:#fffdfa;}
 #school .btmbtnbox li a.btn.c3 { margin:10px 5px 10px 15px;}
 #school .btmbtnbox li a.btn.c2 { margin:10px 15px 10px 5px;}
 #school .btmbtnbox li span.btn{ background:#bbb; border: 1px solid #999; border-radius:5px; color: #fff; line-height: 30px; margin:10px 15px 10px 5px; display:block; text-align:center; font-weight:bold; padding:6px;}
-
-#school .sec_h3 {
-    background: none no-repeat scroll 9px 4px / 22px auto #f9efdd;
-    border-bottom: 1px dotted #aa917c;
-    border-top: 4px solid #5b3219;
-    color: #5b3219;
-    padding: 5px 0 5px 40px;
-}
-#school .sec_h3.search {
-    background-image: url("../../image/sp/new/search.png");
-}
-
-.lesson .sec_h3 {width:100%; display: table; box-sizing: border-box;}
-.sec_h3 p {display: table-cell; vertical-align: middle;width: 75%;}
 .lesson .more { display:table-cell; vertical-align:middle; font-size:12px; line-height:14px; text-align:right; width:90px;}
 .lesson .more a {text-decoration:none; color:#fff; background:#5b3219; border-radius:5px; display: block; padding:3px 5px; text-align:center;}
 .lesson .more a:after {content:"\f138"; font-family: FontAwesome; padding-left:5px; }
