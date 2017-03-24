@@ -509,11 +509,84 @@ div#footerArea li.commentBtn a {
     font-size: 15px;
 }
 
+/* 2017/03/13 受賞バッジ編集 */
+/* メインビジュアル下 */
+#school #top .badgeAward{
+  margin-bottom: 10px;
+  text-align: center;
+}
+#school #top .badgeAward table{
+  margin: 0 auto;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #763f1c;
+}
+#school #top .badgeAward img{
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* 教室情報 */
+#school #top .badgeYear{
+  font-weight: bold;
+  color: #5b3219;
+}
 #school #top ul{
 	display:block;
 	border-radius:3px;
 	font-size:larger;
 }
+#school #top ul.badge{
+  display: inline-block;
+  padding: 3px 0;
+  background: none;
+  text-align: left;
+  font-size: 12px;
+  font-weight: normal;
+  color: #000;
+}
+#school #top ul.badge li{
+  margin-bottom: 5px;
+  line-height: 1.5em;
+  white-space: normal;
+}
+#school #top ul.badge li:last-child{
+  margin-bottom: 0;
+}
+
+#school #top ul.badge li p.award,
+#school #top ul.badge li p.recipeContest{
+  float: left;
+  width: 5%;
+  height: 21px;
+  padding-right: 1%;
+}
+#school #top ul.badge li p.award{
+  margin-left: -2px;
+  padding-right: 1.5%;
+  background: url(../../image/badge-sp.png) left top no-repeat;
+  background-size: 20px 20px;
+}
+#school #top ul.badge li p.recipeContest1{
+  background: url(../../image/badge-recipeContest.png) left top no-repeat;
+  background-size: 16px 21px;
+}
+#school #top ul.badge li p.recipeContest2{
+  background: url(../../image/badge-recipeContestRank2.png) left top no-repeat;
+  background-size: 16px 21px;
+}
+#school #top ul.badge li p.recipeContest3{
+  background: url(../../image/badge-recipeContestRank3.png) left top no-repeat;
+  background-size: 16px 21px;
+}
+#school #top ul.badge li p.recipeContestName{
+  float: left;
+  width: 93%;
+  height: 38px;
+  overflow: hidden;
+}
+/* //2017/03/13 受賞バッジ編集 */
+
 
 #school #top .content,#school #top .feature {
     float: left;
@@ -1668,7 +1741,6 @@ div.otherRecipes .mgt15_auto {margin:15px;}
 #fffaef;}
 #school #top .profile.above h3 {margin:0 auto; padding-bottom:0; background:none; border:none; text-align:center;}
 #school #top .profile.above h3:before {content:none;}
-#school #top .profile.above p.subTitle{width:100%; text-align:center; font-size:11px;}
 #school #top .profile table{width: 90%; margin:5px auto 0;}
 #school #top .profile table td{vertical-align:middle!important;}
 #school #top .profile table td.profileImg{width:80px; height:80px; padding-right:20px; text-align:center;}

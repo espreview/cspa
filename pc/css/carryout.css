@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/** collaborationLeft **/
+#collaborationLeft{
+  display:inline;
+  width:650px;
+}
+#collaborationLeftInner{
+  padding:0 0 16px 0;
+  margin-left:15px;
+}
+.collaboration_left_inner{
+    width: 620px;
+    margin: 0 0 1px 0;
+    padding: 5px;
+    background: url(../image/bg_idot.gif);
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.collaboration_left_inner h3{
+    margin: 0 !important;
+    padding: 0 !important;
+    float: left;
+    background-image: none !important;
+}
+.collaboration_left_inner p{
+    float: left;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+.collaboration_left_inner a{
+    color: #444;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/** collaborationRight **/
+#collaborationRight{
+  float:right;
+  display:inline;
+  width:300px;
+    margin: 0 20px 0 0;
+    padding: 0 0 10px 0;
+    position: static;
+    bottom: 380px;
+    left: 784px;
+    background: #fff;
+}
+#collaborationRightInner{
+    background: url(../image/bg_idot.gif);
+    border: 1px solid #eee;
+}
+#collaborationRightInner h3{
+}
+#collaborationRightInner h3 img{
+    margin: -8px 0 0 0;
+}
+/* 2017/03/13 受賞バッジ編集 */
+.badge{
+    width: 93%;
+    margin: 5px auto 0;
+    padding: 0 3px 0 5px;
+    list-style: none;
+    overflow: hidden;
+    background: #fff!important;
+    text-align: left!important;
+}
+.badge li a{
+    color: #663300;
+}
+.badge li a:hover{
+    text-decoration:none;
+    background:none;
+    color: #ff6600;
+}
+.badge li{
+    width: 57px;
+    height: 57px;
+    margin: 0 3px 10px;
+    float: left;
+}
+
+/* for クスパアワード */
+.badge.cspAward{
+    margin-top: 10px;
+    padding: 3px 0 0 14px;
+}
+.badge.cspAward li{
+    margin: 0 3px 10px -5px;
+}
+
+/* for レシピコンテスト */
+.badge.recipeContest li{
+    width: 125px;
+    margin-right: 15px;
+}
+.badge.recipeContest li:nth-child(2n+1){
+    margin-left: 8px;
+}
+.badge.recipeContest li:nth-child(2n){
+    margin-right: 0px;
+}
+.badge.recipeContest li img{
+    width: 26px;
+    float: left;
+}
+.badge.recipeContest li div{
+    float: left;
+    width: 94px;
+    margin-left: 5px;
+}
+.badge.recipeContest li p{
+    margin-bottom: 3px;
+    line-height: 1.3;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.badge.recipeContest p.contestName{
+    width: 100%;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.7em;
+    font-weight: normal;
+}
+.badge.recipeContest li.recipeContestSingle{
+    clear: both;
+    width: 265px;
+    margin-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 受賞が1つのみの場合 */
+.badge.recipeContest li.recipeContestSingle div{
+    width: 234px;
+}
+/* //2017/03/13 受賞バッジ編集 */
