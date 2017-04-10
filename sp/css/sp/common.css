@@ -89,19 +89,55 @@ header p {
     text-align: center;
 }
 header #pageReturn {
-    left: 5px;
+    left: -2%;
+    max-width: 36%;
     position: absolute;
-    top: 7px;
+    top: 10px;
+}
+ul#pageReturn li{
+    list-style: none;
 }
 header #pageReturn li a {
-    background: url("../../image/sp/bg_page_return.png") no-repeat scroll 0 0 / 10px 31px #ece4d2;
-    color: #000;
     display: block;
+    position: relative;
+    min-width: 50px;
+    height: 23px;
+    left: 25px;
+    padding: 7px 5px 0 3px;
+    background: #ece4d2;
+    text-align: center;
+    text-decoration: none;
     font-size: 11px;
     font-weight: bold;
-    height: 26px;
-    padding: 5px 5px 0 12px;
-    text-decoration: none;
+    color: #542d1c;
+    border: 1px solid #dac699;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+header #pageReturn li a:before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: -15px;
+    margin: -7px 0 0 -10px;
+    border: 15px solid transparent;
+    border-right: 10px solid #dac699;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+header #pageReturn li a:after{
+    display: block;
+    content: "";
+    position: absolute;
+    left: -14px;
+    margin: -24px 0 0 -10px;
+    border: 15px solid transparent;
+    border-right: 10px solid #ece4d2;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
 }
 ul#switch {
     list-style-type: none;
@@ -329,10 +365,10 @@ div#footerAreaSchool ul li a, div#footerAreaSchool ul li span {
     background-size: 27px 450px;
     border-right: 1px solid #d0c6b0;
     display: block;
-    font-size: 6px;
+    font-size: 8px;
     font-weight: bold;
     height: 11px;
-    padding: 28px 0 0;
+    padding: 30px 0 0;
     text-align: center;
     text-decoration: none;
 }
@@ -358,30 +394,38 @@ div#footerAreaSchool ul li a, div#footerAreaMypage ul li a {
 div#footerAreaSchool ul li span, div#footerAreaMypage ul li span {
     color: #574d37;
 }
+/* div#footerAreaSchool */
 div#footerAreaSchool li.menu a {
     background-position: center 0;
 }
-div#footerAreaSchool li.contactBtn a {
-    background-position: center -90px;
-}
-div#footerAreaSchool li.favoriteBtn a {
-    background-position: center -180px;
+div#footerAreaSchool li.lessoninfo a {
+    background-position: center -87px;
 }
 div#footerAreaSchool li.commentBtn a {
+    background-position: center -180px;
+}
+div#footerAreaSchool li.recipeBtn a {
     background-position: center -270px;
+}
+div#footerAreaSchool li.blogtBtn a {
+    background-position: center -364px;
 }
 div#footerAreaSchool li.menu span {
     background-position: center -45px;
 }
-div#footerAreaSchool li.contactBtn span {
+div#footerAreaSchool li.lessoninfo span {
     background-position: center -135px;
 }
-div#footerAreaSchool li.favoriteBtn span {
-    background-position: center -225px;
-}
 div#footerAreaSchool li.commentBtn span {
+    background-position: center -226px;
+}
+div#footerAreaSchool li.recipeBtn span {
     background-position: center -315px;
 }
+div#footerAreaSchool li.blogtBtn span {
+    background-position: center -409px;
+}
+/* div#footerAreaMypage */
 div#footerAreaMypage li.menu a {
     background-position: center -2px;
 }
@@ -620,11 +664,11 @@ div.school2 {
     margin-top: 15px;
 }
 div.school2 h4 {
-    background: none no-repeat scroll 9px 4px / 22px auto #f9efdd;
+    padding: 4px 0 3px 15px;
     border-bottom: 1px dotted #aa917c;
-    border-top: 4px solid #5b3219;
+    border-top: 2px solid #5b3219;
+    font-size: 13px;
     color: #5b3219;
-    padding: 5px 0 5px 15px;
 }
 div.school2 ul {
     margin: 0 15px;
@@ -827,34 +871,9 @@ header p {
     padding: 7px 0 0;
     text-align: center;
 }
-header #pageReturn {
-    left: 5px;
-    max-width: 36%;
-    position: absolute;
-    top: 10px;
-}
-header #pageReturn li a {
-    background: url("../../image/sp/bg_page_return.png") no-repeat scroll 0 0 / 10px 31px #ece4d2;
-    color: #000;
-    display: block;
-    font-size: 11px;
-    font-weight: bold;
-    height: 24px;
-    overflow: hidden;
-    padding: 7px 4px 0 12px;
-    text-decoration: none;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
 div#footerAreaSchool ul li {
     float: left;
     width: 20%;
-}
-div#footerAreaSchool li.lessoninfo a {
-    background-position: center -360px;
-}
-div#footerAreaSchool li.lessoninfo span {
-    background-position: center -408px;
 }
 div.hukidashi {
     bottom: 60px;

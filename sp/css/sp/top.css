@@ -43,13 +43,17 @@
     margin: 5px 5px 0 0 !important;
 }
 ul#switch li.login {
-    background: url("../../image/sp/i_login.png") no-repeat scroll 0 0 / 45px 45px rgba(0, 0, 0, 0);
+    background: url("../../image/sp/i_login.png") no-repeat scroll 0 0 / 35px 35px rgba(0, 0, 0, 0);
+    margin-top: 5px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
 }
 ul#switch li.icon a.icon {
-    background-size: 45px 45px;
+    background-size: 35px 35px;
     display: block;
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
 }
 ul#switch li.mypage {
     background: url("../../image/sp/i_mypage.png") no-repeat scroll 0 0 / 45px 45px rgba(0, 0, 0, 0);
@@ -614,7 +618,7 @@ ul#switch li a span {
     width: 20px;
 }
 #oshirase {
-    background: none repeat scroll 0 0 #faffe0;
+    background: none repeat scroll 0 0 #effdc7;
     color: #000;
     display: block;
     font-weight: bold;

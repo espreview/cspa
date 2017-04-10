@@ -85,10 +85,10 @@
   padding: 2px 0 0;
   background: #f6f6f6;
 }
-#schoolName h2.subPage{
-  width: 95%;
+#schoolName h1.subPage{
+  width: 98%;
   margin: 0 auto;
-  padding: 2px 2.5% 0;
+  padding: 2px 1% 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -96,10 +96,10 @@
   text-align: left;
   font-size: 0.8em;
 }
-#schoolName h2.subPage span{
+#schoolName h1.subPage span{
   font-weight: normal;
 }
-#schoolName h2.subPage a{
+#schoolName h1.subPage a{
   color: #5b3219;
   text-decoration: none;
 }
@@ -177,11 +177,17 @@ a.recipePickuph3 {
 div.recipePickupTitle{
   padding: 7px 2%;
   background: #fffaef;
+  background-image: -moz-radial-gradient(#ffe4b3 20%, transparent 0), radial-gradient(#ffe4b3 20%, transparent 0);
+  background-position: 0 0, 8px 8px;
+  border-top: 1px solid #e3e3e3;
+
+  /*padding: 7px 2%;
+  background: #fffaef;
   background-image: radial-gradient(#ffe4b3 20%, transparent 0), radial-gradient(#ffe4b3 20%, transparent 0);
   background-image: -webkit-radial-gradient(#ffe4b3 20%, transparent 0), radial-gradient(#ffe4b3 20%, transparent 0);
   background-image: -moz-radial-gradient(#ffe4b3 20%, transparent 0), radial-gradient(#ffe4b3 20%, transparent 0);
   background-position: 0 0, 8px 8px;
-  background-size: 15px 15px;
+  background-size: 15px 15px;*/
 }
 div.recipePickupTitle h3 {
   float: left;
