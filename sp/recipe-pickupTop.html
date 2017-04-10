@@ -52,6 +52,7 @@ $(function(){
 <link href="css/sp/top.css" rel="stylesheet" type="text/css">
 <link href="css/sp/school.css" rel="stylesheet" type="text/css">
 <link href="css/sp/title.css" rel="stylesheet" type="text/css">
+<link href="css/sp/reciperanking.css" rel="stylesheet" type="text/css">
 <link href="../css/font-awesome.min.css" rel="stylesheet">
 <!-- FB-insight -->
 <meta property="fb:admins" content="100001844550496" />
@@ -181,7 +182,8 @@ sb.on('click', function(){ks.stop(true,false).toggle();});
 </div>
 </div>
 <!-- search -->
-<div class="KwSearch"><script language="JavaScript" src="https://cookingschool.jp/script/sp/common.gnavi.jsp" type="text/JavaScript"></script>
+<div class="KwSearch">
+<script language="JavaScript" src="https://cookingschool.jp/script/sp/common.gnavi.jsp" type="text/JavaScript"></script>
 <link href="https://cookingschool.jp/css/sp/search_box.css" rel="stylesheet" type="text/css">
 <form name="common.SearchBean" method="get" action="/do/s/common/search"><div class="lay-search">
 <span class="select-big_search">
@@ -198,11 +200,7 @@ sb.on('click', function(){ks.stop(true,false).toggle();});
 <section class="ichioshiRecipe">
 
 <!-- section -->
-<!-- indent -->
-<div class="pickup" style="margin-top: 10px;">
-<div class="pickupTitle"><h2 class="pickup">スタッフイチオシ</h2></div>
-</div>
-<!-- //indent -->
+<h2 class="ichioshiRecipe">スタッフイチオシレシピ</h2>
 
 <!-- h3 recipePickupTitle -->
 <a href="recipe-pickupTop.html" class="recipePickuph3">
@@ -217,16 +215,28 @@ sb.on('click', function(){ks.stop(true,false).toggle();});
 <div class="topRecipe" style="margin-top: 10px;">
 <figure>
 <a href="/s/recipe/14764" onclick=" trackEvent('SpRecommendRecipe' , 'recipe20160831Click', '14764');"><img src="https://cookingschool.jp/image/cache/image/upload/recipe/00/00/01/47/200x320_64_20140228210752.png" width="280" alt="油淋鶏（揚げ鶏の甘酢ネギソース）"><figcaption>油淋鶏（揚げ鶏の甘酢ネギソース）</figcaption></a></figure>
-<p>普段のおかず、おもてなし料理、お弁当にと大活躍の一品です。</p>
-<div class="author">
-<a href="/s/school/hunangarden"><h3>レシピ制作者</h3>
-<dl>
-<dt>
-	<img src="https://cookingschool.jp/image/cache/image/upload/organizer/00/00/01/01/160x160_21_20110424201536.png" height="160" width="160" class="border" alt="佐藤　絵里子"></dt>
-<dd class="nameTeacher">佐藤　絵里子</dd>
-<dd class="nameClass">お料理＆お菓子の教室　12カ月</dd>
-<dd class="clsdisc">関西学院大学史学科卒業後、辻学園調理・製菓専門学校に入学し調理師免許を取得。ツアーコンダクター…</dd>
-</dl></a></div>
+<p class="desc">普段のおかず、おもてなし料理、お弁当にと大活躍の一品です。</p>
+
+<div class="recipeAuthor">
+  <p class="authorttl" >
+    <i class="fa fa-cutlery"></i>
+    レシピ作成者
+  </p>
+
+  <div class="inner">
+    <p class="photo">
+      <img src="https://cookingschool.jp/image/cache/image/upload/organizer/00/00/01/01/160x160_21_20110424201536.png" height="160" width="160" class="border" alt="佐藤　絵里子">
+    </p>
+    <ul>
+      <li class="rankingAuthor">佐藤　絵里子</li>
+      <li><a href="/s/school/seawind">お料理＆お菓子の教室　12カ月</a></li>
+      <li class="des">
+        関西学院大学史学科卒業後、辻学園調理・製菓専門学校に入学し調理師免許を取得。ツアーコンダクター…
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- //recipeAuthor -->
 </div>
 <!-- topRecipe -->
 

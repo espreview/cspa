@@ -55,7 +55,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="https://cookingschool.jp/css/colorbox.css" type="text/css" media="all" />
 <link rel="stylesheet" href="https://cookingschool.jp/css/button.css" type="text/css" media="all" />
 <link rel="stylesheet" href="https://cookingschool.jp/css/label_badge.css" type="text/css" media="all" />
-<link rel="stylesheet" href="css/sp/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" media="all" />
 
 <link href="css/sp/common.css" rel="stylesheet" type="text/css">
 <link href="css/sp/school.css" rel="stylesheet" type="text/css">
@@ -210,17 +210,6 @@ $(function(){
 <a src="https://cookingschool.jp/image/upload/school/00/00/01/23/93_2_20151102195843.JPG" class="colorbox"><img src="https://cookingschool.jp/image/cache/image/upload/school/00/00/01/23/280x280_93_2_20151102195843.png" id="picture" class="border" alt="eriko cooking salon TOKYO"></a></li>
 </ul>
 <div class='dots'></div></div>
-
-<!-- 2017/03/13 受賞バッジ編集 -->
-<div class="badgeAward">
-	<table>
-		<tr>
-			<td><img src="image/badge-sp.png" height="20" width="20"></td>
-			<td>クスパアワード2016 大賞</td>
-		</tr>
-	</table>
-</div>
-<!-- //2017/03/13 受賞バッジ編集 -->
 
 <div class="messagebox">
 		<p class="moreread">初心者の方からレパートリーを増やしたい方まで安心してご参加いただけます。
@@ -442,29 +431,6 @@ $(function(){
 <br />東京・自由が丘で料理教室を主宰。
 <br />その他企業や飲食店のメニュー開発、雑誌へのレシピ提供等で活動中。
 <br /></dd>
-<!-- 2017/03/13 受賞バッジ編集 -->
-<dt>■&nbsp;受賞歴</dt>
-<dd>
-	<p class="badgeYear">- 2016</p>
-	<ul class="badge">
-		<li class="clearfix">
-			<p class="award"></p>
-			<p class="recipeContestName">ロート製薬「ダルーラ」時短アレンジレシピコンテスト♪ 企業賞</p>
-		</li>
-	</ul>
-	<p class="badgeYear">- 2015</p>
-	<ul class="badge">
-		<li class="clearfix">
-			<p class="recipeContest recipeContest2"></p>
-			<p class="recipeContestName">「タカナシ乳業」北海道マスカルポーネをつかったレシピ30品 ノミネート</p>
-		</li>
-		<li class="clearfix">
-			<p class="recipeContest recipeContest1"></p>
-			<p class="recipeContestName">ロート製薬「ダルーラ」時短アレンジレシピコンテスト♪ 企業賞</p>
-		</li>
-	</ul>
-</dd>
-<!-- //2017/03/13 受賞バッジ編集 -->
 <dt>■&nbsp;実績</dt>
 <dd>著書：「カラダよろこぶオイルおにぎり」（辰巳出版）</dd>
 <dt>■&nbsp;保有資格</dt>
@@ -689,22 +655,25 @@ $(function(){
 </script>
 <p>eriko cooking salon TOKYO</p>
 
-<!-- 2016-06-03 add kawai
-	（１）iPhone5での表示時に横幅が足りず、「お気に入り登録」が改行されるのを回避する為、
-	　　統一されていた横幅を各メニューに合わせて変更しました（<li>タグ内 style="width:○○%"　で指定）。
-
-	（２）「口コミ」を「ブログ」へ変更
- -->
+<!-- 教室フッターナビゲーション -->
 <ul class="clearfix">
-<li class="menu"><a href="#modal" class="first" id="menu_button" onclick="javascript:trackEvent('school menu','open','schoolId=12393');" data-hasqtip="true">教室情報</a></li>
-<li class="lessoninfo" style="width:21%"><a href="/s/school/eriko-cooking-salonJ/lesson">レッスン情報</a></li>
-<li class="commentBtn" style="width:17%"><a href="#">ブログ</a></li>
-<li class="favoriteBtn" style="width:25%">
-<a href="/do/s/login/index?fail=%252Fdo%252Fs%252Fentry%252Fstep1%253Fpath%253D%25252Fdo%25252Fs%25252Fentry%25252Fregist_school_favorite%25253FschoolId%25253D12393%2526schoolId%253D12393%2526login%253Dtrue&amp;entry=%2Fdo%2Fs%2Fentry%2Fstep1%3Fpath%3D%252Fdo%252Fs%252Fentry%252Fregist_school_favorite%253FschoolId%253D12393%26schoolId%3D12393&amp;messageKey=errors.favorite.needlogin&amp;path=%2Fs%2Fschool%2Feriko-cooking-salonJ" class="thickbox" title="">お気に入り登録</a></li>
-<li class="contactBtn" style="width:17%">
-<a href="/do/s/login/index?fail=%252Fdo%252Fs%252Fschool%252Finquiry%252Fstep1%253FschoolId%253D12393%2526login%253Dtrue&amp;entry=%2Fdo%2Fs%2Fschool%2Finquiry%2Fstep1%3FschoolId%3D12393&amp;path=%2Fdo%2Fs%2Fschool%2Finquiry%2Findex%3FschoolId%3D12393&amp;messageKey=errors.inquiry.needlogin" class="thickbox" title="">問合せ</a></li>
+	<li class="menu">
+		<a href="#modal" class="first" id="menu_button" onclick="javascript:trackEvent('school menu','open','schoolId=12393');" data-hasqtip="true">教室情報</a>
+	</li>
+	<li class="lessoninfo">
+		<a href="/s/school/eriko-cooking-salonJ/lesson">レッスン情報</a>
+	</li>
+	<li class="commentBtn">
+		<a href="#">クチコミ</a>
+	</li>
+	<li class="recipeBtn">
+		<a href="#">レシピ</a>
+	</li>
+	<li class="blogtBtn">
+		<a href="#">ブログ</a>
+	</li>
 </ul>
-<!-- //2016-06-03 add kawai -->
+<!-- //教室フッターナビゲーション -->
 
 <div class="hukidashi hide" id="hukidashiarea"><p><a href="javascript:void(0);" id="hukidashiclose">気に入った教室をお気に入り登録して最新のお知らせをチェック</a></p></div></div>
 <!-- menu -->

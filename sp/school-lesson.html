@@ -125,7 +125,7 @@ sb.on('click', function(){ks.stop(true,false).toggle();});
 </form></div>
 <!-- //search -->
 <div id="schoolName" class="clearfix">
-<h2 class="subPage"><a href="/s/school/eriko-cooking-salonJ">eriko cooking salon TOKYO<span>（東京都目黒区）</span></a></h2>
+<h1 class="subPage"><a href="/s/school/eriko-cooking-salonJ">eriko cooking salon TOKYO<span>（東京都目黒区）</span></a></h1>
 </div>
 
 <section id="school" class="none">
@@ -872,15 +872,26 @@ $(function(){
 </script>
 <p>eriko cooking salon TOKYO</p>
 
+<!-- 教室フッターナビゲーション -->
 <ul class="clearfix">
-<li class="menu"><a href="#modal" class="first" id="menu_button" onclick="javascript:trackEvent('school menu','open','schoolId=12393');">教室情報</a></li>
-<li class="lessoninfo"><a href="/s/school/eriko-cooking-salonJ/lesson">レッスン情報</a></li>
-<li class="commentBtn"><a href="/s/school/eriko-cooking-salonJ/comment">口コミ</a></li>
-<li class="favoriteBtn">
-<a href="/do/s/login/index?fail=%252Fdo%252Fs%252Fentry%252Fstep1%253Fpath%253D%25252Fdo%25252Fs%25252Fentry%25252Fregist_school_favorite%25253FschoolId%25253D12393%2526schoolId%253D12393%2526login%253Dtrue&amp;entry=%2Fdo%2Fs%2Fentry%2Fstep1%3Fpath%3D%252Fdo%252Fs%252Fentry%252Fregist_school_favorite%253FschoolId%253D12393%26schoolId%3D12393&amp;messageKey=errors.favorite.needlogin&amp;path=%2Fs%2Fschool%2Feriko-cooking-salonJ%2Flesson" class="thickbox" title="">お気に入り登録</a></li>
-<li class="contactBtn">
-<a href="/do/s/login/index?fail=%252Fdo%252Fs%252Fschool%252Finquiry%252Fstep1%253FschoolId%253D12393%2526login%253Dtrue&amp;entry=%2Fdo%2Fs%2Fschool%2Finquiry%2Fstep1%3FschoolId%3D12393&amp;path=%2Fdo%2Fs%2Fschool%2Finquiry%2Findex%3FschoolId%3D12393&amp;messageKey=errors.inquiry.needlogin" class="thickbox" title="">問合せ</a></li>
+  <li class="menu">
+    <a href="#modal" class="first" id="menu_button" onclick="javascript:trackEvent('school menu','open','schoolId=12393');" data-hasqtip="true">教室情報</a>
+  </li>
+  <li class="lessoninfo">
+    <a href="/s/school/eriko-cooking-salonJ/lesson">レッスン情報</a>
+  </li>
+  <li class="commentBtn">
+    <a href="#">クチコミ</a>
+  </li>
+  <li class="recipeBtn">
+    <a href="#">レシピ</a>
+  </li>
+  <li class="blogtBtn">
+    <a href="#">ブログ</a>
+  </li>
 </ul>
+<!-- //教室フッターナビゲーション -->
+
 <div class="hukidashi hide" id="hukidashiarea"><p><a href="javascript:void(0);" id="hukidashiclose">気に入った教室をお気に入り登録して最新のお知らせをチェック</a></p></div></div>
 <!-- menu -->
 <ul id="modal">
