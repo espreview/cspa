@@ -1,0 +1,1821 @@
+@charset "UTF-8";
+
+html { background:#FFFFFF; }
+/*===================================
+教室情報　header
+===================================*/
+.btnOverlay{
+	position: relative;
+	width: 280px;
+	height: 280px;
+}
+.btnOverlay .btnOverLayBody{
+	position: absolute;
+	top: 235px;
+	right: 10px;
+	width: 50px;
+}
+.btnOverlay .btnOverLayBody p{
+	margin-top: 2px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+.btnOverlay .delicious_off{
+	width: 50px;
+	height: 50px;
+	background: url(../../image/sp/delicious_off.png) left top no-repeat;
+	background-size: 50px;
+}
+.btnOverlay .btnOverLayBody p.delicious_off2{
+	color: #979797;
+}
+.btnOverlay .delicious_on{
+	width: 50px;
+	height: 50px;
+	background: url(../../image/sp/delicious_on.png) left top no-repeat;
+	background-size: 50px;
+}
+.btnOverlay .btnOverLayBody p.delicious_on2{
+	color: #e79e26;
+}
+/*
+.btnOverlay .btnOverLayIcon{
+	width: 44px;
+	height: 37px;
+	margin: 0 auto 3px;
+	padding-top: 7px;
+	border: 2px #ee7d00 solid;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	background: rgba(255,255,255,0.95);
+	text-align: center;
+}
+.btnOverlay .btnOverLayBody .btnOverLayIcon i{
+	font-size: 30px;
+}
+.btnOverlay .btnOverLayBody .btnOverLayIcon.on{
+	background: #ee7d00;
+	color: #fff;
+}*/
+.btnSNS{
+	width: 90%;
+	margin: 0 auto 20px;
+	padding: 2px 4px 2px 3px;
+	background: #fffaef;
+    border: 1px #ece4d2 solid;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+.btnSNS a{
+	text-decoration: none;
+	color: #5b3219;
+}
+.btnSNS ul{
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-align: center;
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
+    border: 1px #ece4d2 solid;
+}
+.btnSNS li{
+	width: 24%;
+	float: left;
+	padding: 3px 0;
+	border-right: 1px #ece4d2 dashed;
+	list-style: none;
+}
+.btnSNS li:first-child{
+	width: 25%;
+}
+.btnSNS li:last-child{
+	width: 23%;
+	border-right: 0px;
+}
+.btnSNS .btnSNS3 li{
+	width: 33%;
+	float: left;
+	padding: 3px 0;
+	border-right: 1px #ece4d2 dashed;
+}
+.btnSNS .btnSNS3 li:last-child{
+	border-right: 0px;
+}
+.btnSNS li span{ font-size: 10px; color: #fff;}
+.btnSNS li p{ font-size: 10px;}
+.btnSNS li .fa-heart.on{ color: #ff2140; }
+.btnSNS li .fa-heart.off{ color: #aaa; }
+.btnSNS li .fa-twitter{	font-size: 25px; color: #55acee; }
+.btnSNS li .fa-facebook{ font-size: 25px; color: #3b579d!important;}
+.btnSNS li .fa-envelope{ color: #009688;}
+.btnSNS li .fa-smile-o{ font-size: 16px; color: #ee7d00; }
+
+.btnSNSSub{
+	width: 90%;
+	max-height: 20px;
+	margin: 0 auto 10px;
+	padding: 5px 4px 12px 3px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-align: center;
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 );
+    border: 1px #ece4d2 solid;
+}
+.btnSNSSub a{ text-decoration: none; font-weight: bold; color: #ee7d00; }
+.btnSNSSub .fa-smile-o{ margin-top: 5px; }
+.btnSNSSub span{
+	margin-left: 10px;
+	font-size: 12px;
+	color: #5b3219;
+}
+
+/* 吹き出し */
+.btnSNS li .arrow_box,
+.btnSNSSub .arrow_box {
+	position: relative;
+    padding: 3px!important;
+	background: #fff;
+    border: #ece4d2 1px solid;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+	color: #5A3219;
+}
+.btnSNS li .arrow_box:after,
+.btnSNSSub .arrow_box:after {
+	content: " ";
+	height: 0;
+	width: 0;
+	margin-top: -2px;
+	right: 100%;
+	top: 50%;
+	position: absolute;
+	pointer-events: none;
+	border: solid transparent;
+	border-color: rgba(136, 183, 213, 0);
+	border-right-color: #fff;
+	border-width: 2px;
+    border: #ece4d2 1px solid;
+}
+/* //吹き出し */
+
+/* 注意書き */
+.btnAttention{
+	width: 95%;
+	margin: 0 auto 20px;
+	text-align: center;
+	font-size: 0.8em;
+	color: #5b3219;
+}
+.btnAttention .fa-smile-o{ color: #ee7d00; margin-right: 5px; }
+/* //注意書き */
+
+/* for recipe.html */
+.btnSNS2{
+	width: 94%;
+	margin: 0 auto 20px;
+	padding: 0;
+    border: 1px #dddddd solid;
+}
+.btnSNS2 ul{
+	border: none;
+}
+.btnSNS2 .btnSNS3 li{
+    border-right: 1px #dddddd dashed;
+}
+.btnSNS2 li .fa-twitter{ font-size: 18px; color: #55acee; }
+.btnSNS2 li .fa-facebook{ font-size: 17px; color: #3b579d!important;}
+/* //for recipe.html */
+
+.appealBox img {
+	float:left;
+	margin-right:10px;
+}
+
+#open_confirm_top {
+	text-align:right;
+	font-size:10px!important;
+	padding:3px 3px 0 0;
+	margin-top: -20px;
+}
+
+.fbbtn {
+	display:block;
+	width:120px;
+}
+
+li.delibtn a {
+	display:inline-block;
+	padding:1px 6px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#333;
+	border:solid 1px #CCCCCC;
+	border-radius:3px;
+	font-size:11px;
+	background: #ebebeb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ebebeb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#ebebeb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+	text-align:center;
+	color:#333;
+}
+
+li.delibtn span {
+	text-align:center;
+	font-size:12px;
+	font-weight:bold;
+	color:#FF6666;
+	line-height:20px;
+	display:inline-block;
+	background-color: transparent;
+	background-image: url("../../image/mypage/vd/btn_deli_cur.gif");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: left top;
+	background-clip: padding-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+	padding:0  3px 0 8px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #d9ccbf;
+}
+
+
+/*===================================
+教室情報　メニュー
+===================================*/
+div#footerArea li.contactBtn a,div#footerArea li.contactBtn span {
+}
+
+div#footerArea li.contactBtn a,div#footerArea li.contactBtn span {
+}
+div#footerArea li.favoriteBtn a,div#footerArea li.favoriteBtn span {
+}
+div#footerArea li.commentBtn a {
+}
+
+/*===================================
+教室情報　TOP
+===================================*/
+#school #top .photo{
+	width: 280px;
+	height: 300px;
+	margin-bottom: 10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.slideshow .dots,
+.slideshow .dot-item,
+.slideshow .dot {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  border: 0;
+  background: transparent;
+}
+
+.slideshow .dots {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  list-style: none;
+
+  font-size: 0;
+}
+
+.slideshow .dot-item {
+  list-style: none;
+  display: inline-block;
+
+  width: 18px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+
+  cursor: pointer;
+
+  opacity: 0.8;
+}
+
+.slideshow .dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 6px;
+  font-size: 0;
+
+  border: solid 1px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.no-touch .dot-item:hover .dot {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.slideshow .dot-item:active .dot,
+.slideshow .dot-item.active .dot {
+  background-color: white;
+}
+#school dl.ingredientarea {margin:0 15px 15px 15px; border:1px solid #f7ead2; }
+#school dl.ingredientarea dd{ display:block; padding:6px; border-bottom:solid 1px #F7EAD2; border-radius:3px; font-size: small;}
+#school dl.ingredientarea dd:last-child {border-bottom:0;}
+
+#school dl.type1, #school dl.type2 {
+    font-size: 14px;
+    margin: 0 15px 15px;
+}
+#school dt {
+    color: #5b3219;
+	font-size: 15px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+#school .type1 dd {
+    border: 1px solid #f7ead2;
+    border-radius: 3px;
+    display: block;
+	font-size: 15px;
+    padding: 6px;
+    word-break: break-all;
+}
+
+#school .type1 dd span.default {
+	display:block;
+	height:40px;
+	overflow:hidden;
+}
+
+#school .type1 dd a {
+	display:block;
+	text-align:right;
+	color:#FF6601;
+}
+
+/* ----------------------------------------
+	UXS003 「その他拠点の教室」の表示がズレている
+---------------------------------------- */
+#school .type1 .other a {
+    text-align: left;
+    display: inline;
+	color:#FF6601;
+}
+
+#school .type1 dd.no a {
+	background: url(../../image/sp/bg_arrow_b.png) no-repeat center bottom;
+	background-size: 36px 25px;
+}
+
+#school .type1 dd.on a {
+	background: url(../../image/sp/bg_arrow_t.png) no-repeat center bottom;
+	background-size: 36px 25px;
+}
+
+#school .type1 dd.no span.on  {
+	display: none;
+}
+
+#school .type1.participant {
+	background-color:#faf0e6;
+	padding:5px;
+}
+
+#school .type1.participant dt.title {
+	font-size:12pt;
+}
+
+#school dd a.center {
+	text-align:center;
+}
+#school dd a.left {
+	text-align:left;
+}
+
+#school dd.reset {
+	padding:0;
+	border:none;
+	border-radius:0;
+}
+
+#school .type2 dd {
+	border-top: 1px solid #F7EAD2;
+	border-radius:3px;
+	background: url(../../image/sp/bg_arrow.png) no-repeat right center;
+	background-size: 16px 23px;
+
+}
+#school .type2 dd:last-child {
+	border-bottom: 1px solid #F7EAD2;
+}
+
+#school .type2 dd a{
+	display:block;
+	padding:10px;
+	border-radius:3px;
+    font-size:15px;
+	border-right: 1px solid #F7EAD2;
+	border-left: 1px solid #F7EAD2;
+	text-decoration: none;
+	color: #FF6601;
+}
+
+#school .type2 dd a img {
+	margin: 0 0 0 10px;
+	vertical-align: middle;
+}
+
+#school section.schoolnews{
+	margin:0 15px 15px 15px;
+	padding:10px;
+	border-radius:3px;
+	background:#FDF9EB;
+}
+
+#school section.schoolnews ul {
+	list-style-type: none;
+	font-size:14px;
+}
+
+#school section.schoolnews time {
+	display: block;
+	margin-top:0;
+	color:#333;
+	font-size:13px;
+	font-weight:normal;
+}
+#school section.schoolnews li {
+	display:block;
+	margin:0 0 10px 0;
+	padding: 0 0 10px;
+	border:none;
+	border-radius:0px;
+	border-bottom:dotted 1px #b99984;
+}
+
+#school section.schoolnews li a {
+	display: block;
+	padding: 0 0 35px;
+}
+
+#school section.schoolnews li.no a {
+	background: url(../../image/sp/bg_arrow_b.png) no-repeat center bottom;
+	background-size: 36px 25px;
+}
+
+#school section.schoolnews li.on a {
+	background: url(../../image/sp/bg_arrow_t.png) no-repeat center bottom;
+	background-size: 36px 25px;
+}
+
+#school section.schoolnews li.no span.on  {
+	display: none;
+}
+
+#school section.schoolnews li:last-child{
+	margin: 0;
+	border: 0;
+}
+
+
+#school #top .recipetxt p{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#school #top ul{
+	display:block;
+	border-radius:3px;
+	font-size:larger;
+}
+
+#school #top .content,#school #top .feature {
+    float: left;
+    width: auto;
+    border-top: none;
+    background: #FDF9EB;
+    padding: 0 2px;
+    margin: 5px 3px;
+    border-radius: 4px;
+}
+
+#school #top li{
+	float:left;
+	display:block;
+	/*width:50%;
+	border-top:solid 1px #F7EAD2;*/
+}
+#school #top li.ingredient{
+	float:left;
+	display:block;
+	width:70%;
+	border-top:solid 1px #F7EAD2;
+	font-size: small;
+}
+#school #top li.ingredient2{
+	float:right;
+	text-align:right;
+	display:block;
+	width:30%;
+	border-top:solid 1px #F7EAD2;
+	font-size: small;
+}
+
+#school #top li span{
+	font-size: 12px;
+	padding:6px 3px;
+}
+#school #top li:nth-child(2), #school #top li:first-child {
+	border-top:none;
+}
+#school #top li:nth-child(odd) span {
+	border-right:solid 1px #F7EAD2;
+	border-right: none;
+}
+#school #top .lessonphoto {
+	text-align:center;
+	padding:0px;
+}
+
+#school #top .lessonphoto span {
+	width:60px;
+	height:60px;
+	margin:0 2px;
+	padding:0;
+}
+/* 2016-06-10 add kawai */
+#school #top .profile .border{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+/* //2016-06-10 add kawai */
+
+#school #top .otherpage {
+	border-top: dotted 1px #CCC;
+}
+
+#school #top .otherpage table{
+	width: 100%;
+}
+
+
+/*===================================
+教室情報　レッスン情報
+===================================*/
+
+/* スケジュール */
+#schedule p.month {
+	padding:6px 0;
+	padding-bottom:0px;
+	font-size:12px;
+	font-weight:normal;
+	color:#5A3219;
+	background:#F6F6F6;
+	border-top:solid 1px #9D8678;
+	text-align:center;
+}
+#schedule p.month a.prev { float:left; padding-left:10px; }
+#schedule p.month a.next { float:right; padding-right:10px; }
+#schedule a.schedulehide {
+	padding:3px 8px;
+	margin:10px;
+	display:inline-block;
+	color:#333;
+	font-size:10px;
+	background: #ebebeb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ebebeb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#ebebeb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+	text-decoration:none;
+	border-radius:5px;
+	border:solid 1px #EBEBEB;
+}
+#schedule table { width:100%; margin-bottom:15px; }
+#schedule table th { padding:4px; border-bottom:solid 1px #AAAAAA; }
+#schedule table th.sun, #schedule table td.sun { background:#FFE4E4; }
+#schedule table th.sat, #schedule table td.sat { background:#E4FFFF; border-right:none; }
+#schedule table td {
+	padding:3px;
+	width:14%;
+	height:40px;
+	border-bottom:solid 1px #AAAAAA;
+	border-right:solid 1px #AAAAAA;
+}
+#schedule table span { display:block; font-weight:bold; }
+#schedule table span.gray { color:#999999; }
+#schedule table a { font-size:15px; color:#FF9900; }
+#schedule a.btn {
+	display:block;
+	padding:6px;
+	margin:15px 10px;
+	color:#333;
+	font-size:14px;
+	font-weight:bold;
+	background: #ebebeb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ebebeb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#ebebeb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+	text-align:center;
+	text-decoration:none;
+	border-radius:5px;
+	border:solid 1px #EBEBEB;
+}
+
+.btn-area {
+	width: 100%;
+	margin: 0 0 15px;
+}
+
+.btn-area td {
+	width: 30%;
+}
+.btn-area td a {
+	margin: 5px;
+}
+
+/* モーダルボックス */
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+.Modalbox {
+    width: 90%;
+    display:none;
+	background: #FFFAEF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+	border:solid 3px #F8ECD5;
+}
+.Modalbox h3 {
+	margin:0 10px;
+	padding:7px 6px 6px 20px;
+	font-size:14px;
+	color:#D69650;
+	line-height:100%;
+	border-bottom:solid 1px #D69650;
+	background:url(../../image/sp/time.png) no-repeat left center #fffaef;
+	-webkit-background-size:16px 16px;
+	-moz-background-size:16px 16px;
+	background-size:16px 16px;
+}
+.modal_close{
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: block;
+  width: 84px;
+  height: 28px;
+  background: url(../../image/sp/modal_close.png);
+  z-index: 2;
+}
+.Modalbox ul { overflow: scroll; margin:0 8px 10px; padding:8px; max-height:200px; font-size:14px; background:#fffaef; border-radius:5px; }
+.Modalbox li {
+	display:block;
+	border-bottom:dotted 1px #CCCCCC;
+	list-style:none;
+	background:url(../../image/sp/lesson-arrow.png) no-repeat right center;
+	-webkit-background-size:7px 13px;
+	-moz-background-size:7px 13px;
+	background-size:7px 13px;
+}
+.Modalbox li a {
+	display:block;
+	padding:5px 15px 5px 5px;
+	color:#593219;
+	font-size:12px;
+	text-decoration:none;
+}
+.Modalbox li span {
+	display:inline-block;
+	float:right;
+	padding-left:10px;
+	font-weight:normal;
+}
+.Modalbox li:last-child { border:none; }
+
+#school #lesson h3{
+	width: 95%;
+	margin: 0 auto;
+	padding:6px 2.5%;
+	margin-bottom:15px;
+	border-bottom:dotted 1px #5A3219;
+	background: url(../../image/sp/clip.png) no-repeat 5px center #F9EFDD;
+	-webkit-background-size:17px 15px;
+	-moz-background-size:17px 15px;
+	background-size:17px 15px;
+	color:#5A3219;
+}
+#school #lesson h3.lessonttl {
+	background: #f9efdd;
+	margin-bottom:3px;
+	font-size: 17px;
+}
+#school #lesson h3.fullseat:after { content:"満席"; display:inline-block; font-size:12px; background-color:#ff0000; border-radius:3px; color:#fff; margin-left:5px; padding:0 5px;}
+
+#lessonttl {
+	color:#5B3219;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#school #lesson ul.option {
+}
+#school #lesson ul.option li {
+	float:left;
+	padding-left:10px;
+	list-style:none;
+}
+#school #lesson .reserv a {
+	display:block;
+	margin:10px 15px 15px 15px;
+	padding:10px;
+	color:#FFF;
+	text-align:center;
+	text-decoration:none;
+	font-weight:bold;
+	text-shadow:-1px -1px 0px #DA9F5F;
+	border:solid 1px #DA9F5F;
+	border-radius:5px;
+	background: #ffba54; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffba54 1%, #ff9c00 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffba54), color-stop(100%,#ff9c00)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffba54 1%,#ff9c00 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffba54 1%,#ff9c00 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffba54 1%,#ff9c00 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffba54 1%,#ff9c00 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffba54', endColorstr='#ff9c00',GradientType=0 ); /* IE6-9 */
+	border:solid 1px #ff9c00;
+	color:#FFF;
+	height: 23px;
+	line-height: 23px;
+}
+#school #lesson .reserv a.on {
+	color:#FFF;
+	font-weight:bold;
+	border:solid 1px #CC3333;
+	text-shadow:-1px -1px 0px #CC3333;
+	background:#C66;
+}
+#school #lesson .reserv a.off {
+	color:#999999;
+	font-weight:bold;
+	border:solid 1px #CCCCCC;
+	text-shadow:none;
+	background: #e0e0e0;
+}
+#school #lesson p {
+    width: 90%;
+    margin: 5px auto;
+	font-size:15px;
+}
+#school #lesson .lessonphoto {
+	text-align:center;
+	margin-bottom:15px;
+}
+#school #lesson .lessonphoto img {
+	border:solid 4px #F8ECD5;
+}
+#school #lesson a.addlesson {
+	display:block;
+	padding:6px;
+	margin:15px 10px;
+	color:#333;
+	font-size:14px;
+	font-weight:bold;
+	background: #ebebeb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ebebeb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#ebebeb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+	text-align:center;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #FFF;
+	border-radius:5px;
+	border:solid 1px #EBEBEB;
+}
+#school span.label-full {
+	background-color: #ff0000;
+}
+
+/*===================================
+教室情報　レッスン写真
+===================================*/
+#school {
+	margin:0 0 10px;
+}
+#schoolTop {
+	background:#E7D8A5;
+	padding:3px 6px;
+	margin-bottom:10px;
+	font-size:16px;
+	color:#5A3219;
+	box-shadow:0px 0px 5px #666666;
+	height: 25px;
+}
+#school .recipeTitle{
+	width: 100%;
+	color: #5b3219;
+}
+#school .recipeTitle .recipeName{
+	width: 95%;
+	display: table;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+#school .recipeTitle .recipeName .recipeIcon{
+	display: table-cell;
+    text-align: center;
+}
+#school .recipeTitle .recipeName i{
+	font-size: 13px;
+	background: #8fb721;
+	padding: 7px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #fff;
+}
+#school .recipeTitle .recipeName h2{
+	display: table-cell;
+	background: none;
+	box-shadow: none;
+	font-size: 18px;
+	border: none;
+  text-align: left;
+  padding-left: 7px;
+}
+#school .recipeTitle p{
+	width: 95%;
+	margin: 0 auto 10px;
+	font-size: 13px;
+	text-align: right;
+}
+#school #photo {
+	text-align:center;
+}
+#school #photo ul {
+	margin:15px;
+}
+#school #photo li {
+	float:left;
+	display:block;
+	width:48%;
+	height: 175px;
+	margin-bottom:15px;
+}
+#school #photo li:nth-child(odd) {
+	margin-right:10px;
+}
+
+/*===================================
+教室情報　レシピ
+===================================*/
+#school #recipe .recipebox {
+	margin:0 15px 0 15px;
+}
+#school #recipe .recipebox li {
+	padding-bottom:15px;
+	margin-bottom:15px;
+	list-style:none;
+	border-bottom:solid 2px #F7EAD2;
+}
+#school .appealBox .recipebox li.detail {
+	padding:0;
+	margin:0 8px 0 -11px;
+	border:none;
+}
+#school .appealBox .detail.recipebox {margin:0 0 5px;}
+#school .appealBox .detail.recipebox li.detail {
+	margin:0 1px 0 0;
+	display: inline-block;
+}
+#school #recipe .recipebox li a.box {
+	display:block;
+	padding:15px 15px 15px 0;
+	text-decoration:none;
+	color:#5B3219;
+	background:url(../../image/sp/lesson-arrow.png) no-repeat right center;
+	-webkit-background-size:7px 13px;
+	-moz-background-size:7px 13px;
+	background-size:7px 13px;
+}
+#school #recipe .recipebox li img {
+	float:left;
+	margin-right:10px;
+}
+#school #recipe .recipebox h3 {
+	padding:0;
+	margin:0;
+	background:none;
+	border:none;
+	color:#5B3219;
+}
+#school .appealBox .recipebox p {
+	font-size:10px;
+}
+#school .appealBox .recipebox li p.tasty {
+	display:inline-block;
+	margin-top:3px;
+	padding:0 3px;
+	background:#F7F7F7;
+	border:solid 1px #CCCCCC;
+	border-radius:3px;
+}
+#school .appealBox .recipebox li p span {
+	font-size:12px;
+	font-weight:bold;
+	color:#FF6666;
+}
+#school .appealBox .recipebox li a.favobtn,#school #recipe .recipebox li span.favobtn {
+	display:inline-block;
+	padding:1px 6px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#333;
+	border:solid 1px #CCCCCC;
+	border-radius:3px;
+	font-size:11px;
+	background: #ebebeb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ebebeb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ebebeb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#ebebeb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+	text-align:center;
+}
+
+#school #recipe .recipebox li a.favobtn {
+	color:#333;
+}
+
+#school #recipe .recipebox li span.favobtn {
+	color:#AAA;
+}
+
+#school #recipe .recipebox li a.favobtn span,#school #recipe .recipebox li span.favobtn span {
+	display:block;
+	padding-left:15px;
+	background:url(../../image/sp/favo.png) no-repeat left center;
+}
+
+/*===================================
+教室情報　生徒の声
+===================================*/
+
+#school #voice {
+  margin-top: -5px;
+}
+#school #voice dl {
+/*	margin:0 15px 15px 15px; */
+}
+#school #voice dt {
+	padding:6px 6px 6px 28px;
+	margin-top:0;
+	color:#333;
+	font-size:14px;
+	font-weight:normal;
+	background:url(../../image/sp/voiceicon.png) no-repeat 5px center #FFFAEF;
+	-webkit-background-size:19px 15px;
+	-moz-background-size:19px 15px;
+	background-size:19px 15px;
+	border-bottom:dotted 1px #D69650;
+}
+#school #voice dt span {
+	color:#D69650;
+	font-size:14px;
+}
+#school #voice dd {
+	display:block;
+
+
+	padding:6px;
+	margin-bottom:10px;
+	border:none;
+	border-radius:0px;
+	font-size:12px;
+}
+#school #voice dd span {
+	display:block;
+	margin-bottom:5px;
+	padding:3px 5px;
+	border-radius:3px;
+	font-size:9px;
+	color:#999;
+	background:#F6F6F6;
+	text-align:right;
+}
+#school #voice dd img {
+	float:left;
+	margin:5px 5px 5px 0;
+}
+
+#school .comment p.commttl {
+	margin:25px 15px 0;
+	padding:0 0 0 25px;
+	color:#5B3219;
+	font-size:15px;
+	font-weight:bold;
+	border-bottom:dotted 2px #5B3219;
+	background:url(../../image/sp/voiceicon2.png) no-repeat left center;
+	-webkit-background-size:19px 15px;
+	-moz-background-size:19px 15px;
+	background-size:19px 15px;
+	border-radius:0px;
+}
+#school .comment p {
+	margin:10px 15px;
+	padding:7px;
+	font-size:12px;
+	background:#F7F7F7;
+	border-radius:5px;
+}
+
+#school .comment .error p{
+	margin:0;
+	font-size:12px;
+	line-height:10px;
+	font-weight:bold;
+	color:#d53d3d;
+}
+
+#school .comment p span {
+	display:block;
+	padding-top:10px;
+	font-size:10px;
+}
+#school .comment span {
+	display:block;
+	margin:3px 15px;
+}
+#school .comment .commTxt {
+	margin:0 15px;
+	padding:3px;
+	width:88%;
+	min-height:100px;
+	border-radius:5px;
+	border:solid 1px #CCCCCC;
+}
+#school .comment .length {
+	margin:0 15px;
+	padding:3px;
+	width:88%;
+	min-height:100px;
+	border-radius:5px;
+	border:solid 1px #CCCCCC;
+}
+#school .comment .commImg {
+	margin:3px 15px;
+	padding:3px;
+	width:88%;
+}
+#school .comment .appendedimg {
+	float:left;
+	margin:0 15px;
+	width:48%;
+	min-height:60px;
+	padding:10px;
+	text-align:center;
+	background:#F7F7F7;
+}
+#school .comment a.appended {
+	display:inline-block;
+	margin-top:55px;
+	padding:3px 8px;
+	color:#333;
+	font-size:12px;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #FFF;
+	border:solid 1px #CCCCCC;
+	border-radius:5px;
+	background: #e7e7e7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f8f8f8 0%, #e7e7e7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f8f8f8 0%,#e7e7e7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f8f8f8 0%,#e7e7e7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f8f8f8 0%,#e7e7e7 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f8f8f8 0%,#e7e7e7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+}
+#school .comment { margin-bottom:30px; }
+
+
+/*===================================
+教室情報　ブログ
+===================================*/
+
+#school #blog {
+}
+#school #blog dl {
+	margin:0 15px 15px 15px;
+}
+#school #blog dt {
+	padding:6px 6px 6px 28px;
+	margin-top:0;
+	color:#333;
+	font-size:14px;
+	font-weight:normal;
+	background:url(../../image/sp/clip.png) no-repeat 5px center #FFFAEF;
+	-webkit-background-size:19px 15px;
+	-moz-background-size:19px 15px;
+	background-size:19px 15px;
+	border-bottom:dotted 1px #D69650;
+}
+#school #blog dt span {
+	color:#D69650;
+	font-size:14px;
+}
+#school #blog dd {
+	display:block;
+	padding:6px;
+	margin-bottom:10px;
+	border:none;
+	border-radius:0px;
+	font-size:12px;
+}
+#school #blog dd span {
+	display:block;
+	margin-bottom:5px;
+	padding:3px 5px;
+	border-radius:3px;
+	font-size:9px;
+	color:#666;
+	text-align:right;
+}
+#school span.blogOrganizer {
+	display:block;
+	margin-top:10px;
+	padding:3px 5px;
+	border-radius:3px;
+	font-size:9px;
+	color:#666;
+	text-align:right;
+}
+
+#school #blog dd img {
+	margin:5px 5px 5px 0;
+}
+
+/* 教室・レシピ */
+
+div.news {}
+div.news div.trigger  {
+	padding:6px;
+	padding-left:23px;
+	color:#FFFFFF;
+	font-weight:bold;
+	background:url(../../image/sp/newsicon.png) #F66 no-repeat 3px 8px;
+	-webkit-background-size:15px 13px;
+	-moz-background-size:15px 13px;
+	background-size:15px 13px;
+}
+div.news dl {
+	margin:10px;
+	padding:10px 10px 0 10px;
+	background:#fffaef;
+	border:solid 3px #5B3219;
+
+	border-radius:5px;
+	font-size:12px;
+	color:#454545;
+}
+.trigger span.open-close {
+ background: url(../../image/sp/point_plus.png) no-repeat right top;
+ float: right;
+ width: 20px;
+ height: 20px;
+ text-indent: -9999em;
+ }
+.active span.open-close {
+ background: url(../../image/sp/point_none.png) no-repeat right top;
+ float: right;
+ width: 20px;
+ height: 20px;
+ }
+
+.organizerPhoto{
+	width: 160px;
+	height: 160px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div.otherRecipes h4 {
+	padding:5px 5px 5px 10px;
+	color:#FFF;
+	font-size:11px;
+	background:#5B3219;
+}
+div.otherRecipes ul {
+	margin:-15px 15px 0 15px;
+}
+div.otherRecipes li {
+	min-height: 150px;
+	list-style:none;
+	border-bottom:dotted 1px #666666;
+}
+div.otherRecipes li a {
+	display:block;
+	padding:15px 0 15px 0;
+	text-decoration:none;
+	color:#333333;
+}
+div.otherRecipes li img {
+	float:left;
+	margin-right:10px;
+}
+
+div.otherRecipes li img.right {
+	float:right;
+	margin-right:10px;
+}
+
+div.otherRecipes li a h5 {
+	color:#5B3219;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	margin-top: -3px;
+}
+
+div.otherRecipes li a h5.wrap {
+	color:#5B3219;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:normal;
+	font-size: 16px;
+}
+
+div.otherRecipes li a p.description {
+	font-size:11pt;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	margin:5px 0;
+}
+div.otherRecipes li a p {
+	font-size:10px;
+}
+div.otherRecipes li a p.tasty {
+	display:inline-block;
+	margin-top:3px;
+	padding:0 3px;
+	background:#F7F7F7;
+	border:solid 1px #CCCCCC;
+	border-radius:3px;
+}
+div.otherRecipes li a p span {
+	font-size:12px;
+	font-weight:bold;
+	color:#FF6666;
+}
+div.otherRecipes p.search {
+	display:block;
+	padding:8px 18px 8px 18px;
+	margin:0 0 15px 0;
+	background:#fffaef;
+	text-align:right;
+}
+div.otherRecipes p.search a {
+	color:#5B3219;
+	font-size:12px;
+}
+
+.others {
+	padding: 10px 0 0 0;
+}
+
+#school #lesson dd.others em {
+	font-weight: bold;
+	font-style: normal;
+}
+
+#school #lesson dd.others ul {
+	list-style-type:none;
+}
+
+#school #lesson dd.others ul li {
+	padding:3px;
+}
+
+#school #lesson dd.others a {
+	display:inline;
+	text-align:left;
+	color:#FF6601;
+}
+
+#school #lesson dd.others span.full {
+	padding: 1px 4px 2px 4px;
+	background-color:red;
+}
+
+span.label {
+	font-size: 10.998px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #ffffff;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+	white-space: nowrap;
+	vertical-align: baseline;
+	background-color: #999999;
+	padding: 1px 4px 2px 4px;
+	border-radius: 3px;
+	margin-left:3px;
+}
+
+span.badge {
+ font-size: 10.998px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #999999;
+  padding-top: 1px;
+  padding-right: 9px;
+  padding-bottom: 2px;
+  padding-left: 9px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+	background-color:red;
+}
+
+/*===================================
+教室情報　クチコミ　2014.11.26
+===================================*/
+.kuchikomiArea {
+	padding:10px;
+	margin:10px 15px;
+	border:1px solid #ccc;
+	border-radius:5px;
+}
+.kuchikomiArea .userimg {
+	float:left;
+	margin-right:5px;
+}
+.kuchikomiArea .postDate {
+	color:#666;
+	font-size:12px;
+}
+.kuchikomiArea .textArea {
+	display:block;
+	clear:both;
+}
+.kuchikomiArea .texthide {
+	clear:both;
+	height: auto;
+	background-image:url(../../image/sp/dammy-kuchikomi.png);
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+.kuchikomiArea .hidecmt {
+	clear:both;
+	display:block;
+	background-color:#fff;
+	border:solid 1px #eee;
+	text-align:center;
+	font-size:12px;
+	width:150px;
+	padding:5px 0;
+	line-height:14px;
+	color:#cbb596;
+	margin:0 auto;
+}
+.answerArea {
+	padding:10px;
+	margin:10px 0 0;
+	background:#faf6f2;
+	border-radius:10px;
+	border:1px solid #faf6f2;
+	box-sizing:border-box;
+}
+.answerArea .text {
+	display:table;
+	width:100%;
+	border-bottom:1px dotted #ccc;
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+.answerArea .text ul {
+	display: table-cell;
+	text-align:right;
+	width:100%;
+	padding:0 5px 0 0;
+	vertical-align:top;
+}
+.answerArea .teacherArea {
+	display: table-cell;
+	text-align:right;
+	width:60px;
+}
+.answerArea .teacherArea img{
+	vertical-align:top;
+}
+.answerArea  ul{
+	display:table-cell;
+	width:130px;
+	vertical-align: middle;
+	text-align:right;
+}
+.answerArea li {
+	list-style:none;
+	}
+.answerArea .teacherArea .postDate{
+	margin:0;
+	display:block;
+}
+#school .comment .notes{
+	text-align:right;
+	font-size:12px;
+	margin:0 15px;
+}
+#consultButton {
+	text-align:right;
+	margin:10px 0 0;
+}
+.consult_btn {
+background:#fff;
+color:#333;
+border-radius:3px;
+padding:2px 5px;
+border: 1px solid #ccc;
+font-size:12px;
+display:inline-block;
+margin-left:2px;
+}
+.consult-count {
+    background:#faf6f2;
+    position:relative;
+    padding:4px;
+	border:1px solid #ccc;
+	border-radius:3px;
+	font-size:12px;
+}
+.consult-count:before {
+  content: ' ';
+    width:0;
+    height: 0;
+    position:absolute;
+    border:5px solid transparent;
+    border-left-color:#ccc;
+    top:5px;
+    left:100%;
+}
+.consult-count:after {
+    content: ' ';
+    width:0;
+    height: 0;
+    position:absolute;
+    border:4px solid transparent;
+    border-left-color:#faf6f2;
+    top:6px;
+    left:100%;
+	}
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+#school #kuchikomi_popup {
+	width: 80%;
+	padding: 0;
+	margin:0 auto;
+	display:none;
+	background: #FFF;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+}
+#school #kuchikomi_popup dl {
+	margin:0 15px 15px;
+}
+#school #kuchikomi_popup dt {
+	background:none;
+	border-bottom: 1px solid #663300;
+    color: #663300;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding:10px 0;
+}
+#school #kuchikomi_popup dd {
+	font-size:14px;
+	margin-bottom:5px;
+}
+#school #kuchikomi_popup dd:last-child {
+	background:#faf6f2;
+	border-radius:10px;
+	padding:10px 5px 10px 10px;
+	font-size:12px;
+}
+#school #kuchikomi_button{
+	display:block;
+	float:right;
+	padding-right:15px;
+}
+#school #kuchikomi_button i{
+	font-size:28px;
+	color:#999;
+}
+
+#school h2 a {
+	font-size:12px;
+	color:#735c3f;
+	display:block;
+}
+#school h2 span {
+	display:inline-block;
+}
+#school .comment .button_camera {
+	background:url(../../image/sp/photoimg.png) no-repeat;
+	display:block;
+	width:640px;
+	height:140px;
+	margin:-18px 0 0 0;
+}
+#school .comment .file-input {
+    cursor: pointer;
+	background:url(../../image/sp/icon_camera.png) no-repeat;
+    font-size: 50px;
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+    z-index: 10;
+}
+#school .loading ,
+#school .kuchikomi_photo {
+	width:80px;
+	padding:0 15px;
+	position:relative;
+}
+#school #kuchikomi_popup .modal_close {
+	background:none;
+    background-color: #ddd;
+    border-radius: 16px;
+	font-weight:bold;
+    box-shadow: 1px 1px 1px #ddc inset;
+    color: #666;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    width: 24px;
+	position:absolute;
+	top:-10px;
+	right:-5px;
+}
+#school .kuchikomi_photo .photo_close {
+    background-color: #ddd;
+    border-radius: 15px;
+	font-weight:bold;
+    box-shadow: 1px 1px 1px #ddc inset;
+    color: #666;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    width: 24px;
+	position:absolute;
+	right:-5px;
+}
+
+/* 2015.4.8 修正*/
+#schoolName h1 a { color:#fff; text-decoration:none; display:block;}
+.appealBox .fbbtn {width:auto; vertical-align:top; margin-top: -4px;}
+.appealBox .line img { margin-right: 0;}
+
+/* 2015.4.21 修正*/
+#school #top .career { margin:10px 15px 0; font-size:small; line-height:17px; overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
+#school .gentei { display:block; padding:3px; margin:15px 10px 0; text-align:center; text-decoration:none; background:#E7AE69; color:#FFF; text-shadow:1px 1px 0 #DA9D5A; border-radius:5px; box-shadow: 0px 0px 4px rgba(0,0,0,0.4); -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.4); -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.4); }
+div.otherRecipes li a h5.lock:before { content: "\f023"; font-family: FontAwesome; font-weight:bold; color:#FF9900; font-style: normal; display: inline-block; margin-right:2px;}
+div.otherRecipes .mgt15_auto {margin:15px;}
+#school .passwordinputArea {padding:15px 15px 5px;}
+#school .passwordinputArea p{ display:block; line-height:17px; margin-bottom:10px; }
+#school .passwordinputArea span {margin-left:10px; font-size:16px; line-height:16px; vertical-align:middle;}
+#school .passwordinputArea input { width:55%; padding:5px 3px;}
+
+/* 教室ページ改修2015.605 */
+#school .messagebox { font-size:14px; margin: 0 15px 15px; padding-top:10px; border-width:1px 0; border-style:solid; border-color:#e8dcc7;}
+#school .messagebox .moreread a {display:block; font-size:0; line-height:none; text-align:center; padding-top:10px;}
+#school #top .profile.above{ width:95%; margin:0 auto 15px; padding:0; border:1px solid #e8dbd1; box-shadow:2px 2px 2px #ddd; color:#5A3219; position:relative; background:
+#fffaef;}
+#school #top .profile.above h3 {margin:0 auto; padding-bottom:0; background:none; border:none; text-align:center;}
+#school #top .profile.above h3:before {content:none;}
+#school #top .profile table{width: 90%; margin:5px auto 0;}
+#school #top .profile table td{vertical-align:middle!important;}
+#school #top .profile table td.profileImg{width:80px; height:80px; padding-right:20px; text-align:center;}
+#school #top .profile table td p{margin:0 auto; font-size:12px;}
+#school #top .profile table td p.teacher{font-size:14px;}
+#school #top .profile table td.profileSchoolLink{
+	max-width: 300px;
+	width: 300px;
+	padding: 10px 5px;
+	text-align: center;
+	font-size: 12px;
+	background: #f68606;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+#school #top .profile table td.profileSchoolLink a{
+	text-decoration: none;
+	color: #fff;
+}
+#school #top .profile.above .moreread{width:90%;margin:0 auto; font-size:12px;}
+#school #top .profile.above .moreread a{display:block; text-align:center;}
+#school #top .accepting  { padding:0 10px;}
+#school #top .accepting li {border-bottom:1px dotted #5A3219; padding:15px 0; float:none; width:100%;}
+#school #top .accepting li:first-child {padding-top:0;}
+#school #top .accepting li .inner {display:table; table-layout:fixed; width:100%;}
+#school #top .accepting .lessonphoto{width:120px; height:auto; display:table-cell; padding-right:10px;}
+#school #top .accepting .lessonphoto img {width:100%; max-width:120px; height:auto;}
+#school #top .accepting .lessonDetail { display:table-cell; color: #5b3219; vertical-align:top; width:100%;}
+#school #top .accepting h4 { font-size:14px; font-weight: bold; margin-bottom:5px; color:#5A3219; line-height:18px;}
+#school #top .accepting h4 a{ color:#FF6601;}
+#school #top .accepting .lessonDetail dt{ float:left; clear:left; font-size:14px; font-weight:normal; margin:0; vertical-align:middle;}
+#school #top .accepting .lessonDetail dd {font-size:14px;}
+#school #top .accepting .lessonDetail dd span {display:inline-block; padding:0 5px 0 0; border:none; font-size:14px;}
+#school #top .accepting .lessonDetail dd:last-child {font-size:10px;}
+#school #top .accepting .lessonDetail dd strong {font-size:14px; font-weight:bold; padding-right:2px;}
+#school #top .accepting .moreLesson {clear:both; text-align:center; padding:5px 0;}
+#school #top .accepting .moreLesson a {background-color:#998570; display:inline-block; border-radius:5px; color:#fff; text-decoration:none; padding:8px 0; font-weight:bold; width:80%;}
+#school #top .accepting .lessonDetail p {clear:both;}
+
+#school #top .accepting .lessonDetail dl .date span {display: inline-block;}
+
+.ellip{display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;}
+
+/* レッスン情報ページ改修2015.610 */
+#school .lessonDate { margin:0 15px;}
+#school .lessonDate h4 { color: #5b3219; font-size: 15px; font-weight: bold;}
+#school #lesson .lessonDate p {margin:0;}
+#school #lesson .lessonDate p span{font-size: 12px;}
+#school .lessonDate ul {list-style:none; padding:0; margin:5px 0 10px;}
+#school .lessonDate .date li {width:100%; position:relative; background-color: #f0ece5;	border-width:1px; border-style:solid; border-color:#dcd4c5; display:block; box-sizing:border-box;	box-shadow:0 2px #a9988b; border-radius:5px; color:#663300; margin-bottom:5px; padding:9px 6px;font-size:14px; line-height:18px; font-weight:bold;	position:relative;}
+#school .lessonDate .date li a {color:#5A3219; text-decoration:none; display:block; font-size:14px;}
+#school .lessonDate .date li.non,#school .lessonDate .date li.full {background-color: #eee; border:1px solid #ddd; box-shadow:none; color:#ccc;}
+#school .lessonDate .date li span {width:75px; height:26px; position:absolute; top:50%; right:6px; background:url(../../image/sp/bk_bg.png) no-repeat; color:#5b3219; font-size:14px; text-align:center; margin-top:-13px; padding:0 0 0 12px; box-sizing:border-box; line-height:26px;}
+#school .lessonDate .date li.full span {background-color: #ebb; border: 1px solid #a66; color: #a66; background-image: none; position:absolute; right:6px; width:60px; padding:0;}
+#school .lessonDate .date li.nolink span.completed {color:#749545; border:1px solid #749545; background-color:#f9fef7; background-image: none; position:absolute; right:6px; width:60px; padding:0;}
+#school .lessonDate .date li.nolink span.inquiry {color:#663300; border:1px solid #663300; background-color:#fff; background-image: none; position:absolute; right:6px; width:60px; padding:0;}
+#school .lessonDate .date li.non span.completed {color:#749545; border:1px solid #749545; background-color:#f9fef7; background-image: none; position:absolute; right:6px; width:60px; padding:0;}
+#school .lessonDate .date li.now {border:3px solid #f79904; color:#FD7524;}
+#school .lessonDate .date li.nolink {background-color: #fff; background-image: none; border:1px solid #dcd4c5; box-shadow:none; margin-top:2px; font-size:12px; color:#76593b;}
+#school .lessonDate .date li.more { background-color: #fff; background-image: none; border: 1px solid #663300; box-shadow: 0 1px 0 #663300; color: #aaa; font-size: 16px; margin-top: 2px; padding:10px 3px; text-align: center;}
+#school .lessonDate .date li.moreclose { background-color: #fff; background-image: none; border: 1px solid #663300; box-shadow: 0 1px 0 #663300; color: #aaa; font-size: 16px; margin-top: 2px; padding:10px 3px; text-align: center;}
+#school .lessonDate .date li.morepast { background-color: #fff; background-image: none; border: 1px solid #663300; box-shadow: 0 1px 0 #663300; color: #aaa; font-size: 16px; margin-top: 2px; padding:10px 3px; text-align: center;}
+#school .lessonDate .date li.morepastclose { background-color: #fff; background-image: none; border: 1px solid #663300; box-shadow: 0 1px 0 #663300; color: #aaa; font-size: 16px; margin-top: 2px; padding:10px 3px; text-align: center;}
+#school .lessonDate .date li.morefuture { background-color: #fff; background-image: none; border: 1px solid #663300; box-shadow: 0 1px 0 #663300; color: #aaa; font-size: 16px; margin-top: 2px; padding:10px 3px; text-align: center;}
+#school .lessonDate .date li.morefutureclose { background-color: #fff; background-image: none; border: 1px solid #663300; box-shadow: 0 1px 0 #663300; color: #aaa; font-size: 16px; margin-top: 2px; padding:10px 3px; text-align: center;}
+#school .lessonDate .date li.all { background-color: #fff; background-image: none; border: 1px solid #ff9900; box-shadow: 0 1px 0 #ff9900; color: #aaa; font-size: 16px; margin-top: 2px; padding:10px 3px; text-align: center;}
+
+
+/* 教室情報　参加中の企画追加　2015.708 */
+#school .join {border-bottom:2px solid #f5d16e; margin-bottom:10px;}
+#school .join h4 {border-bottom:2px solid #f5d16e; line-height:16px;}
+#school .join h4 span{ color:#5A3219; text-shadow:1px 1px 1px #fff; background-color:#f5d16e; border-radius:6px 6px 0 0; display:inline-block; padding:3px 10px 0; font-size:12px;}
+#school .join div:last-child {border-bottom:none;}
+
+#kuchikomisend {
+    padding: 10px;
+    margin: 10px 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ingredient_row {
+    border-bottom: 1px solid #E5E5E5;
+    overflow: hidden;
+	padding: 5px;
+    zoom: 1;
+	font-size: 1.1em;
+}
+
+.ingredient_name {
+    display: inline;
+    float: left;
+	padding-left: 10px;
+}
+
+.ingredient_amount {
+    display: inline;
+    float: right;
+    margin: 0 0 0 10px;
+    text-align: right;
+	padding-right: 10px;
+}
+
+/* クチコミ改修　20151014 */
+.kuchikomiArea .recipeimg {	margin:5px auto 0; clear:both; text-align:center;}
+.kuchikomiArea .recipeimg a {display:inline-block;}
+.kuchikomiArea .recipeimg img { width:100%; max-width:280px; height:auto; border:4px solid #fff; box-shadow:0px 1px 3px #bbb; box-sizing:border-box;}
+#formoutline {border:1px solid #cfc2a6; margin:15px auto 10px; border-radius:10px; width:94%; max-width:360px;}
+#formoutline .length {width:100%; min-height:100px; border-radius:5px; border:solid 1px #CCC; box-sizing:border-box;}
+#formoutline .txtBox { margin: 0 15px; }
+#formoutline .notes { text-align: right; font-size: 12px; margin: 15px 15px 0;}
+#formoutline span { display: block; margin: 3px 0px;}
+#formoutline .iframe-content{ position: relative; width:100%; box-sizing:border-box; padding: 85px 0 0; /* topを0、bottomをcalc()としてもOK */  }
+#formoutline .iframe-content #picture_iframe { position: absolute; top: 0; left: 0; width: 100%; height:100%; padding:10px 15px 0; box-sizing:border-box;}
+html.bgc { background-color:#fffdfa;}
+
+#photoArea .button_camera { display: inline-block; overflow: hidden; position: relative; }
+#photoArea .file-input {
+    opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    cursor: pointer;
+	display:block;
+	width:100%; height:100%;
+	z-index: 10;
+}
+#photoArea .button_camera img {width:100%; height:auto; vertical-align:bottom;}
+.kuchikomiPosting {position:relative;}
+.kuchikomiPosting .qpop {position:absolute; top:2px; right:5px;}
+#school.kuchikomiPosting #kuchikomi_button { padding:0; float:none; width:25px; height:25px; border-radius:50%; display:inline-block; background-color:#fff; text-align:center; box-shadow:1px 1px 3px #a6955d;}
+#school.kuchikomiPosting #kuchikomi_button i {color:#cd611a; font-size:26px; line-height:26px;}
+
+/* レッスン情報ページ下ボタンレイアウト変更　20151112 */
+#school .btmbtnbox {display:table; width:100%; table-layout:fixed;}
+#school .btmbtnbox li {display:table-cell;}
+#school .btmbtnbox li a.btn.c3 { margin:10px 5px 10px 15px;}
+#school .btmbtnbox li a.btn.c2 { margin:10px 15px 10px 5px;}
+#school .btmbtnbox li span.btn{ background:#bbb; border: 1px solid #999; border-radius:5px; color: #fff; line-height: 30px; margin:10px 15px 10px 5px; display:block; text-align:center; font-weight:bold; padding:6px;}
+.lesson .more { display:table-cell; vertical-align:middle; font-size:12px; line-height:14px; text-align:right; width:90px;}
+.lesson .more a {text-decoration:none; color:#fff; background:#5b3219; border-radius:5px; display: block; padding:3px 5px; text-align:center;}
+.lesson .more a:after {content:"\f138"; font-family: FontAwesome; padding-left:5px; }

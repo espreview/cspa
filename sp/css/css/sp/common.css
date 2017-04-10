@@ -1,0 +1,948 @@
+@charset "UTF-8";
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+/* ----------------------------------------
+	UXS001 æ¨™æº–ãƒ•ã‚©ãƒ³ãƒˆã‚µã‚¤ã‚ºã‚’ä¸Šã’ã‚‹
+	ï¼œå¤‰æ›´å‰ï¼ž
+    font: 14px/1.5 Helvetica,"Hiragino Kaku Gothic Pro",sans-serif;
+---------------------------------------- */
+body {
+    font: 15px/1.6 Helvetica,"Hiragino Kaku Gothic Pro",sans-serif;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+nav ul {
+    list-style: outside none none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+a {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #cccccc -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
+}
+input, select {
+    vertical-align: middle;
+}
+header {
+    background: none repeat scroll 0 0 #fffaef;
+    box-shadow: 0 0 5px #666666;
+    height: 45px;
+    position: relative;
+}
+header h1 {
+    padding: 5px 0 0;
+    text-align: center;
+}
+header p {
+    padding: 5px 0 0;
+    text-align: center;
+}
+header #pageReturn {
+    left: -2%;
+    max-width: 36%;
+    position: absolute;
+    top: 10px;
+}
+ul#pageReturn li{
+    list-style: none;
+}
+header #pageReturn li a {
+    display: block;
+    position: relative;
+    min-width: 50px;
+    height: 23px;
+    left: 25px;
+    padding: 7px 5px 0 3px;
+    background: #ece4d2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    color: #542d1c;
+    border: 1px solid #dac699;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+header #pageReturn li a:before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: -15px;
+    margin: -7px 0 0 -10px;
+    border: 15px solid transparent;
+    border-right: 10px solid #dac699;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+header #pageReturn li a:after{
+    display: block;
+    content: "";
+    position: absolute;
+    left: -14px;
+    margin: -24px 0 0 -10px;
+    border: 15px solid transparent;
+    border-right: 10px solid #ece4d2;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+ul#switch {
+    list-style-type: none;
+    margin: 3px 3px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+ul#switch > li {
+    float: right;
+    list-style-type: none;
+    margin: 0 0 0 1px;
+}
+ul#switch li.login {
+    background: url("../../image/sp/i_login.png") no-repeat scroll 0 0 / 45px 45px rgba(0, 0, 0, 0);
+}
+ul#switch li.search {
+    background: url("../../image/sp/i_search.png") no-repeat scroll 0 0 / 45px 45px rgba(0, 0, 0, 0);
+}
+ul#switch li a.icon {
+    background-size: 45px 45px;
+    display: block;
+    height: 45px;
+    width: 45px;
+}
+ul.login li a {
+    background: url("../../image/sp/i_login.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+ul.mypage li.mypage a {
+    background: url("../../image/sp/i_mypage.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+ul#switch li a span {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+}
+.error {
+    background: none repeat scroll 0 0 #fdf7f7;
+    border: 3px solid #e8b0b0;
+    color: #d53d3d;
+    margin: 10px;
+    padding: 5px;
+}
+.error p {
+    color: #d53d3d;
+    margin: 0;
+}
+.form-text1 {
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    width: 95%;
+}
+.form-text2 {
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    width: 10em;
+}
+footer {
+    background: none repeat scroll 0 0 #efe9d9;
+    border-top: 1px solid #fff;
+    box-shadow: 0 0 5px #999;
+    margin-top: 25px;
+    padding: 5px 10px;
+}
+footer p {
+    color: #9b8f70;
+    font-size: 11px;
+    text-align: center;
+}
+.contents {
+    margin: 10px;
+}
+.link-box {
+    border-radius: 5px;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+}
+.link-box li {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    list-style-type: none;
+}
+.link-box a {
+    background: url("../../image/sp/ar.png") no-repeat scroll right center / 19px 15px #fff;
+    color: #3399cc;
+    display: block;
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: none;
+}
+.st, .st a {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.ed, .ed a {
+}
+.link-box2 {
+    margin-top: 20px;
+}
+.link-box2 h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+.link-box2 li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style-type: none;
+}
+.link-box2 li a {
+    background: url("../../image/sp/ar.png") no-repeat scroll right center / 19px 15px #fff;
+    border-radius: 5px;
+    color: #3399cc;
+    display: block;
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: none;
+}
+.head-news {
+    background: none repeat scroll 0 0 #fffaef;
+    border: 1px dotted #dfc288;
+    border-radius: 5px;
+    font-size: 9px;
+    margin: 10px;
+    padding: 10px;
+}
+.head-news dt {
+    margin-bottom: 5px;
+}
+.head-news dt span {
+    background: none repeat scroll 0 0 #996600;
+    border-radius: 3px;
+    color: #fff;
+    padding: 2px 5px;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.clearfix {
+}
+.hide {
+    display: none;
+}
+a.btn {
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px 10px;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+a.btn.c1 {
+    background: linear-gradient(to bottom, #f7f7f7 0%, #dbdbdb 99%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #dbdbdb;
+    color: #333;
+    font-size: small;
+    line-height: 30px;
+}
+a.btn.c2 {
+    background: linear-gradient(to bottom, #d2d891 1%, #9abd36 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #96b835;
+    color: #fff;
+    line-height: 30px;
+}
+a.btn.c3 {
+    background: linear-gradient(to bottom, #ffba54 1%, #ff9c00 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #ff9c00;
+    color: #fff;
+    line-height: 30px;
+}
+a.btn.c4 {
+    background: linear-gradient(to bottom, #f7f7f7 0%, #dbdbdb 99%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #dbdbdb;
+    color: #5b3219;
+    line-height: 30px;
+    text-shadow: 0 0 0 #dbdbdb;
+}
+a.btn.more {
+    background: url("../../image/sp/favorite-arrow.png") no-repeat scroll 250px 14px / 13px 8px #f7f7f7;
+    border: 1px solid #dbdbdb;
+    color: #333;
+    display: block;
+}
+* html body {
+    overflow: hidden;
+}
+div#footerAreaSchool, div#footerAreaMypage {
+    background: none repeat scroll 0 0 #ece4d2;
+    border-top: 3px solid #5a3219;
+    bottom: 0;
+    box-shadow: 0 0 6px #aaaaaa;
+    height: 60px;
+    left: 0;
+    position: fixed !important;
+    width: 100%;
+    padding-bottom: 10px;
+    z-index: 15;
+}
+div#footerAreaSchool p, div#footerAreaMypage p {
+    font-size: 11px;
+    padding: 2px 0 3px;
+    text-align: center;
+}
+div#footerAreaSchool ul, div#footerAreaMypage ul {
+    list-style-type: none;
+    width: 100%;
+}
+div#footerAreaMypage ul li {
+    float: left;
+    width: 20%;
+}
+div#footerAreaSchool ul li a, div#footerAreaSchool ul li span {
+    background-image: url("../../image/sp/i_footer.png");
+    background-repeat: no-repeat;
+    background-size: 27px 450px;
+    border-right: 1px solid #d0c6b0;
+    display: block;
+    font-size: 8px;
+    font-weight: bold;
+    height: 11px;
+    padding: 30px 0 0;
+    text-align: center;
+    text-decoration: none;
+}
+div#footerAreaMypage ul li a, div#footerAreaMypage ul li span {
+    background-image: url("../../image/sp/i_footer_my.png");
+    background-repeat: no-repeat;
+    background-size: 40px 860px;
+    border-right: 1px solid #d0c6b0;
+    display: block;
+    font-size: 6px;
+    font-weight: bold;
+    height: 11px;
+    padding: 28px 0 0;
+    text-align: center;
+    text-decoration: none;
+}
+div#footerAreaSchool ul li:last-child a, div#footerAreaSchool ul li:last-child span, div#footerAreaMypage ul li:last-child a, div#footerAreaMypage ul li:last-child span {
+    border-right: 0 none;
+}
+div#footerAreaSchool ul li a, div#footerAreaMypage ul li a {
+    color: #574d37;
+}
+div#footerAreaSchool ul li span, div#footerAreaMypage ul li span {
+    color: #574d37;
+}
+/* div#footerAreaSchool */
+div#footerAreaSchool li.menu a {
+    background-position: center 0;
+}
+div#footerAreaSchool li.lessoninfo a {
+    background-position: center -87px;
+}
+div#footerAreaSchool li.commentBtn a {
+    background-position: center -180px;
+}
+div#footerAreaSchool li.recipeBtn a {
+    background-position: center -270px;
+}
+div#footerAreaSchool li.blogtBtn a {
+    background-position: center -364px;
+}
+div#footerAreaSchool li.menu span {
+    background-position: center -45px;
+}
+div#footerAreaSchool li.lessoninfo span {
+    background-position: center -135px;
+}
+div#footerAreaSchool li.commentBtn span {
+    background-position: center -226px;
+}
+div#footerAreaSchool li.recipeBtn span {
+    background-position: center -315px;
+}
+div#footerAreaSchool li.blogtBtn span {
+    background-position: center -409px;
+}
+/* div#footerAreaMypage */
+div#footerAreaMypage li.menu a {
+    background-position: center -2px;
+}
+div#footerAreaMypage li.settingBtn a {
+    background-position: center -90px;
+}
+div#footerAreaMypage li.messageBtn a {
+    background-position: center -260px;
+}
+div#footerAreaMypage li.schoolBtn a {
+    background-position: center -390px;
+}
+div#footerAreaMypage li.schedule a {
+    background-position: center -526px;
+}
+div#footerAreaMypage li.recipeBtn a {
+    background-position: center -656px;
+}
+div#footerAreaMypage li.menu span {
+    background-position: center -69px;
+}
+div#footerAreaMypage li.settingBtn span {
+    background-position: center -135px;
+}
+div#footerAreaMypage li.messageBtn span {
+    background-position: center -327px;
+}
+div#footerAreaMypage li.schoolBtn span {
+    background-position: center -456px;
+}
+div#footerAreaMypage li.schedule span {
+    background-position: center -529px;
+}
+div#footerAreaMypage li.recipeBtn span {
+    background-position: center -722px;
+}
+div#footerArea {
+    background: none repeat scroll 0 0 #fffaef;
+    border-top: 3px solid #5a3219;
+    bottom: 0;
+    box-shadow: 0 0 6px #aaaaaa;
+    left: 0;
+    padding: 5px;
+    position: fixed !important;
+    width: 100%;
+}
+div#footerArea li {
+    background: linear-gradient(to bottom, #ffffff 0%, #ebebeb 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #999999;
+    border-radius: 3px;
+    float: left;
+    line-height: 100%;
+    list-style: outside none none;
+    margin-right: 4px;
+}
+div#footerArea li a, div#footerArea li span {
+    display: table-cell;
+    font-size: 10px;
+    font-weight: bold;
+    height: 25px;
+    padding: 0 5px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+div#footerArea li a {
+    color: #333;
+}
+div#footerArea li span {
+    color: #aaa;
+}
+div#footerArea li a img, div#footerArea li span img {
+    margin-top: 3px;
+}
+#modal_sub, #modal {
+    display: none;
+}
+#modal_sub li, #modal li {
+    border-bottom: 1px dotted #666;
+    list-style: outside none none;
+    padding: 10px;
+}
+#modal li.open {
+    background: url("../../image/sp/point_plus.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    border-bottom: 1px dotted #666;
+    list-style: outside none none;
+    padding: 10px;
+}
+#modal_sub li.cls {
+    background: url("../../image/sp/point_none.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    border-bottom: 1px dotted #666;
+    list-style: outside none none;
+    padding: 10px;
+}
+#modal_sub, #modal {
+    display: none;
+}
+#modal_sub a, #modal a {
+    color: #fff;
+    text-decoration: none;
+}
+#modal_sub a:active, #modal_sub a:hover, #modal_sub a:focus, #modal a:active, #modal a:hover, #modal a:focus {
+    color: #ff6601;
+}
+#modal_sub li.subhead, #modal_sub li.sub li, #modal li.subhead, #modal li.sub li {
+    border: medium none;
+    list-style: outside none none;
+}
+#modal_sub li.sub ul, #modal li.sub ul {
+    margin-top: -5px;
+    padding-top: 0;
+}
+#modal_sub li.subhead, #modal li.subhead {
+    padding-bottom: 0;
+}
+#modal_sub li.sub li, #modal li.sub li {
+    padding: 5px 10px;
+}
+#modal_sub li.close, #modal li.close {
+    border: medium none;
+    margin-top: -10px;
+    padding-bottom: 0;
+}
+#modal_sub li.close li, #modal li.close li {
+    border: medium none;
+    margin-right: -15px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+#modal_sub li.close li.my, #modal li.close li.my {
+    border: medium none;
+    margin-right: -15px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+#pageslide {
+    background-color: #333;
+    box-shadow: 0 0 5px 5px #222 inset;
+    color: #fff;
+    display: none;
+    height: 100%;
+    overflow: scroll;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 220px;
+    z-index: 999999;
+}
+.imgpad {
+    border: 10px solid #ccc;
+    display: block;
+    margin: 15px 0;
+    max-width: 230px;
+}
+p.pagetop {
+    background: none repeat scroll 0 0 #574d37;
+    display: block;
+    font-size: 12px;
+    text-align: right;
+}
+p.pagetop a {
+    color: #ffffff;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+p.pagetop a span {
+    background: url("../../image/sp/pagetopicon.png") no-repeat scroll 0 0 / 14px 10px rgba(0, 0, 0, 0);
+    padding: 0 0 0 15px;
+}
+#path {
+    background: none repeat scroll 0 0 #e6e4e0;
+    font-size: 9px;
+    height: 30px;
+}
+#path li {
+    background: url("../../image/sp/bg_path.png") no-repeat scroll right center / 9px 30px rgba(0, 0, 0, 0);
+    color: #685f49;
+    display: inline-block;
+    height: 30px;
+    padding: 0 12px 0 3px;
+    vertical-align: middle;
+}
+#path li:last-child {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 20px;
+    padding: 10px 0 0 3px;
+}
+#path li a {
+    color: #685f49;
+    display: block;
+    height: 20px;
+    padding: 10px 0 0;
+    text-decoration: none;
+}
+#path li a:hover {
+    text-decoration: none;
+}
+#path li.home a {
+    background: url("../../image/sp/i_path_home.png") no-repeat scroll 3px center / 20px 18px rgba(0, 0, 0, 0);
+    width: 25px;
+}
+#path li.home a span {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+}
+footer {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-top: medium none;
+    box-shadow: none;
+    margin-bottom: 60px;
+    margin-top: 0;
+    padding: 0;
+}
+footer.recipe {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-top: medium none;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+footer p.copy {
+    background: linear-gradient(to bottom, #c0d47b 0%, #fffaef 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-top: 1px solid #ffffff;
+    clear: both;
+    color: #5b3219;
+    display: block;
+    font-size: 10px;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+div.school2 {
+    margin-top: 15px;
+}
+div.school2 h4 {
+    padding: 4px 0 3px 15px;
+    border-bottom: 1px dotted #aa917c;
+    border-top: 2px solid #5b3219;
+    font-size: 13px;
+    color: #5b3219;
+}
+div.school2 ul {
+    margin: 0 15px;
+}
+div.school2 li {
+    border-bottom: 1px dotted #666666;
+    list-style: outside none none;
+    min-height: 90px;
+}
+div.school2 li a {
+    color: #5b3219;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+div.school2 li img {
+    float: left;
+    margin-right: 10px;
+}
+div.school2 li a h5 {
+}
+div.school2 li a p {
+    font-size: 10px;
+}
+div.school2 li a p span {
+    color: #ff6666;
+    font-size: 12px;
+    font-weight: bold;
+}
+div.school2 p.search {
+    background: none repeat scroll 0 0 #fffaef;
+    display: block;
+    margin: 0 15px 15px;
+    padding: 8px;
+    text-align: right;
+}
+div.school2 p.search a {
+    color: #5b3219;
+    font-size: 12px;
+}
+.lesson-all {
+    margin-bottom: 15px;
+}
+.lesson-all li {
+    background: none repeat scroll 0 0 #fffaef;
+    border-bottom: 1px dotted #cccccc;
+    list-style: outside none none;
+    padding: 10px;
+}
+.lesson-all li:nth-child(2n) {
+    background: none repeat scroll 0 0 #fff;
+}
+.lesson-all li a {
+    display: block;
+    text-decoration: none;
+}
+.lesson-all li img {
+    float: left;
+    margin-right: 10px;
+}
+.lesson-all li h2, .lesson-all li h4.lessonttl {
+    color: #5a3219;
+}
+.lesson-all li div {
+    margin-bottom: 10px;
+}
+.lesson-all li p.lessoninfo {
+    color: #ff6601;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 170%;
+}
+ul li.btnSubmit a {
+    background: linear-gradient(to bottom, #edcda7 0%, #d69650 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #da9f5f;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #da9f5f;
+}
+
+ a.btn.submit {
+    background: linear-gradient(to bottom, #edcda7 0%, #d69650 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #da9f5f;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #da9f5f;
+}
+
+.messageBtn a {
+    position: relative;
+}
+.messageBtn b {
+    background: none repeat scroll 0 0 #ff2e28 !important;
+    border-radius: 100px;
+    color: #fff !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+    padding: 0 5px !important;
+    position: absolute;
+    right: 10px;
+    text-align: center !important;
+    top: 0;
+    z-index: 100;
+}
+.radBox {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 1px rgb(102, 102, 102);
+    margin: 5px 2px;
+    padding: 5px 0;
+    text-align: center;
+}
+.footSiteLink {
+    color: #333;
+    display: inline-block;
+    font-size: 0.84em !important;
+}
+.footLinkother {
+    display: inline-block;
+    font-size: 0.84em !important;
+    margin-left: 20px;
+}
+.footLink {
+    color: #333;
+    font-size: 0.84em !important;
+    margin: 5px 2px;
+    text-align: center;
+}
+.footLink a {
+    text-decoration: none;
+}
+.footLink a:hover {
+    text-decoration: none;
+}
+nav {}
+nav ul {
+    display: table;
+    height: auto;
+    table-layout: fixed;
+    width: 100%;
+}
+nav ul li {
+    background-color: #542d1c;
+    border-left: 1px solid #75523f;
+    display: table-cell;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+nav ul li a {
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14px;
+    margin: 0;
+    padding: 6px 0 6px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #351a09;
+}
+nav ul li:first-child {
+    border-left: 0 none;
+}
+nav ul li.stay {
+    border-bottom: 3px solid #f68606;
+}
+nav ul li.kerning a {
+    letter-spacing: -0.1em;
+    text-indent: -0.3em;
+}
+nav ul li.home {
+	width: 50px;
+}
+nav ul li.home a {
+    letter-spacing: -0.1em;
+    text-indent: -0.3em;
+    font-size: 16px;
+}
+header {
+    background: none repeat scroll 0 0 #fffaef;
+    border-top: 5px solid #5b3219;
+    height: 51px;
+    position: relative;
+}
+header p {
+    padding: 7px 0 0;
+    text-align: center;
+}
+div#footerAreaSchool ul li {
+    float: left;
+    width: 20%;
+}
+div.hukidashi {
+    bottom: 60px;
+    position: fixed;
+    right: 19%;
+}
+div#footerAreaSchool div.hukidashi p {
+    background: none repeat scroll 0 0 #fff;
+    border: 3px solid #f99;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #aaa;
+    color: #5a3219;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 16px;
+    padding: 20px 10px 0;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    width: 140px;
+    z-index: 0;
+}
+div.hukidashi p:before {
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    border-width: 14px 17px 0 0;
+    bottom: -9px;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 15px;
+    width: 0;
+    z-index: 0;
+}
+div.hukidashi p:after {
+    border-color: #f99 transparent transparent;
+    border-style: solid;
+    border-width: 14px 21px 0 0;
+    bottom: -14px;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 13px;
+    width: 0;
+    z-index: -1;
+}
+div.hukidashi p a {
+    color: #5a3219;
+    display: block;
+    padding: 20px 5px 0;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+}
+div.hukidashi p a:after {
+    background: none repeat scroll 0 0 #5a3219;
+    border-radius: 50%;
+    color: #fff;
+    content: "Ã—";
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 15px;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    top: 5px;
+    width: 15px;
+}

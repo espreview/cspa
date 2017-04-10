@@ -1,0 +1,235 @@
+@charset "utf-8";
+ul, li {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.recipeRanking dd img {
+    border: 3px solid #fff;
+    box-shadow: 0 1px 2px 1px #ccc;
+}
+.recipeRanking .cramp3{overflow : hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;}
+.recipeRanking a{ text-decoration:none;}
+.recipeRanking dl { width: 100%; position:relative;}
+.recipeRanking dl div {margin-top:5px;}
+.recipeRanking dl a { position:absolute; top:0; left:0; width:100%; height:100%;}
+.recipeRanking h3 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    padding: 10px 0 10px 5px;
+    color:#5a3219;
+    font-weight:bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.recipeRanking h2{
+    width: 96%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 8px 4% 8px 5px;
+    color: #5a3219;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.recipeRanking h2.no1 {
+    border-top: 3px solid #e9ae4e;
+}
+.recipeRanking h2.no2 {
+    border-top: 3px solid #898989;
+}
+.recipeRanking h2.no3 {
+    border-top: 3px solid #c77632;
+}
+.recipeRanking h2.no1::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    margin-right: 5px;
+    background: url("../../image/sp/icon_rank1.png") no-repeat;
+    background-size: contain;
+    vertical-align: top;
+}
+.recipeRanking h2.no2::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    margin-right: 5px;
+    background: url("../../image/sp/icon_rank2.png") no-repeat;
+    background-size: contain;
+    vertical-align: top;
+}
+.recipeRanking h2.no3::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    margin-right: 5px;
+    background: url("../../image/sp/icon_rank3.png") no-repeat;
+    background-size: contain;
+    vertical-align: top;
+}
+.recipeRanking dd {
+    padding: 0 5px;
+    vertical-align: top;
+}
+.recipeRanking dd.desc{
+    width: 90%;
+    margin: 10px auto 5px;
+}
+.recipeRanking dd p{
+    margin-bottom: 10px;
+}
+.recipeRanking .photo {
+    text-align: center;
+}
+.recipeRanking .recipeAuthor{
+    width: 90%;
+    background: none repeat scroll 0 0 #f0f0f0;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    clear: both;
+    margin: 5px auto 20px;
+    padding: 3px 5px 5px 0;
+}
+.recipeRanking .recipeAuthor .authorttl{
+    background: none repeat scroll 0 0 #96b835;
+    box-shadow: 1px 2px 2px 0 #999;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+    margin: 5px -10px 5px -5px;
+    padding: 5px 5px 5px 10px;
+    position: relative;
+    width: 40%;
+}
+.recipeRanking .recipeAuthor .authorttl::after{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #333 transparent transparent;
+    border-image: none;
+    border-right: 5px solid transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 100%;
+    width: 0;
+    z-index: -10;
+}
+.recipeRanking .recipeAuthor .authorttl::after{
+    border-right: 5px solid #333;
+    left: 0;
+}
+.recipeRanking .recipeAuthor li.rankingAuthor{
+    font-weight: bold;
+    color: #5a3219;
+}
+.recipeRanking .recipeAuthor li a{
+    display: block;
+    margin-bottom: 7px;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration:underline;
+    color:#FF9900;
+}
+.recipeRanking .inner{
+    overflow: hidden;
+    padding: 0 5px;
+}
+.recipeRanking .inner .photo{
+    float: left;
+    margin-right: 5px;
+}
+.recipeRanking .inner .photo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.recipeRanking .inner .des{
+    font-size: 12px;
+    line-height: 16px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.recipeRanking .underRank dl {
+    overflow: hidden;
+    padding: 0;
+}
+.recipeRanking .underRank dd.left {
+    float: left;
+    padding-left: 8px;
+}
+.recipeRanking .underRank dd p.right{
+    float: left;
+    width: 60%;
+    margin-left: 1%;
+    font-size: 14px;
+}
+.recipeRanking .recipeRankSub { padding: 0 5px;}
+.recipeRanking .recipeRankSub li { border: 1px solid #ccc; box-sizing: border-box; display: block; margin: 0 0 10px 0; padding: 8px;}
+.recipeRanking .recipeRankSub li p { margin: 0; padding: 0;}
+.recipeRanking .recipeRankSub li p img {border: 3px solid #fff;border: 3px solid #fff; box-shadow: 0 1px 2px 1px #ccc; margin: 0 auto;}
+.recipeRanking .recipeRankSub h3 {
+    box-shadow: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    padding: 0;
+    color:#666;
+}
+.recipeRanking .recipeRankSub h3::after {
+    content: "位";
+    font-size: 12px;
+}
+.recipeRanking .recipeRankSub dl dd { overflow:hidden; padding:0; margin-top: 5px;}
+.recipeRanking .recipeRankSub dl dd ul{ margin-top: 5px; padding: 0;}
+.recipeRanking .recipeRankSub dl li{ border:none; padding:0; margin-bottom:0;}
+.recipeRanking .recipeRankSub dl li.menu {margin-bottom:5px; color:#5a3219; font-weight:bold; font-size:16px; line-height:20px; overflow:hidden;text-overflow: ellipsis; white-space:nowrap;}
+.recipeRanking .recipeRankSub dl li.description {margin-bottom:5px; overflow:hidden;text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; font-size: 14px;}
+.recipeRanking .recipeRankSub dl li .author{background:#f0f0f0; border: 1px solid #e3e3e3; border-radius: 5px; padding:5px; margin:8px 0 0 133px;}
+.recipeRanking .recipeRankSub dl li .author p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #5a3219;
+}
+.recipeRanking .recipeRankSub dl li .author p.name::before {
+    content: "レシピ作成者：";
+}
+.recipeRanking .recipeRankSub dl p.sclname {
+    text-decoration: underline;
+    font-weight: normal!important;
+    color: #FF9900!important;
+}
+.recipeRanking .recipeRankSub .photo { float:left; padding-right:10px;}
+.recipeRanking .recipeRankSub dd img { border: medium none; box-shadow: none;}
+.recipeRanking dl dd p.tasty {
+    background: none repeat scroll 0 0 #f7f7f7;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    color: #5b3219;
+    display: inline-block;
+    font-size: 10px;
+    margin-top: 3px;
+    padding: 0 3px;
+}
+.recipeRanking dl dd p span {
+    color: #ff6666;
+    font-size: 12px;
+    font-weight: bold;
+}

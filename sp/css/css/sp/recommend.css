@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+.ichioshiRecipe h2,h2.ichioshiRecipe {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 0 10px 5px;
+    color: #5a3219;
+    font-weight: bold;
+    border-top: 3px solid #e9ae4e;
+}
+.ichioshiRecipe .author h3 { background: #96b835; box-shadow:1px 2px 2px 0 #999; color: #fff; font-size: 14px; line-height: 1; margin: 8px -10px 5px -5px; padding: 5px 5px 5px 10px; width: 100px; position:relative;}
+.ichioshiRecipe .author h3:after{content: " "; position: absolute; top: 100%; left: 0; border-style: solid; border-width: 0 4px 4px 0; border-color: transparent; border-right-color: #666;}
+.ichioshiRecipe .topRecipe { margin:0 auto 25px; line-height:18px;}
+.ichioshiRecipe .topRecipe figure {text-align:center; color:#333; margin-bottom:10px;}
+.ichioshiRecipe .topRecipe figure a { position:relative; display:inline-block; border:1px solid #ccc; width:100%; max-width:320px; height:auto}
+.ichioshiRecipe .topRecipe figure img {width:100%; position:relative; vertical-align:bottom;}
+.ichioshiRecipe .topRecipe figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 18px;
+    color: #fff;
+    background-color: rgba(91,50,25,0.2);
+    font-weight: bold;
+    font-size: 17px;
+    padding: 7px 10px;
+    margin: 0 10px 0 0;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.ichioshiRecipe .topRecipe figure figcaption:after {
+    content: "\f054";
+    font-family: FontAwesome;
+    font-size: 13px;
+    line-height: 12px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    margin: -9px 0 0 0;
+    vertical-align: middle;
+}
+.ichioshiRecipe .topRecipe p.desc{
+    width: 90%;
+    margin: 0 auto 15px;
+    line-height: 1.7em;
+}
+.ichioshiRecipe a {text-decoration:none;}
+.ichioshiRecipe .topRecipe figure p {text-align:left;}
+
+
+.topRecipe .recipeAuthor {
+    width: 90%;
+    background: none repeat scroll 0 0 #f0f0f0;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    clear: both;
+    margin: 5px auto 20px;
+    padding: 3px 5px 5px 0;
+}
+.topRecipe .recipeAuthor .authorttl {
+    background: none repeat scroll 0 0 #96b835;
+    box-shadow: 1px 2px 2px 0 #999;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+    margin: 5px -10px 5px -5px;
+    padding: 5px 5px 5px 10px;
+    position: relative;
+    width: 40%;
+}
+.topRecipe .recipeAuthor .authorttl::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #333 transparent transparent;
+    border-image: none;
+    border-right: 5px solid transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 100%;
+    width: 0;
+    z-index: -10;
+}
+.topRecipe .recipeAuthor .authorttl::after {
+    border-right: 5px solid #333;
+    left: 0;
+}
+.topRecipe .recipeAuthor li.rankingAuthor{
+    font-weight: bold;
+    color: #5a3219;
+}
+.topRecipe .recipeAuthor li a{
+    display: block;
+    margin-bottom: 7px;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration:underline;
+    color:#FF9900;
+}
+.topRecipe .inner {
+    overflow: hidden;
+    padding: 0 5px;
+}
+.topRecipe .inner .photo {
+    float: left;
+    margin-right: 5px;
+}
+.topRecipe .inner .photo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.topRecipe .inner .des {
+    font-size: 12px;
+    line-height: 16px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.ichioshiRecipe .topRecipe .author a {display:block;}
+.ichioshiRecipe .topRecipe .author {background-color:#f5f5f5; border-radius:10px; border:1px solid #e3e3e3; position:relative; margin:10px 0 0;}
+.ichioshiRecipe .topRecipe .author dl { color:#5a3219; padding:3px 5px 5px 5px; font-size:14px; overflow:hidden; }
+.ichioshiRecipe .topRecipe .author dl dt { float:left; margin-right:8px; width:10%; min-width:80px;}
+.ichioshiRecipe .topRecipe .author dl dt img {
+    vertical-align:bottom;
+    border:1px solid #ccc;
+    height:auto;
+    vertical-align:bottom;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.ichioshiRecipe .topRecipe .author dl dd {font-size:14px;}
+.ichioshiRecipe .topRecipe .author dl .nameTeacher { font-weight:bold; color:#333;}
+.ichioshiRecipe .topRecipe .author dl .nameClass { margin-bottom:5px; overflow:hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+.ichioshiRecipe .topRecipe .author dl .clsdisc {overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color:#333;}
+.ichioshiRecipe .recipeList {border-bottom:1px solid #e3e3e3; margin-bottom:20px;}
+.ichioshiRecipe .recipeList li {border-top:1px solid #e3e3e3; padding:15px;}
+.ichioshiRecipe .recipeList li a {display:block;}
+.ichioshiRecipe .recipeList dl {display:table; width:100%;}
+.ichioshiRecipe .recipeList dl dt {display:table-cell; min-width:100px; width:20%;}
+.ichioshiRecipe .recipeList dl dd {display:table-cell; vertical-align:top; padding:0 0 0 10px; color:#5b3219; font-size:14px; width:100%; line-height:20px;}
+.ichioshiRecipe .recipeList dl dd .ellip {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;}
+.ichioshiRecipe .recipeList dl dd .nameDish {
+    font-weight:bold;
+    font-size:16px;
+    line-height:20px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom:8px;}
+.ichioshiRecipe .recipeList dl dd .author{ background: #f0f0f0; border:1px solid #e3e3e3; border-radius:5px;  padding: 5px;}
+.ichioshiRecipe .recipeList dl dd .name { margin-bottom:3px; color:#333;}
+.ichioshiRecipe .recipeList dl dt img { width:100%; max-width:180px; height:auto; border:3px solid #fff; box-shadow:1px 1px 4px #ccc; vertical-align:bottom; box-sizing: border-box;}
+.ichioshiRecipe .otherTheme { border-top:1px solid #e3e3e3; padding-bottom:10px;}
+.ichioshiRecipe .otherTheme li {padding:8px 0 8px 10px; border-bottom:1px solid #e3e3e3; position:relative;}
+.ichioshiRecipe .otherTheme li a {display:block;}
+.ichioshiRecipe .otherTheme li figure {display:table; width:100%;}
+.ichioshiRecipe .otherTheme span{display:table-cell; width:15%; min-width:60px;}
+.ichioshiRecipe .otherTheme span img{ width:100%; max-width:180px; height:auto; border:1px solid #e3e3e3; border-radius:10px; box-sizing:border-box; vertical-align:bottom;}
+.ichioshiRecipe .otherTheme figcaption{display:table-cell; vertical-align:middle; color:#5b3219; font-weight:bold; text-align:left; width:100%; padding:0 20px 0 10px;}
+.ichioshiRecipe .otherTheme li a:after { content: "\f144"; font-family: FontAwesome; font-size:14px; display:inline-block; position:absolute; right:5px; top:40%; color:#ccc; vertical-align:middle;}
